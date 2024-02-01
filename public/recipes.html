@@ -1,0 +1,57 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script type="module" src="./scripts/recipesScript.mjs" defer></script>
+    <title>Oppskriftsapp</title>
+  </head>
+  <body>
+    <h1>Oppskrifter</h1>
+
+    <form id="leggTilSkjema">
+      <label for="tittel">Tittel:</label>
+      <input type="text" id="tittel" required />
+
+      <label for="ingredienser">Ingredienser:</label>
+      <textarea id="ingredienser" required></textarea>
+
+      <label for="instruksjoner">Instruksjoner:</label>
+      <textarea id="instruksjoner" required></textarea>
+
+      <button type="button" id="leggTilKnapp">Legg til oppskrift</button>
+    </form>
+
+    <div id="kortContainer">
+      <!-- Oppskriftskort vil bli lagt til her dynamisk med JavaScript -->
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("leggTilKnapp")
+          .addEventListener("click", function () {
+            import("./scripts/recipesScript.mjs").then((module) => {
+              module.leggTilOppskrift();
+            });
+          });
+
+        window.redigerOppskrift = function (index) {
+          import("./scripts/recipesScript.mjs").then((module) => {
+            module.redigerOppskrift(index);
+          });
+        };
+
+        // Legg til denne delen for å kunne bruke fjernOppskrift direkte i HTML
+        window.fjernOppskrift = function (index) {
+          import("./scripts/recipesScript.mjs").then((module) => {
+            module.fjernOppskrift(index);
+          });
+        };
+      });
+    </script>
+  </body>
+</html>
