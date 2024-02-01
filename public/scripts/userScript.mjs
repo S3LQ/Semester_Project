@@ -1,10 +1,12 @@
 // userScript.mjs
 
+import loggerMiddleware from "./loggerMiddleware.mjs";
+
 let userList = [];
 
 export function createUser() {
   const navn = document.getElementById("navn").value;
-  const password = document.getElementById("password").value;
+  const password = document.getElementById("pswHash").value;
 
   if (navn && password) {
     const user = { navn, password };
@@ -20,8 +22,8 @@ export function createUser() {
 }
 
 export function loginUser() {
-  const navn = document.getElementById("loginnavn").value;
-  const password = document.getElementById("loginPassword").value;
+  const navn = document.getElementById("loginUserNavn").value;
+  const password = document.getElementById("loginPassord").value;
 
   const user = userList.find((u) => u.navn === navn && u.password === password);
 
@@ -36,13 +38,32 @@ export function loginUser() {
 }
 
 function resetUserForm() {
-  const userForm = document.getElementById("userForm");
-  userForm.reset();
+  const userForm = document.getElementById("createUserSection");
+
+  // Sjekk om userForm er et skjemaelement
+  if (userForm.tagName.toLowerCase() === "form") {
+    // Bruk reset-metoden for skjemaelementer
+    userForm.reset();
+  } else {
+    // Tilpasset reset for andre elementer
+    document.getElementById("navn").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("pswHash").value = "";
+  }
 }
 
 function resetLoginForm() {
-  const loginForm = document.getElementById("loginForm");
-  loginForm.reset();
+  const loginForm = document.getElementById("loginSection");
+
+  // Sjekk om loginForm er et skjemaelement
+  if (loginForm.tagName.toLowerCase() === "form") {
+    // Bruk reset-metoden for skjemaelementer
+    loginForm.reset();
+  } else {
+    // Tilpasset reset for andre elementer
+    document.getElementById("loginUserNavn").value = "";
+    document.getElementById("loginPassord").value = "";
+  }
 }
 
 // Placeholder for loggInn function

@@ -27,6 +27,20 @@ h1 {
   text-align: center;
 }
 
+#loginSection,
+#createUserSection {
+  width: 300px;
+  margin-right: 20px;
+}
+
+#showCreateUserButton {
+  margin-top: 10px; /* Legg til ønsket avstand over knappen */
+}
+
+#backToLoginButton {
+  margin-top: 10px; /* Legg til ønsket avstand over knappen */
+}
+
 label {
   display: block;
   margin-bottom: 8px;

@@ -4,14 +4,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta Navn="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My App</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div class="center-box">
-      <!-- Create User Section -->
-      <div id="createUserSection">
+      <!-- Logg Inn Section -->
+      <div id="loginSection">
+        <h2>Logg inn</h2>
+        <label for="loginUserNavn">Navn:</label>
+        <input type="text" id="loginUserNavn" />
+        <label for="loginPassord">Passord:</label>
+        <input type="password" id="loginPassord" />
+        <button id="loginButton">Logg inn</button>
+        <button id="showCreateUserButton">Lag bruker</button>
+      </div>
+
+      <!-- Lag Bruker Section -->
+      <div id="createUserSection" style="display: none">
         <h2>Lag bruker</h2>
         <label for="navn">Navn:</label>
         <input type="text" id="navn" />
@@ -20,19 +31,8 @@
         <label for="pswHash">Passord:</label>
         <input type="password" id="pswHash" />
         <button id="createUserButton">Lag bruker</button>
+        <button id="backToLoginButton">Tilbake til Logg inn</button>
       </div>
-
-      <!-- Login Section -->
-      <div id="loginSection">
-        <h2>Logg inn</h2>
-        <label for="loginUserNavn">Navn:</label>
-        <input type="text" id="loginUserNavn" />
-        <label for="loginPassord">Passord:</label>
-        <input type="password" id="loginPassord" />
-        <button id="loginButton">Logg inn</button>
-      </div>
-
-      <!-- Additional content can be added here related to user management -->
     </div>
 
     <script type="module" src="./scripts/loginScript.mjs"></script>
