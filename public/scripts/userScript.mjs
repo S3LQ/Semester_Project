@@ -1,7 +1,5 @@
 // userScript.mjs
 
-import loggerMiddleware from "./loggerMiddleware.mjs";
-
 let userList = [];
 
 export function createUser() {

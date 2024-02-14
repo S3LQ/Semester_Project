@@ -1,7 +1,4 @@
 // recipesscript.mjs
-
-import loggerMiddleware from "./loggerMiddleware.mjs";
-
 let oppskriftsListe = [];
 let currentUser; // Variable to store the current logged-in user
 

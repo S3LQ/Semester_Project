@@ -1,7 +1,6 @@
 // loginScript.mjs
 
 import * as userScript from "./userScript.mjs";
-import loggerMiddleware from "./loggerMiddleware.mjs";
 
 const showCreateUserButton = document.getElementById("showCreateUserButton");
 const backToLoginButton = document.getElementById("backToLoginButton");
