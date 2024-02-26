@@ -20,14 +20,3 @@ backToLoginButton.addEventListener("click", function () {
 const loginButton = document.getElementById("loginButton");
 
 loginButton.addEventListener("click", userScript.loginUser);
-
-const createUserButton = document.getElementById("createUserButton");
-
-createUserButton.addEventListener("click", function () {
-  // Opprett bruker uten å kreve gyldige verdier for navn og passord
-  userScript.createUser();
-  // Logg inn brukeren (du kan endre dette avhengig av dine krav)
-  userScript.loggInn("TemporaryUser");
-  console.log("Bruker opprettet, omdirigerer...");
-  window.location.href = "recipes.html";
-});
