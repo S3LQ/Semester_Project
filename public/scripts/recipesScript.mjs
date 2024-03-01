@@ -1,10 +1,11 @@
 // recipesscript.mjs
 let oppskriftsListe = [];
-let currentUser; // Variable to store the current logged-in user
+const userData = JSON.parse(localStorage.getItem("userData"));
 
 export function leggTilOppskrift() {
   // Check if a user is logged in
-  if (!currentUser) {
+  console.log(userData);
+  if (!userData) {
     alert("You need to log in to add recipes.");
     return;
   }
@@ -144,28 +145,3 @@ function lagOppskriftsKort(oppskrift, index) {
 
   return kort;
 }
-
-// New code for user authentication
-
-export function loggInn(brukernavn) {
-  currentUser = brukernavn;
-  // Lagre brukerinformasjon i localStorage
-  localStorage.setItem("currentUser", currentUser);
-  alert(`Logged in as ${currentUser}`);
-}
-
-export function loggUt() {
-  // Fjern brukerinformasjon fra localStorage
-  localStorage.removeItem("currentUser");
-  currentUser = null;
-  alert("Logged out");
-}
-
-// Sjekk om det er lagret en innlogget bruker i localStorage ved lasting av siden
-window.onload = function () {
-  const savedUser = localStorage.getItem("currentUser");
-  if (savedUser) {
-    currentUser = savedUser;
-    alert(`Welcome back, ${currentUser}!`);
-  }
-};

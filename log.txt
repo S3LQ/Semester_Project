@@ -38,3 +38,1414 @@ Database connection  postgresql://localhost:5433/tveitsindre
 2:34:47 PM [32mGET[39m /
 2:34:52 PM [33mPOST[39m /user
 2:34:53 PM [33mPOST[39m /user
+2:37:36 PM [32mGET[39m /
+2:37:36 PM [32mGET[39m /styles/style.css
+2:37:36 PM [32mGET[39m /scripts/createUser.mjs
+2:37:39 PM [32mGET[39m /styles/style.css
+2:37:44 PM [33mPOST[39m /user
+10:38:21 AM [32mGET[39m /
+10:38:21 AM [32mGET[39m /styles/style.css
+10:38:21 AM [32mGET[39m /scripts/createUser.mjs
+10:38:40 AM [33mPOST[39m /user
+10:42:15 AM [33mPOST[39m /user
+10:42:15 AM [33mPOST[39m /user
+10:42:19 AM [32mGET[39m /styles/style.css
+10:42:22 AM [33mPOST[39m /user
+10:43:35 AM [33mPOST[39m /user
+10:45:33 AM [32mGET[39m /
+10:45:33 AM [32mGET[39m /styles/style.css
+10:45:33 AM [32mGET[39m /scripts/createUser.mjs
+10:45:37 AM [33mPOST[39m /user
+10:45:37 AM [32mGET[39m /recipes.html
+10:45:37 AM [32mGET[39m /styles/style.css
+10:45:37 AM [32mGET[39m /scripts/recipesScript.mjs
+10:45:43 AM [32mGET[39m /index.html
+10:45:43 AM [32mGET[39m /styles/style.css
+10:45:43 AM [32mGET[39m /scripts/createUser.mjs
+10:46:01 AM [33mPOST[39m /user
+10:46:01 AM [32mGET[39m /recipes.html
+10:46:01 AM [32mGET[39m /styles/style.css
+10:46:01 AM [32mGET[39m /scripts/recipesScript.mjs
+10:46:03 AM [32mGET[39m /index.html
+10:46:03 AM [32mGET[39m /styles/style.css
+10:46:03 AM [32mGET[39m /scripts/createUser.mjs
+10:46:11 AM [33mPOST[39m /user
+10:46:11 AM [32mGET[39m /recipes.html
+10:46:11 AM [32mGET[39m /styles/style.css
+10:46:11 AM [32mGET[39m /scripts/recipesScript.mjs
+10:54:12 AM [32mGET[39m /recipes.html
+10:54:12 AM [32mGET[39m /styles/style.css
+10:54:12 AM [32mGET[39m /scripts/recipesScript.mjs
+10:54:16 AM [32mGET[39m /index.html
+10:54:16 AM [32mGET[39m /styles/style.css
+10:54:16 AM [32mGET[39m /scripts/createUser.mjs
+10:54:16 AM [32mGET[39m /index.html
+10:54:16 AM [32mGET[39m /styles/style.css
+10:54:16 AM [32mGET[39m /scripts/createUser.mjs
+10:54:22 AM [33mPOST[39m /user
+10:54:22 AM [32mGET[39m /recipes.html
+10:54:22 AM [32mGET[39m /styles/style.css
+10:54:22 AM [32mGET[39m /scripts/recipesScript.mjs
+10:54:26 AM [32mGET[39m /index.html
+10:54:26 AM [32mGET[39m /styles/style.css
+10:54:26 AM [32mGET[39m /scripts/createUser.mjs
+10:54:27 AM [32mGET[39m /index.html
+10:54:27 AM [32mGET[39m /styles/style.css
+10:54:27 AM [32mGET[39m /scripts/createUser.mjs
+10:54:39 AM [32mGET[39m /index.html
+10:54:39 AM [32mGET[39m /styles/style.css
+10:54:39 AM [32mGET[39m /scripts/createUser.mjs
+10:59:24 AM [32mGET[39m /index.html
+10:59:24 AM [32mGET[39m /styles/style.css
+10:59:24 AM [32mGET[39m /scripts/createUser.mjs
+10:59:43 AM [33mPOST[39m /user
+10:59:43 AM [32mGET[39m /recipes.html
+10:59:44 AM [32mGET[39m /styles/style.css
+10:59:44 AM [32mGET[39m /scripts/recipesScript.mjs
+10:59:46 AM [32mGET[39m /index.html
+10:59:46 AM [32mGET[39m /styles/style.css
+10:59:46 AM [32mGET[39m /scripts/createUser.mjs
+10:59:48 AM [32mGET[39m /index.html
+10:59:48 AM [32mGET[39m /styles/style.css
+10:59:48 AM [32mGET[39m /scripts/createUser.mjs
+11:05:47 AM [32mGET[39m /index.html
+11:05:48 AM [32mGET[39m /styles/style.css
+11:05:48 AM [32mGET[39m /scripts/createUser.mjs
+11:05:48 AM [32mGET[39m /index.html
+11:05:48 AM [32mGET[39m /styles/style.css
+11:05:48 AM [32mGET[39m /scripts/createUser.mjs
+11:05:55 AM [33mPOST[39m /user
+11:05:55 AM [32mGET[39m /recipes.html
+11:05:55 AM [32mGET[39m /styles/style.css
+11:05:55 AM [32mGET[39m /scripts/recipesScript.mjs
+11:05:57 AM [32mGET[39m /index.html
+11:05:57 AM [32mGET[39m /styles/style.css
+11:05:57 AM [32mGET[39m /scripts/createUser.mjs
+11:05:58 AM [32mGET[39m /index.html
+11:05:58 AM [32mGET[39m /styles/style.css
+11:05:58 AM [32mGET[39m /scripts/createUser.mjs
+11:05:58 AM [32mGET[39m /index.html
+11:05:58 AM [32mGET[39m /styles/style.css
+11:05:58 AM [32mGET[39m /scripts/createUser.mjs
+11:05:58 AM [32mGET[39m /index.html
+11:05:58 AM [32mGET[39m /styles/style.css
+11:05:58 AM [32mGET[39m /scripts/createUser.mjs
+11:07:37 AM [32mGET[39m /index.html
+11:07:37 AM [32mGET[39m /styles/style.css
+11:07:37 AM [32mGET[39m /scripts/createUser.mjs
+11:07:38 AM [32mGET[39m /index.html
+11:07:38 AM [32mGET[39m /styles/style.css
+11:07:38 AM [32mGET[39m /scripts/createUser.mjs
+11:07:51 AM [32mGET[39m /index.html
+11:07:51 AM [32mGET[39m /styles/style.css
+11:07:51 AM [32mGET[39m /scripts/createUser.mjs
+11:08:17 AM [32mGET[39m /
+11:08:17 AM [32mGET[39m /styles/style.css
+11:08:17 AM [32mGET[39m /scripts/createUser.mjs
+11:08:26 AM [32mGET[39m /styles/style.css
+11:10:17 AM [32mGET[39m /
+11:10:17 AM [32mGET[39m /styles/style.css
+11:10:17 AM [32mGET[39m /scripts/createUser.mjs
+11:10:18 AM [32mGET[39m /
+11:10:18 AM [32mGET[39m /styles/style.css
+11:10:18 AM [32mGET[39m /scripts/createUser.mjs
+11:11:56 AM [32mGET[39m /
+11:11:56 AM [32mGET[39m /styles/style.css
+11:11:56 AM [32mGET[39m /scripts/createUser.mjs
+11:12:09 AM [33mPOST[39m /user
+11:12:09 AM [32mGET[39m /recipes.html
+11:12:09 AM [32mGET[39m /styles/style.css
+11:12:09 AM [32mGET[39m /scripts/recipesScript.mjs
+11:12:14 AM [32mGET[39m /index.html
+11:12:14 AM [32mGET[39m /styles/style.css
+11:12:14 AM [32mGET[39m /scripts/createUser.mjs
+11:13:19 AM [33mPOST[39m /user
+11:13:19 AM [32mGET[39m /recipes.html
+11:13:19 AM [32mGET[39m /styles/style.css
+11:13:19 AM [32mGET[39m /scripts/recipesScript.mjs
+11:14:31 AM [33mPOST[39m /user
+11:14:31 AM [32mGET[39m /recipes.html
+11:14:31 AM [32mGET[39m /styles/style.css
+11:14:31 AM [32mGET[39m /scripts/recipesScript.mjs
+11:16:08 AM [32mGET[39m /index.html
+11:16:08 AM [32mGET[39m /styles/style.css
+11:16:08 AM [32mGET[39m /scripts/createUser.mjs
+11:16:24 AM [33mPOST[39m /user
+11:16:30 AM [32mGET[39m /index.html
+11:16:30 AM [32mGET[39m /styles/style.css
+11:16:30 AM [32mGET[39m /scripts/createUser.mjs
+11:16:34 AM [33mPOST[39m /user
+11:16:38 AM [32mGET[39m /index.html
+11:16:38 AM [32mGET[39m /styles/style.css
+11:16:38 AM [32mGET[39m /scripts/createUser.mjs
+11:16:43 AM [33mPOST[39m /user
+11:18:12 AM [33mPOST[39m /user
+11:18:12 AM [32mGET[39m /recipes.html
+11:18:12 AM [32mGET[39m /styles/style.css
+11:18:12 AM [32mGET[39m /scripts/recipesScript.mjs
+11:18:18 AM [32mGET[39m /index.html
+11:18:18 AM [32mGET[39m /styles/style.css
+11:18:18 AM [32mGET[39m /scripts/createUser.mjs
+11:18:19 AM [32mGET[39m /index.html
+11:18:19 AM [32mGET[39m /styles/style.css
+11:18:19 AM [32mGET[39m /scripts/createUser.mjs
+11:18:20 AM [32mGET[39m /index.html
+11:18:20 AM [32mGET[39m /styles/style.css
+11:18:20 AM [32mGET[39m /scripts/createUser.mjs
+11:18:20 AM [32mGET[39m /index.html
+11:18:20 AM [32mGET[39m /styles/style.css
+11:18:20 AM [32mGET[39m /scripts/createUser.mjs
+11:18:20 AM [32mGET[39m /index.html
+11:18:20 AM [32mGET[39m /styles/style.css
+11:18:20 AM [32mGET[39m /scripts/createUser.mjs
+11:18:20 AM [32mGET[39m /index.html
+11:18:20 AM [32mGET[39m /styles/style.css
+11:18:20 AM [32mGET[39m /scripts/createUser.mjs
+11:18:20 AM [32mGET[39m /index.html
+11:18:20 AM [32mGET[39m /styles/style.css
+11:18:21 AM [32mGET[39m /scripts/createUser.mjs
+11:18:36 AM [32mGET[39m /index.html
+11:18:36 AM [32mGET[39m /styles/style.css
+11:18:36 AM [32mGET[39m /scripts/createUser.mjs
+11:18:37 AM [32mGET[39m /index.html
+11:18:37 AM [32mGET[39m /styles/style.css
+11:18:37 AM [32mGET[39m /scripts/createUser.mjs
+11:18:37 AM [32mGET[39m /index.html
+11:18:37 AM [32mGET[39m /styles/style.css
+11:18:37 AM [32mGET[39m /scripts/createUser.mjs
+11:18:37 AM [32mGET[39m /index.html
+11:18:37 AM [32mGET[39m /styles/style.css
+11:18:37 AM [32mGET[39m /scripts/createUser.mjs
+11:18:37 AM [32mGET[39m /index.html
+11:18:37 AM [32mGET[39m /styles/style.css
+11:18:38 AM [32mGET[39m /scripts/createUser.mjs
+11:18:38 AM [32mGET[39m /index.html
+11:18:38 AM [32mGET[39m /styles/style.css
+11:18:38 AM [32mGET[39m /scripts/createUser.mjs
+11:18:46 AM [33mPOST[39m /user
+11:18:46 AM [32mGET[39m /recipes.html
+11:18:47 AM [32mGET[39m /styles/style.css
+11:18:47 AM [32mGET[39m /scripts/recipesScript.mjs
+11:19:25 AM [32mGET[39m /recipes.html
+11:19:25 AM [32mGET[39m /styles/style.css
+11:19:25 AM [32mGET[39m /scripts/recipesScript.mjs
+11:19:27 AM [32mGET[39m /index.html
+11:19:27 AM [32mGET[39m /styles/style.css
+11:19:27 AM [32mGET[39m /scripts/createUser.mjs
+11:19:28 AM [32mGET[39m /index.html
+11:19:28 AM [32mGET[39m /styles/style.css
+11:19:28 AM [32mGET[39m /scripts/createUser.mjs
+11:19:34 AM [33mPOST[39m /user
+11:23:10 AM [32mGET[39m /index.html
+11:23:10 AM [32mGET[39m /styles/style.css
+11:23:10 AM [32mGET[39m /scripts/createUser.mjs
+11:23:10 AM [32mGET[39m /index.html
+11:23:10 AM [32mGET[39m /styles/style.css
+11:23:11 AM [32mGET[39m /scripts/createUser.mjs
+11:23:17 AM [33mPOST[39m /user
+11:23:24 AM [32mGET[39m /index.html
+11:23:24 AM [32mGET[39m /styles/style.css
+11:23:24 AM [32mGET[39m /scripts/createUser.mjs
+11:23:24 AM [32mGET[39m /index.html
+11:23:24 AM [32mGET[39m /styles/style.css
+11:23:24 AM [32mGET[39m /scripts/createUser.mjs
+11:23:25 AM [32mGET[39m /index.html
+11:23:25 AM [32mGET[39m /styles/style.css
+11:23:25 AM [32mGET[39m /scripts/createUser.mjs
+11:23:25 AM [32mGET[39m /index.html
+11:23:25 AM [32mGET[39m /styles/style.css
+11:23:25 AM [32mGET[39m /scripts/createUser.mjs
+11:23:25 AM [32mGET[39m /index.html
+11:23:25 AM [32mGET[39m /styles/style.css
+11:23:25 AM [32mGET[39m /scripts/createUser.mjs
+11:23:29 AM [33mPOST[39m /user
+11:23:30 AM [33mPOST[39m /user
+11:23:30 AM [33mPOST[39m /user
+11:23:30 AM [33mPOST[39m /user
+11:24:09 AM [32mGET[39m /index.html
+11:24:09 AM [32mGET[39m /styles/style.css
+11:24:09 AM [32mGET[39m /scripts/createUser.mjs
+11:24:10 AM [32mGET[39m /index.html
+11:24:10 AM [32mGET[39m /styles/style.css
+11:24:10 AM [32mGET[39m /scripts/createUser.mjs
+11:24:10 AM [32mGET[39m /index.html
+11:24:10 AM [32mGET[39m /styles/style.css
+11:24:10 AM [32mGET[39m /scripts/createUser.mjs
+11:24:10 AM [32mGET[39m /index.html
+11:24:10 AM [32mGET[39m /styles/style.css
+11:24:10 AM [32mGET[39m /scripts/createUser.mjs
+11:24:10 AM [32mGET[39m /index.html
+11:24:10 AM [32mGET[39m /styles/style.css
+11:24:10 AM [32mGET[39m /index.html
+11:24:10 AM [32mGET[39m /scripts/createUser.mjs
+11:24:10 AM [32mGET[39m /styles/style.css
+11:24:10 AM [32mGET[39m /scripts/createUser.mjs
+11:24:11 AM [32mGET[39m /index.html
+11:24:11 AM [32mGET[39m /styles/style.css
+11:24:11 AM [32mGET[39m /scripts/createUser.mjs
+11:24:11 AM [32mGET[39m /index.html
+11:24:11 AM [32mGET[39m /styles/style.css
+11:24:11 AM [32mGET[39m /scripts/createUser.mjs
+11:24:15 AM [33mPOST[39m /user
+11:24:46 AM [32mGET[39m /index.html
+11:24:46 AM [32mGET[39m /styles/style.css
+11:24:46 AM [32mGET[39m /scripts/createUser.mjs
+11:24:46 AM [32mGET[39m /index.html
+11:24:46 AM [32mGET[39m /styles/style.css
+11:24:46 AM [32mGET[39m /scripts/createUser.mjs
+11:24:47 AM [32mGET[39m /index.html
+11:24:47 AM [32mGET[39m /styles/style.css
+11:24:47 AM [32mGET[39m /scripts/createUser.mjs
+11:24:47 AM [32mGET[39m /index.html
+11:24:47 AM [32mGET[39m /styles/style.css
+11:24:47 AM [32mGET[39m /scripts/createUser.mjs
+11:24:50 AM [33mPOST[39m /user
+11:25:02 AM [32mGET[39m /index.html
+11:25:02 AM [32mGET[39m /styles/style.css
+11:25:02 AM [32mGET[39m /scripts/createUser.mjs
+11:25:06 AM [33mPOST[39m /user
+11:26:08 AM [32mGET[39m /index.html
+11:26:08 AM [32mGET[39m /styles/style.css
+11:26:08 AM [32mGET[39m /scripts/createUser.mjs
+11:26:09 AM [32mGET[39m /index.html
+11:26:09 AM [32mGET[39m /styles/style.css
+11:26:09 AM [32mGET[39m /scripts/createUser.mjs
+11:26:09 AM [32mGET[39m /index.html
+11:26:09 AM [32mGET[39m /styles/style.css
+11:26:09 AM [32mGET[39m /index.html
+11:26:09 AM [32mGET[39m /scripts/createUser.mjs
+11:26:09 AM [32mGET[39m /styles/style.css
+11:26:09 AM [32mGET[39m /scripts/createUser.mjs
+11:26:12 AM [33mPOST[39m /user
+11:28:28 AM [32mGET[39m /index.html
+11:28:28 AM [32mGET[39m /styles/style.css
+11:28:28 AM [32mGET[39m /scripts/createUser.mjs
+11:28:29 AM [32mGET[39m /index.html
+11:28:29 AM [32mGET[39m /styles/style.css
+11:28:29 AM [32mGET[39m /scripts/createUser.mjs
+11:28:29 AM [32mGET[39m /index.html
+11:28:29 AM [32mGET[39m /styles/style.css
+11:28:29 AM [32mGET[39m /scripts/createUser.mjs
+11:28:29 AM [32mGET[39m /index.html
+11:28:29 AM [32mGET[39m /styles/style.css
+11:28:29 AM [32mGET[39m /index.html
+11:28:29 AM [32mGET[39m /scripts/createUser.mjs
+11:28:29 AM [32mGET[39m /styles/style.css
+11:28:29 AM [32mGET[39m /scripts/createUser.mjs
+11:28:35 AM [33mPOST[39m /user
+11:30:26 AM [32mGET[39m /index.html
+11:30:26 AM [32mGET[39m /styles/style.css
+11:30:26 AM [32mGET[39m /scripts/createUser.mjs
+11:30:26 AM [32mGET[39m /index.html
+11:30:26 AM [32mGET[39m /styles/style.css
+11:30:26 AM [32mGET[39m /scripts/createUser.mjs
+11:30:26 AM [32mGET[39m /index.html
+11:30:26 AM [32mGET[39m /styles/style.css
+11:30:26 AM [32mGET[39m /index.html
+11:30:26 AM [32mGET[39m /scripts/createUser.mjs
+11:30:26 AM [32mGET[39m /styles/style.css
+11:30:27 AM [32mGET[39m /scripts/createUser.mjs
+11:30:35 AM [33mPOST[39m /user
+11:30:35 AM [32mGET[39m /recipes.html
+11:30:35 AM [32mGET[39m /styles/style.css
+11:30:35 AM [32mGET[39m /scripts/recipesScript.mjs
+11:30:57 AM [32mGET[39m /index.html
+11:30:57 AM [32mGET[39m /styles/style.css
+11:30:57 AM [32mGET[39m /scripts/createUser.mjs
+11:30:57 AM [32mGET[39m /index.html
+11:30:57 AM [32mGET[39m /styles/style.css
+11:30:57 AM [32mGET[39m /scripts/createUser.mjs
+11:30:57 AM [32mGET[39m /index.html
+11:30:57 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:58 AM [32mGET[39m /index.html
+11:30:58 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /index.html
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:58 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:58 AM [32mGET[39m /index.html
+11:30:58 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:58 AM [32mGET[39m /index.html
+11:30:58 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:58 AM [32mGET[39m /index.html
+11:30:58 AM [32mGET[39m /styles/style.css
+11:30:58 AM [32mGET[39m /scripts/createUser.mjs
+11:30:59 AM [32mGET[39m /index.html
+11:30:59 AM [32mGET[39m /styles/style.css
+11:30:59 AM [32mGET[39m /index.html
+11:30:59 AM [32mGET[39m /scripts/createUser.mjs
+11:30:59 AM [32mGET[39m /styles/style.css
+11:30:59 AM [32mGET[39m /scripts/createUser.mjs
+11:31:00 AM [32mGET[39m /index.html
+11:31:00 AM [32mGET[39m /styles/style.css
+11:31:00 AM [32mGET[39m /scripts/createUser.mjs
+11:31:00 AM [32mGET[39m /index.html
+11:31:00 AM [32mGET[39m /styles/style.css
+11:31:00 AM [32mGET[39m /scripts/createUser.mjs
+11:31:00 AM [32mGET[39m /index.html
+11:31:01 AM [32mGET[39m /styles/style.css
+11:31:01 AM [32mGET[39m /scripts/createUser.mjs
+11:31:06 AM [33mPOST[39m /user
+11:31:06 AM [32mGET[39m /recipes.html
+11:31:06 AM [32mGET[39m /styles/style.css
+11:31:06 AM [32mGET[39m /scripts/recipesScript.mjs
+11:31:28 AM [32mGET[39m /recipes.html
+11:31:28 AM [32mGET[39m /styles/style.css
+11:31:28 AM [32mGET[39m /scripts/recipesScript.mjs
+11:31:28 AM [32mGET[39m /recipes.html
+11:31:28 AM [32mGET[39m /styles/style.css
+11:31:28 AM [32mGET[39m /scripts/recipesScript.mjs
+11:31:28 AM [32mGET[39m /recipes.html
+11:31:29 AM [32mGET[39m /styles/style.css
+11:31:29 AM [32mGET[39m /scripts/recipesScript.mjs
+11:31:32 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:33 AM [32mGET[39m /scripts/createUser.mjs
+11:31:33 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:33 AM [32mGET[39m /scripts/createUser.mjs
+11:31:33 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:33 AM [32mGET[39m /scripts/createUser.mjs
+11:31:33 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:33 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /scripts/createUser.mjs
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:33 AM [32mGET[39m /scripts/createUser.mjs
+11:31:33 AM [32mGET[39m /index.html
+11:31:33 AM [32mGET[39m /styles/style.css
+11:31:34 AM [32mGET[39m /scripts/createUser.mjs
+11:31:34 AM [32mGET[39m /index.html
+11:31:34 AM [32mGET[39m /styles/style.css
+11:31:34 AM [32mGET[39m /scripts/createUser.mjs
+11:31:39 AM [33mPOST[39m /user
+11:31:42 AM [33mPOST[39m /user
+11:31:43 AM [33mPOST[39m /user
+11:31:44 AM [33mPOST[39m /user
+11:35:09 AM [32mGET[39m /index.html
+11:35:09 AM [32mGET[39m /styles/style.css
+11:35:09 AM [32mGET[39m /scripts/createUser.mjs
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /scripts/createUser.mjs
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /scripts/createUser.mjs
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /scripts/createUser.mjs
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /index.html
+11:35:10 AM [32mGET[39m /scripts/createUser.mjs
+11:35:10 AM [32mGET[39m /styles/style.css
+11:35:10 AM [32mGET[39m /scripts/createUser.mjs
+11:35:11 AM [32mGET[39m /index.html
+11:35:11 AM [32mGET[39m /styles/style.css
+11:35:11 AM [32mGET[39m /scripts/createUser.mjs
+11:35:11 AM [32mGET[39m /index.html
+11:35:11 AM [32mGET[39m /styles/style.css
+11:35:11 AM [32mGET[39m /index.html
+11:35:11 AM [32mGET[39m /scripts/createUser.mjs
+11:35:11 AM [32mGET[39m /styles/style.css
+11:35:11 AM [32mGET[39m /scripts/createUser.mjs
+11:35:22 AM [33mPOST[39m /user
+11:35:37 AM [32mGET[39m /
+11:35:37 AM [32mGET[39m /styles/style.css
+11:35:37 AM [32mGET[39m /scripts/createUser.mjs
+11:35:38 AM [32mGET[39m /
+11:35:38 AM [32mGET[39m /styles/style.css
+11:35:38 AM [32mGET[39m /scripts/createUser.mjs
+11:35:38 AM [32mGET[39m /
+11:35:38 AM [32mGET[39m /styles/style.css
+11:35:38 AM [32mGET[39m /scripts/createUser.mjs
+11:35:38 AM [32mGET[39m /
+11:35:38 AM [32mGET[39m /styles/style.css
+11:35:39 AM [32mGET[39m /scripts/createUser.mjs
+11:35:39 AM [32mGET[39m /styles/style.css
+11:35:43 AM [33mPOST[39m /user
+11:35:44 AM [33mPOST[39m /user
+11:35:44 AM [33mPOST[39m /user
+11:35:44 AM [33mPOST[39m /user
+11:35:51 AM [32mGET[39m /recipes.html
+11:35:51 AM [32mGET[39m /styles/style.css
+11:35:51 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:43 AM [32mGET[39m /recipes.html
+11:36:43 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:43 AM [32mGET[39m /styles/style.css
+11:36:43 AM [32mGET[39m /recipes.html
+11:36:43 AM [32mGET[39m /styles/style.css
+11:36:43 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:43 AM [32mGET[39m /recipes.html
+11:36:44 AM [32mGET[39m /styles/style.css
+11:36:44 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:44 AM [32mGET[39m /recipes.html
+11:36:44 AM [32mGET[39m /styles/style.css
+11:36:44 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:44 AM [32mGET[39m /recipes.html
+11:36:44 AM [32mGET[39m /styles/style.css
+11:36:44 AM [32mGET[39m /scripts/recipesScript.mjs
+11:36:44 AM [32mGET[39m /recipes.html
+11:36:44 AM [32mGET[39m /styles/style.css
+11:36:44 AM [32mGET[39m /scripts/recipesScript.mjs
+11:52:01 AM [32mGET[39m /recipes.html
+11:52:01 AM [32mGET[39m /styles/style.css
+11:52:01 AM [32mGET[39m /scripts/recipesScript.mjs
+11:52:02 AM [32mGET[39m /index.html
+11:52:02 AM [32mGET[39m /styles/style.css
+11:52:02 AM [32mGET[39m /scripts/createUser.mjs
+11:52:02 AM [32mGET[39m /index.html
+11:52:02 AM [32mGET[39m /styles/style.css
+11:52:02 AM [32mGET[39m /scripts/createUser.mjs
+11:52:02 AM [32mGET[39m /index.html
+11:52:03 AM [32mGET[39m /styles/style.css
+11:52:03 AM [32mGET[39m /scripts/createUser.mjs
+11:52:03 AM [32mGET[39m /index.html
+11:52:03 AM [32mGET[39m /styles/style.css
+11:52:03 AM [32mGET[39m /scripts/createUser.mjs
+11:52:03 AM [32mGET[39m /index.html
+11:52:03 AM [32mGET[39m /styles/style.css
+11:52:03 AM [32mGET[39m /scripts/createUser.mjs
+11:52:03 AM [32mGET[39m /index.html
+11:52:03 AM [32mGET[39m /styles/style.css
+11:52:03 AM [32mGET[39m /scripts/createUser.mjs
+11:52:03 AM [32mGET[39m /index.html
+11:52:03 AM [32mGET[39m /styles/style.css
+11:52:03 AM [32mGET[39m /scripts/createUser.mjs
+11:52:04 AM [32mGET[39m /index.html
+11:52:04 AM [32mGET[39m /styles/style.css
+11:52:04 AM [32mGET[39m /scripts/createUser.mjs
+11:52:09 AM [33mPOST[39m /user
+11:53:34 AM [33mPOST[39m /user
+11:53:51 AM [32mGET[39m /
+11:53:51 AM [32mGET[39m /styles/style.css
+11:53:51 AM [32mGET[39m /scripts/createUser.mjs
+11:53:53 AM [32mGET[39m /styles/style.css
+11:54:15 AM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:55:17 AM [32mGET[39m /
+11:55:17 AM [32mGET[39m /styles/style.css
+11:55:17 AM [32mGET[39m /scripts/createUser.mjs
+11:55:19 AM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:55:55 AM [32mGET[39m /
+11:55:55 AM [32mGET[39m /styles/style.css
+11:55:55 AM [32mGET[39m /scripts/createUser.mjs
+11:55:57 AM [32mGET[39m /styles/style.css
+11:56:00 AM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:59:03 AM [32mGET[39m /
+11:59:03 AM [32mGET[39m /styles/style.css
+11:59:03 AM [32mGET[39m /scripts/createUser.mjs
+11:59:05 AM [32mGET[39m /styles/style.css
+11:59:09 AM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:59:25 AM [32mGET[39m /
+11:59:25 AM [32mGET[39m /styles/style.css
+11:59:25 AM [32mGET[39m /scripts/createUser.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:00:29 PM [32mGET[39m /
+12:00:29 PM [32mGET[39m /styles/style.css
+12:00:29 PM [32mGET[39m /scripts/createUser.mjs
+12:00:29 PM [32mGET[39m /
+12:00:29 PM [32mGET[39m /styles/style.css
+12:00:29 PM [32mGET[39m /scripts/createUser.mjs
+12:00:29 PM [32mGET[39m /
+12:00:29 PM [32mGET[39m /styles/style.css
+12:00:29 PM [32mGET[39m /scripts/createUser.mjs
+12:00:33 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+12:01:14 PM [32mGET[39m /
+12:01:14 PM [32mGET[39m /styles/style.css
+12:01:14 PM [32mGET[39m /scripts/createUser.mjs
+12:01:15 PM [32mGET[39m /
+12:01:15 PM [32mGET[39m /styles/style.css
+12:01:15 PM [32mGET[39m /scripts/createUser.mjs
+12:01:18 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:02:12 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:02:31 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:03:39 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:03:58 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:04:41 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:04:58 PM [33mPOST[39m /user
+12:05:09 PM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:05:34 PM [33mPOST[39m /user
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+12:05:45 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:26:23 PM [32mGET[39m /
+12:26:23 PM [32mGET[39m /styles/style.css
+12:26:23 PM [32mGET[39m /scripts/postToUsers.mjs
+12:26:28 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:27:23 PM [32mGET[39m /
+12:27:23 PM [32mGET[39m /styles/style.css
+12:27:23 PM [32mGET[39m /scripts/postToUsers.mjs
+12:27:25 PM [32mGET[39m /styles/style.css
+12:27:25 PM [32mGET[39m /scripts/postToUsers.mjs
+12:27:26 PM [32mGET[39m /styles/style.css
+12:27:26 PM [32mGET[39m /
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:46:29 PM [32mGET[39m /
+12:46:29 PM [32mGET[39m /styles/style.css
+12:46:29 PM [32mGET[39m /scripts/postToUsers.mjs
+12:46:36 PM [33mPOST[39m /user
+12:46:42 PM [32mGET[39m /
+12:46:42 PM [32mGET[39m /styles/style.css
+12:46:42 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:47:09 PM [32mGET[39m /
+12:47:09 PM [32mGET[39m /styles/style.css
+12:47:09 PM [32mGET[39m /scripts/postToUsers.mjs
+12:47:15 PM [32mGET[39m /styles/style.css
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:49:23 PM [32mGET[39m /
+12:49:23 PM [32mGET[39m /styles/style.css
+12:49:23 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:52:05 PM [32mGET[39m /
+12:52:05 PM [32mGET[39m /styles/style.css
+12:52:05 PM [32mGET[39m /scripts/loginScript.mjs
+12:52:05 PM [32mGET[39m /scripts/postToUsers.mjs
+12:52:08 PM [33mPOST[39m /user
+12:52:52 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:53:50 PM [32mGET[39m /
+12:53:50 PM [32mGET[39m /styles/style.css
+12:53:50 PM [32mGET[39m /scripts/loginScript.mjs
+12:53:50 PM [32mGET[39m /scripts/postToUsers.mjs
+12:53:52 PM [32mGET[39m /
+12:53:52 PM [32mGET[39m /styles/style.css
+12:53:52 PM [32mGET[39m /scripts/loginScript.mjs
+12:53:52 PM [32mGET[39m /scripts/postToUsers.mjs
+12:53:57 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+12:59:10 PM [32mGET[39m /
+12:59:10 PM [32mGET[39m /styles/style.css
+12:59:10 PM [32mGET[39m /scripts/loginScript.mjs
+12:59:10 PM [32mGET[39m /scripts/postToUsers.mjs
+12:59:14 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:00:32 PM [32mGET[39m /
+1:00:32 PM [32mGET[39m /styles/style.css
+1:00:32 PM [32mGET[39m /scripts/loginScript.mjs
+1:00:32 PM [32mGET[39m /scripts/postToUsers.mjs
+1:00:36 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:00:50 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:00:58 PM [32mGET[39m /
+1:00:58 PM [32mGET[39m /styles/style.css
+1:00:58 PM [32mGET[39m /scripts/loginScript.mjs
+1:00:58 PM [32mGET[39m /scripts/postToUsers.mjs
+1:00:58 PM [32mGET[39m /
+1:00:58 PM [32mGET[39m /styles/style.css
+1:00:58 PM [32mGET[39m /scripts/loginScript.mjs
+1:00:58 PM [32mGET[39m /scripts/postToUsers.mjs
+1:01:03 PM [33mPOST[39m /user
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+1:01:39 PM [32mGET[39m /recipes.html
+1:01:39 PM [32mGET[39m /styles/style.css
+1:01:39 PM [32mGET[39m /scripts/recipesScript.mjs
+1:01:43 PM [32mGET[39m /
+1:01:43 PM [32mGET[39m /styles/style.css
+1:01:43 PM [32mGET[39m /scripts/loginScript.mjs
+1:01:43 PM [32mGET[39m /scripts/postToUsers.mjs
+1:01:48 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:01:59 PM [32mGET[39m /recipes.html
+1:01:59 PM [32mGET[39m /styles/style.css
+1:01:59 PM [32mGET[39m /scripts/recipesScript.mjs
+1:02:02 PM [32mGET[39m /index.html
+1:02:02 PM [32mGET[39m /styles/style.css
+1:02:02 PM [32mGET[39m /scripts/loginScript.mjs
+1:02:02 PM [32mGET[39m /scripts/postToUsers.mjs
+1:02:03 PM [32mGET[39m /index.html
+1:02:03 PM [32mGET[39m /styles/style.css
+1:02:03 PM [32mGET[39m /scripts/loginScript.mjs
+1:02:03 PM [32mGET[39m /scripts/postToUsers.mjs
+1:02:06 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:02:16 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:02:33 PM [32mGET[39m /
+1:02:33 PM [32mGET[39m /styles/style.css
+1:02:33 PM [32mGET[39m /scripts/loginScript.mjs
+1:02:33 PM [32mGET[39m /scripts/postToUsers.mjs
+1:02:37 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:03:03 PM [32mGET[39m /
+1:03:04 PM [32mGET[39m /styles/style.css
+1:03:04 PM [32mGET[39m /scripts/loginScript.mjs
+1:03:04 PM [32mGET[39m /scripts/postToUsers.mjs
+1:03:10 PM [33mPOST[39m /user
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+1:03:31 PM [32mGET[39m /
+1:03:31 PM [32mGET[39m /scripts/loginScript.mjs
+1:03:31 PM [32mGET[39m /styles/style.css
+1:03:31 PM [32mGET[39m /scripts/postToUsers.mjs
+1:03:33 PM [32mGET[39m /styles/style.css
+1:03:36 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:04:33 PM [32mGET[39m /
+1:04:33 PM [32mGET[39m /styles/style.css
+1:04:33 PM [32mGET[39m /scripts/loginScript.mjs
+1:04:33 PM [32mGET[39m /scripts/postToUsers.mjs
+1:04:34 PM [32mGET[39m /
+1:04:34 PM [32mGET[39m /styles/style.css
+1:04:34 PM [32mGET[39m /scripts/loginScript.mjs
+1:04:34 PM [32mGET[39m /scripts/postToUsers.mjs
+1:04:37 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:04:50 PM [32mGET[39m /recipes.html
+1:04:50 PM [32mGET[39m /styles/style.css
+1:04:50 PM [32mGET[39m /scripts/recipesScript.mjs
+1:04:50 PM [32mGET[39m /recipes.html
+1:04:50 PM [32mGET[39m /styles/style.css
+1:04:50 PM [32mGET[39m /scripts/recipesScript.mjs
+1:04:52 PM [32mGET[39m /recipes.html
+1:04:52 PM [32mGET[39m /styles/style.css
+1:04:52 PM [32mGET[39m /scripts/recipesScript.mjs
+1:04:54 PM [32mGET[39m /index.html
+1:04:54 PM [32mGET[39m /styles/style.css
+1:04:54 PM [32mGET[39m /scripts/loginScript.mjs
+1:04:54 PM [32mGET[39m /scripts/postToUsers.mjs
+1:04:58 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:05:09 PM [32mGET[39m /index.html
+1:05:09 PM [32mGET[39m /styles/style.css
+1:05:09 PM [32mGET[39m /scripts/loginScript.mjs
+1:05:09 PM [32mGET[39m /scripts/postToUsers.mjs
+1:05:12 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:06:51 PM [32mGET[39m /index.html
+1:06:51 PM [32mGET[39m /styles/style.css
+1:06:51 PM [32mGET[39m /scripts/loginScript.mjs
+1:06:51 PM [32mGET[39m /scripts/postToUsers.mjs
+1:06:57 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:07:23 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:09:01 PM [32mGET[39m /
+1:09:01 PM [32mGET[39m /styles/style.css
+1:09:01 PM [32mGET[39m /scripts/loginScript.mjs
+1:09:02 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:09:15 PM [33mPOST[39m /user
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+1:10:41 PM [32mGET[39m /
+1:10:41 PM [32mGET[39m /styles/style.css
+1:10:41 PM [32mGET[39m /scripts/loginScript.mjs
+1:10:41 PM [32mGET[39m /scripts/postToUsers.mjs
+1:10:50 PM [33mPOST[39m /user
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:11:09 PM [32mGET[39m /
+1:11:09 PM [32mGET[39m /styles/style.css
+1:11:09 PM [32mGET[39m /scripts/loginScript.mjs
+1:11:09 PM [32mGET[39m /scripts/postToUsers.mjs
+1:11:13 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:15:07 PM [33mPOST[39m /user
+1:15:10 PM [33mPOST[39m /user
+1:15:11 PM [33mPOST[39m /user
+1:15:11 PM [33mPOST[39m /user
+1:15:11 PM [33mPOST[39m /user
+1:15:11 PM [33mPOST[39m /user
+1:15:12 PM [33mPOST[39m /user
+1:15:12 PM [33mPOST[39m /user
+1:15:12 PM [33mPOST[39m /user
+1:15:12 PM [33mPOST[39m /user
+1:15:12 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:13 PM [33mPOST[39m /user
+1:15:14 PM [33mPOST[39m /user
+1:15:14 PM [33mPOST[39m /user
+1:15:14 PM [33mPOST[39m /user
+1:15:14 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:15:31 PM [32mGET[39m /
+1:15:31 PM [32mGET[39m /styles/style.css
+1:15:31 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:31 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:31 PM [32mGET[39m /
+1:15:31 PM [32mGET[39m /styles/style.css
+1:15:31 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:31 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:31 PM [32mGET[39m /
+1:15:31 PM [32mGET[39m /styles/style.css
+1:15:31 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:31 PM [32mGET[39m /
+1:15:31 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:32 PM [32mGET[39m /styles/style.css
+1:15:32 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:32 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:32 PM [32mGET[39m /
+1:15:32 PM [32mGET[39m /styles/style.css
+1:15:32 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:32 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:15:37 PM [33mPOST[39m /user
+1:15:37 PM [32mGET[39m /recipes.html
+1:15:37 PM [32mGET[39m /styles/style.css
+1:15:37 PM [32mGET[39m /scripts/recipesScript.mjs
+1:15:43 PM [32mGET[39m /index.html
+1:15:43 PM [32mGET[39m /styles/style.css
+1:15:43 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:43 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:43 PM [32mGET[39m /index.html
+1:15:43 PM [32mGET[39m /styles/style.css
+1:15:43 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:43 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:47 PM [33mPOST[39m /user
+1:15:47 PM [32mGET[39m /recipes.html
+1:15:47 PM [32mGET[39m /styles/style.css
+1:15:47 PM [32mGET[39m /scripts/recipesScript.mjs
+1:15:54 PM [32mGET[39m /index.html
+1:15:54 PM [32mGET[39m /styles/style.css
+1:15:54 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:54 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:57 PM [33mPOST[39m /user
+1:15:58 PM [32mGET[39m /recipes.html
+1:15:58 PM [32mGET[39m /styles/style.css
+1:15:58 PM [32mGET[39m /scripts/recipesScript.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:44:19 AM [32mGET[39m /
+11:44:19 AM [32mGET[39m /styles/style.css
+11:44:19 AM [32mGET[39m /scripts/loginScript.mjs
+11:44:19 AM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:47:31 AM [32mGET[39m /
+11:47:32 AM [32mGET[39m /styles/style.css
+11:47:32 AM [32mGET[39m /scripts/loginScript.mjs
+11:47:32 AM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:49:10 AM [32mGET[39m /
+11:49:10 AM [32mGET[39m /scripts/loginScript.mjs
+11:49:10 AM [32mGET[39m /styles/style.css
+11:49:11 AM [32mGET[39m /scripts/postToUsers.mjs
+11:49:13 AM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+11:51:05 AM [32mGET[39m /
+11:51:05 AM [32mGET[39m /styles/style.css
+11:51:05 AM [32mGET[39m /scripts/loginScript.mjs
+11:51:05 AM [32mGET[39m /scripts/postToUsers.mjs
+11:51:07 AM [32mGET[39m /styles/style.css
+11:51:10 AM [33mPOST[39m /user
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+11:53:42 AM [32mGET[39m /
+11:53:42 AM [32mGET[39m /styles/style.css
+11:53:42 AM [32mGET[39m /scripts/loginScript.mjs
+11:53:42 AM [32mGET[39m /scripts/postToUsers.mjs
+11:53:43 AM [32mGET[39m /
+11:53:43 AM [32mGET[39m /styles/style.css
+11:53:43 AM [32mGET[39m /scripts/loginScript.mjs
+11:53:43 AM [32mGET[39m /scripts/postToUsers.mjs
+11:53:46 AM [33mPOST[39m /user
+11:53:46 AM [32mGET[39m /recipes.html
+11:53:46 AM [32mGET[39m /styles/style.css
+11:53:46 AM [32mGET[39m /scripts/recipesScript.mjs
+11:53:53 AM [32mGET[39m /index.html
+11:53:54 AM [32mGET[39m /styles/style.css
+11:53:54 AM [32mGET[39m /scripts/loginScript.mjs
+11:53:54 AM [32mGET[39m /scripts/postToUsers.mjs
+11:53:55 AM [32mGET[39m /index.html
+11:53:55 AM [32mGET[39m /styles/style.css
+11:53:55 AM [32mGET[39m /scripts/loginScript.mjs
+11:53:55 AM [32mGET[39m /scripts/postToUsers.mjs
+11:53:56 AM [32mGET[39m /index.html
+11:53:56 AM [32mGET[39m /styles/style.css
+11:53:56 AM [32mGET[39m /scripts/loginScript.mjs
+11:53:56 AM [32mGET[39m /scripts/postToUsers.mjs
+11:54:04 AM [33mPOST[39m /user
+11:54:04 AM [32mGET[39m /recipes.html
+11:54:04 AM [32mGET[39m /styles/style.css
+11:54:04 AM [32mGET[39m /scripts/recipesScript.mjs
