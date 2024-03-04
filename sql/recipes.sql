@@ -3,6 +3,6 @@ CREATE TABLE "Recipes" (
     tittel text,
     ingredients text,
     instructions text,
-    image 
+    image bytea,
 );
 

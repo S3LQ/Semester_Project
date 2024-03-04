@@ -3225,3 +3225,597 @@ Database connection  postgresql://localhost:5433/tveitsindre
 Server enviorment local
 Database connection  postgresql://localhost:5433/tveitsindre
 ####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:42:27 PM [32mGET[39m /recipes.html
+5:42:27 PM [32mGET[39m /styles/style.css
+5:42:34 PM [32mGET[39m /scripts/recipesScript.mjs
+5:42:34 PM [33mPOST[39m /recipes
+5:42:37 PM [31mDELETE[39m /recipes/29
+5:43:15 PM [31mDELETE[39m /recipes/29
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:45:44 PM [32mGET[39m /recipes.html
+5:45:44 PM [32mGET[39m /styles/style.css
+5:45:47 PM [32mGET[39m /scripts/recipesScript.mjs
+5:45:47 PM [33mPOST[39m /recipes
+5:45:49 PM [31mDELETE[39m /recipes/30
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:48:00 PM [32mGET[39m /recipes.html
+5:48:00 PM [32mGET[39m /styles/style.css
+5:48:03 PM [32mGET[39m /scripts/recipesScript.mjs
+5:48:03 PM [33mPOST[39m /recipes
+5:48:05 PM [33mPOST[39m /recipes/31/delete
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:48:13 PM [32mGET[39m /recipes.html
+5:48:13 PM [32mGET[39m /styles/style.css
+5:48:17 PM [32mGET[39m /scripts/recipesScript.mjs
+5:48:17 PM [33mPOST[39m /recipes
+5:48:19 PM [31mDELETE[39m /recipes/32
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:49:26 PM [31mDELETE[39m /recipes/32
+5:49:29 PM [32mGET[39m /recipes.html
+5:49:29 PM [32mGET[39m /styles/style.css
+5:49:32 PM [32mGET[39m /scripts/recipesScript.mjs
+5:49:32 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:49:46 PM [32mGET[39m /recipes.html
+5:49:46 PM [32mGET[39m /styles/style.css
+5:49:49 PM [32mGET[39m /scripts/recipesScript.mjs
+5:49:49 PM [33mPOST[39m /recipes
+5:49:50 PM [31mDELETE[39m /recipes/undefined
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:50:02 PM [31mDELETE[39m /recipes/undefined
+5:50:04 PM [32mGET[39m /recipes.html
+5:50:04 PM [32mGET[39m /styles/style.css
+5:50:07 PM [32mGET[39m /scripts/recipesScript.mjs
+5:50:07 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:52:17 PM [32mGET[39m /recipes.html
+5:52:17 PM [32mGET[39m /styles/style.css
+5:52:19 PM [32mGET[39m /recipes.html
+5:52:19 PM [32mGET[39m /styles/style.css
+5:52:22 PM [32mGET[39m /scripts/recipesScript.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:53:45 PM [32mGET[39m /recipes.html
+5:53:45 PM [32mGET[39m /styles/style.css
+5:53:47 PM [32mGET[39m /scripts/recipesScript.mjs
+5:53:47 PM [33mPOST[39m /recipes
+5:53:50 PM [33mPOST[39m /recipes/36/delete
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:54:48 PM [32mGET[39m /recipes.html
+5:54:48 PM [32mGET[39m /styles/style.css
+5:54:51 PM [32mGET[39m /scripts/recipesScript.mjs
+5:54:51 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+5:55:21 PM [32mGET[39m /recipes.html
+5:55:21 PM [32mGET[39m /styles/style.css
+5:55:24 PM [32mGET[39m /scripts/recipesScript.mjs
+5:55:24 PM [33mPOST[39m /recipes
+5:55:25 PM [33mPOST[39m /recipes/38/delete
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+5:58:01 PM [32mGET[39m /recipes.html
+5:58:01 PM [32mGET[39m /styles/style.css
+5:58:04 PM [32mGET[39m /scripts/recipesScript.mjs
+5:58:04 PM [33mPOST[39m /recipes
+5:58:05 PM [33mPOST[39m /recipes/:id/delete
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:00:34 PM [32mGET[39m /recipes.html
+6:00:34 PM [32mGET[39m /styles/style.css
+6:00:38 PM [32mGET[39m /scripts/recipesScript.mjs
+6:00:38 PM [33mPOST[39m /recipes
+6:00:39 PM [33mPOST[39m /recipes/:id/delete
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:01:21 PM [32mGET[39m /recipes.html
+6:01:21 PM [32mGET[39m /styles/style.css
+6:01:23 PM [32mGET[39m /scripts/recipesScript.mjs
+6:01:23 PM [33mPOST[39m /recipes
+6:01:26 PM [33mPOST[39m /recipes/:id
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:01:37 PM [32mGET[39m /recipes.html
+6:01:37 PM [32mGET[39m /styles/style.css
+6:01:40 PM [32mGET[39m /scripts/recipesScript.mjs
+6:01:40 PM [33mPOST[39m /recipes
+6:01:41 PM [31mDELETE[39m /recipes/:id
+6:01:42 PM [31mDELETE[39m /recipes/:id
+6:01:42 PM [31mDELETE[39m /recipes/:id
+6:01:52 PM [33mPOST[39m /recipes
+6:02:01 PM [31mDELETE[39m /recipes/:id
+6:02:08 PM [31mDELETE[39m /recipes/:id
+6:02:08 PM [31mDELETE[39m /recipes/:id
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:04:09 PM [32mGET[39m /recipes.html
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:05:43 PM [32mGET[39m /
+6:05:43 PM [32mGET[39m /styles/style.css
+6:05:43 PM [32mGET[39m /scripts/loginScript.mjs
+6:05:43 PM [32mGET[39m /scripts/postToUsers.mjs
+6:05:46 PM [32mGET[39m /styles/style.css
+6:05:49 PM [33mPOST[39m /user
+6:05:50 PM [32mGET[39m /recipes.html
+6:05:50 PM [32mGET[39m /styles/style.css
+6:05:54 PM [32mGET[39m /scripts/recipesScript.mjs
+6:05:54 PM [33mPOST[39m /recipes
+6:05:56 PM [31mDELETE[39m /recipes/44
+6:05:58 PM [31mDELETE[39m /recipes/44
+6:05:58 PM [31mDELETE[39m /recipes/44
+6:05:58 PM [31mDELETE[39m /recipes/44
+6:05:58 PM [31mDELETE[39m /recipes/44
+6:06:17 PM [31mDELETE[39m /recipes/44
+6:06:41 PM [32mGET[39m /
+6:06:41 PM [32mGET[39m /styles/style.css
+6:06:41 PM [32mGET[39m /scripts/loginScript.mjs
+6:06:41 PM [32mGET[39m /scripts/postToUsers.mjs
+6:06:44 PM [32mGET[39m /styles/style.css
+6:06:47 PM [33mPOST[39m /user
+6:06:48 PM [32mGET[39m /recipes.html
+6:06:48 PM [32mGET[39m /styles/style.css
+6:06:56 PM [32mGET[39m /scripts/recipesScript.mjs
+6:06:56 PM [33mPOST[39m /recipes
+6:06:57 PM [31mDELETE[39m /recipes/45
+6:07:02 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:08:54 PM [32mGET[39m /recipes.html
+6:08:54 PM [32mGET[39m /styles/style.css
+6:08:57 PM [32mGET[39m /scripts/recipesScript.mjs
+6:08:57 PM [33mPOST[39m /recipes
+6:08:58 PM [31mDELETE[39m /recipes/47
+6:09:00 PM [31mDELETE[39m /recipes/47
+6:09:00 PM [31mDELETE[39m /recipes/47
+6:09:01 PM [31mDELETE[39m /recipes/47
+6:09:01 PM [31mDELETE[39m /recipes/47
+6:09:01 PM [31mDELETE[39m /recipes/47
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:15:16 PM [32mGET[39m /recipes.html
+6:15:19 PM [32mGET[39m /
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:15:34 PM [32mGET[39m /
+6:15:34 PM [32mGET[39m /styles/style.css
+6:15:34 PM [32mGET[39m /scripts/loginScript.mjs
+6:15:35 PM [32mGET[39m /scripts/postToUsers.mjs
+6:15:36 PM [32mGET[39m /styles/style.css
+6:15:40 PM [33mPOST[39m /user
+6:15:40 PM [32mGET[39m /recipes.html
+6:15:40 PM [32mGET[39m /styles/style.css
+6:15:44 PM [32mGET[39m /scripts/recipesScript.mjs
+6:15:44 PM [33mPOST[39m /recipes
+6:16:53 PM [32mGET[39m /recipes.html
+6:16:53 PM [32mGET[39m /styles/style.css
+6:16:56 PM [32mGET[39m /scripts/recipesScript.mjs
+6:16:56 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:19:03 PM [32mGET[39m /recipes.html
+6:19:03 PM [32mGET[39m /styles/style.css
+6:19:05 PM [32mGET[39m /scripts/recipesScript.mjs
+6:19:05 PM [33mPOST[39m /recipes
+6:20:09 PM [32mGET[39m /recipes.html
+6:20:09 PM [32mGET[39m /styles/style.css
+6:20:11 PM [32mGET[39m /scripts/recipesScript.mjs
+6:20:11 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:21:18 PM [32mGET[39m /recipes.html
+6:21:18 PM [32mGET[39m /styles/style.css
+6:21:21 PM [32mGET[39m /scripts/recipesScript.mjs
+6:21:21 PM [33mPOST[39m /recipes
+6:21:22 PM [31mDELETE[39m /recipes/undefined
+6:21:23 PM [31mDELETE[39m /recipes/undefined
+6:21:23 PM [31mDELETE[39m /recipes/undefined
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:21:35 PM [32mGET[39m /recipes.html
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:21:40 PM [32mGET[39m /recipes.html
+6:21:40 PM [32mGET[39m /styles/style.css
+6:21:41 PM [32mGET[39m /styles/style.css
+6:21:44 PM [32mGET[39m /scripts/recipesScript.mjs
+6:21:44 PM [33mPOST[39m /recipes
+6:21:45 PM [31mDELETE[39m /recipes/undefined
+6:21:58 PM [31mDELETE[39m /recipes/undefined
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:28:51 PM [32mGET[39m /recipes.html
+6:28:52 PM [32mGET[39m /styles/style.css
+6:28:55 PM [32mGET[39m /scripts/recipesScript.mjs
+6:28:55 PM [33mPOST[39m /recipes
+6:28:57 PM [31mDELETE[39m /recipes/54
+6:28:58 PM [31mDELETE[39m /recipes/54
+6:28:59 PM [31mDELETE[39m /recipes/54
+6:28:59 PM [31mDELETE[39m /recipes/54
+6:28:59 PM [31mDELETE[39m /recipes/54
+6:29:20 PM [33mPOST[39m /recipes
+6:29:31 PM [31mDELETE[39m /recipes/54
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:30:09 PM [32mGET[39m /recipes.html
+6:30:10 PM [32mGET[39m /recipes.html
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:30:16 PM [32mGET[39m /recipes.html
+6:30:17 PM [32mGET[39m /styles/style.css
+6:30:20 PM [32mGET[39m /scripts/recipesScript.mjs
+6:30:20 PM [33mPOST[39m /recipes
+6:30:21 PM [31mDELETE[39m /recipes/56
+6:31:59 PM [31mDELETE[39m /recipes/56
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:34:41 PM [32mGET[39m /recipes.html
+6:34:42 PM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:38:28 PM [32mGET[39m /recipes.html
+6:38:28 PM [32mGET[39m /styles/style.css
+6:38:30 PM [32mGET[39m /scripts/recipesScript.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:38:54 PM [32mGET[39m /recipes.html
+6:38:54 PM [32mGET[39m /styles/style.css
+6:38:58 PM [32mGET[39m /scripts/recipesScript.mjs
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+6:40:18 PM [32mGET[39m /recipes.html
+6:40:18 PM [32mGET[39m /styles/style.css
+6:40:21 PM [32mGET[39m /scripts/recipesScript.mjs
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:40:40 PM [32mGET[39m /recipes.html
+6:40:40 PM [32mGET[39m /styles/style.css
+6:40:43 PM [32mGET[39m /scripts/recipesScript.mjs
+6:40:43 PM [33mPOST[39m /recipes
+6:40:47 PM [31mDELETE[39m /deleteRecipe/kort-57
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:42:15 PM [32mGET[39m /recipes.html
+6:42:15 PM [32mGET[39m /styles/style.css
+6:42:17 PM [32mGET[39m /scripts/recipesScript.mjs
+6:42:17 PM [33mPOST[39m /recipes
+6:42:19 PM [31mDELETE[39m /deleteRecipe/kort-58
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:42:46 PM [32mGET[39m /recipes.html
+6:42:46 PM [32mGET[39m /styles/style.css
+6:42:50 PM [32mGET[39m /scripts/recipesScript.mjs
+6:42:50 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:43:09 PM [32mGET[39m /recipes.html
+6:43:09 PM [32mGET[39m /styles/style.css
+6:43:13 PM [32mGET[39m /scripts/recipesScript.mjs
+6:43:13 PM [33mPOST[39m /recipes
+6:43:14 PM [31mDELETE[39m /deleteRecipe/kort-60
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:44:45 PM [32mGET[39m /recipes.html
+6:44:45 PM [32mGET[39m /styles/style.css
+6:44:47 PM [32mGET[39m /scripts/recipesScript.mjs
+6:44:47 PM [33mPOST[39m /recipes
+6:44:49 PM [31mDELETE[39m /deleteRecipe/61
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+6:49:14 PM [32mGET[39m /recipes.html
+6:49:14 PM [32mGET[39m /styles/style.css
+6:49:16 PM [32mGET[39m /scripts/recipesScript.mjs
+6:49:16 PM [33mPOST[39m /recipes
+6:49:18 PM [31mDELETE[39m /recipes/62
+6:49:24 PM [33mPOST[39m /recipes
+6:49:39 PM [31mDELETE[39m /recipes/63
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:55:03 PM [32mGET[39m /recipes.html
+6:55:03 PM [32mGET[39m /styles/style.css
+6:55:07 PM [32mGET[39m /scripts/recipesScript.mjs
+6:55:07 PM [33mPOST[39m /recipes
+6:55:08 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:55:20 PM [32mGET[39m /recipes.html
+6:55:20 PM [32mGET[39m /styles/style.css
+6:55:23 PM [32mGET[39m /scripts/recipesScript.mjs
+6:55:23 PM [33mPOST[39m /recipes
+6:55:24 PM [31mDELETE[39m /recipes/64
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:55:34 PM [31mDELETE[39m /recipes/64
+6:55:36 PM [32mGET[39m /recipes.html
+6:55:36 PM [32mGET[39m /styles/style.css
+6:55:39 PM [32mGET[39m /scripts/recipesScript.mjs
+6:55:39 PM [33mPOST[39m /recipes
+6:55:40 PM [31mDELETE[39m /recipes/65
+6:55:50 PM [32mGET[39m /recipes.html
+6:55:50 PM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+6:56:46 PM [32mGET[39m /scripts/recipesScript.mjs
+6:56:46 PM [33mPOST[39m /recipes
+6:56:48 PM [31mDELETE[39m /recipes/66
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+7:08:46 PM [32mGET[39m /recipes.html
+7:08:46 PM [32mGET[39m /styles/style.css
+7:08:51 PM [32mGET[39m /scripts/recipesScript.mjs
+7:08:51 PM [33mPOST[39m /recipes
+7:08:59 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:09:04 PM [33mPOST[39m /recipes
+7:09:06 PM [32mGET[39m /recipes.html
+7:09:06 PM [32mGET[39m /styles/style.css
+7:09:06 PM [32mGET[39m /recipes.html
+7:09:06 PM [32mGET[39m /styles/style.css
+7:09:09 PM [32mGET[39m /scripts/recipesScript.mjs
+7:09:09 PM [33mPOST[39m /recipes
+7:09:10 PM [31mDELETE[39m /recipes/67
+7:09:14 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:13:13 PM [32mGET[39m /recipes.html
+7:13:13 PM [32mGET[39m /styles/style.css
+7:13:16 PM [32mGET[39m /scripts/recipesScript.mjs
+7:13:16 PM [33mPOST[39m /recipes
+7:13:25 PM [31mDELETE[39m /recipes/69
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:20:31 PM [32mGET[39m /recipes.html
+7:20:31 PM [32mGET[39m /styles/style.css
+7:20:34 PM [32mGET[39m /scripts/recipesScript.mjs
+7:20:34 PM [33mPOST[39m /recipes
+7:20:36 PM [31mDELETE[39m /recipes/70
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:20:41 PM [31mDELETE[39m /recipes/70
+7:20:43 PM [32mGET[39m /recipes.html
+7:20:43 PM [32mGET[39m /styles/style.css
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:20:55 PM [32mGET[39m /recipes.html
+7:20:55 PM [32mGET[39m /styles/style.css
+7:20:58 PM [32mGET[39m /scripts/recipesScript.mjs
+7:20:58 PM [33mPOST[39m /recipes
+7:20:59 PM [31mDELETE[39m /deleteRecipe/kort-71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:21:07 PM [31mDELETE[39m /deleteRecipe/kort-71
+7:21:18 PM [31mDELETE[39m /deleteRecipe/kort-71
+7:21:25 PM [31mDELETE[39m /deleteRecipe/kort-71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:21:41 PM [31mDELETE[39m /deleteRecipe/kort-71
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:21:56 PM [32mGET[39m /recipes.html
+7:21:56 PM [32mGET[39m /styles/style.css
+7:21:58 PM [32mGET[39m /scripts/recipesScript.mjs
+7:21:58 PM [33mPOST[39m /recipes
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+7:22:07 PM [32mGET[39m /recipes.html
+7:22:07 PM [32mGET[39m /styles/style.css
+7:22:10 PM [32mGET[39m /scripts/recipesScript.mjs
+7:22:10 PM [33mPOST[39m /recipes
+7:22:11 PM [31mDELETE[39m /recipes/72
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################

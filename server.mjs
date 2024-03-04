@@ -33,6 +33,16 @@ server.get("/", (req, res, next) => {
     .end();
 });
 
+// DELETE endpoint to delete a recipe
+server.delete("/recipes/:id", (req, res) => {
+  // Here you can handle the deletion of a recipe using the recipe ID
+  const recipeId = req.params.id;
+
+  // Implement your logic to delete the recipe from the database
+
+  res.status(200).json({ message: "Recipe deleted successfully" });
+});
+
 // Start the server
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);

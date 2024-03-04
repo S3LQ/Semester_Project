@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +29,7 @@
     </form>
 
     <div id="kortContainer">
-      <!-- Oppskriftskort vil bli lagt til her dynamisk med JavaScript -->
+      <!-- Recipe cards will be dynamically added here with JavaScript -->
     </div>
 
     <script>
@@ -44,15 +42,17 @@
             });
           });
 
-        window.redigerOppskrift = function (index) {
+        // Function to handle delete button click
+        window.fjernOppskrift = function (recipeCardId) {
           import("./scripts/recipesScript.mjs").then((module) => {
-            module.redigerOppskrift(index);
+            module.fjernOppskrift(recipeCardId);
           });
         };
 
-        window.fjernOppskrift = function (index) {
+        // Function to handle edit button click
+        window.redigerOppskrift = function (index) {
           import("./scripts/recipesScript.mjs").then((module) => {
-            module.fjernOppskrift(index);
+            module.redigerOppskrift(index);
           });
         };
       });

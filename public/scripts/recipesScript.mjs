@@ -82,7 +82,7 @@ function renderRecipeCard(recipe) {
 
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "Delete";
-  deleteButton.onclick = () => fjernOppskrift(recipe.id);
+  deleteButton.onclick = () => fjernOppskrift(`kort-${recipe.id}`);
 
   kort.appendChild(tittel);
   kort.appendChild(ingredienser);
@@ -93,15 +93,19 @@ function renderRecipeCard(recipe) {
   kortContainer.appendChild(kort);
 }
 
-export function fjernOppskrift(recipeId) {
-  // Send a DELETE request to the server to delete the recipe
-  fetch(`/recipes/${recipeId}`, {
+export function fjernOppskrift(recipeCardId) {
+  if (typeof recipeCardId !== "string") {
+    console.error("Recipe card ID must be a string.");
+    return;
+  }
+
+  const id = recipeCardId.split("-")[1];
+  fetch(`/recipes/${id}`, {
     method: "DELETE",
   })
     .then((response) => {
       if (response.ok) {
-        // Remove the recipe card from the UI
-        const kort = document.getElementById(`kort-${recipeId}`);
+        const kort = document.getElementById(recipeCardId);
         kort.remove();
       } else {
         throw new Error("Failed to delete recipe.");
