@@ -1,7 +1,6 @@
 import pg from "pg";
 import SuperLogger from "./SuperLogger.mjs";
-
-/// TODO: is the structure / design of the DBManager as good as it could be?
+import Recipe from "./recipe.mjs";
 
 class DBManager {
   #credentials = {};
@@ -18,19 +17,14 @@ class DBManager {
 
     try {
       await client.connect();
-      const output = await client.query(
+      await client.query(
         'Update "public"."Users" set "name" = $1, "email" = $2, "password" = $3 where id = $4;',
         [user.name, user.email, user.pswHash, user.id]
       );
-
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
-      //TODO Did we update the user?
     } catch (error) {
-      //TODO : Error handling?? Remember that this is a module seperate from your server
+      console.error(error);
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
 
     return user;
@@ -41,19 +35,13 @@ class DBManager {
 
     try {
       await client.connect();
-      const output = await client.query(
-        'Delete from "public"."Users"  where id = $1;',
-        [user.id]
-      );
-
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
-      //TODO: Did the user get deleted?
+      await client.query('Delete from "public"."Users"  where id = $1;', [
+        user.id,
+      ]);
     } catch (error) {
-      //TODO : Error handling?? Remember that this is a module seperate from your server
+      console.error(error);
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
 
     return user;
@@ -69,18 +57,13 @@ class DBManager {
         [user.name, user.email, user.pswHash]
       );
 
-      // Client.Query returns an object of type pg.Result (https://node-postgres.com/apis/result)
-      // Of special intrest is the rows and rowCount properties of this object.
-
       if (output.rows.length == 1) {
-        // We stored the user in the DB.
         user.id = output.rows[0].id;
       }
     } catch (error) {
       console.error(error);
-      //TODO : Error handling?? Remember that this is a module seperate from your server
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
     }
 
     return user;
@@ -98,38 +81,93 @@ class DBManager {
       return output.rows;
     } catch (error) {
       console.error(error);
-      //TODO : Error handling
     } finally {
-      client.end(); // Always disconnect from the database.
+      client.end();
+    }
+  }
+
+  async updateRecipe(recipe) {
+    const client = new pg.Client(this.#credentials);
+
+    try {
+      await client.connect();
+      await client.query(
+        'Update "public"."Recipes" set "title" = $1, "ingredients" = $2, "instructions" = $3 where id = $4;',
+        [recipe.title, recipe.ingredients, recipe.instructions, recipe.id]
+      );
+    } catch (error) {
+      console.error(error);
+    } finally {
+      client.end();
+    }
+
+    return recipe;
+  }
+
+  async deleteRecipe(recipe) {
+    const client = new pg.Client(this.#credentials);
+
+    try {
+      await client.connect();
+      await client.query('Delete from "public"."Recipes"  where id = $1;', [
+        recipe.id,
+      ]);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      client.end();
+    }
+
+    return recipe;
+  }
+
+  async createRecipe(recipe) {
+    const client = new pg.Client(this.#credentials);
+
+    try {
+      await client.connect();
+      const output = await client.query(
+        'INSERT INTO "public"."Recipes"("title", "ingredients", "instructions") VALUES($1::Text, $2::Text, $3::Text) RETURNING id;',
+        [recipe.title, recipe.ingredients, recipe.instructions]
+      );
+
+      if (output.rows.length == 1) {
+        recipe.id = output.rows[0].id;
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      client.end();
+    }
+
+    return recipe;
+  }
+
+  async getRecipe(id) {
+    const client = new pg.Client(this.#credentials);
+
+    try {
+      await client.connect();
+      const output = await client.query(
+        'SELECT * FROM "public"."Recipes" WHERE id = $1',
+        [id]
+      );
+      return output.rows;
+    } catch (error) {
+      console.error(error);
+    } finally {
+      client.end();
     }
   }
 }
 
-// The following is thre examples of how to get the db connection string from the enviorment variables.
-// They accomplish the same thing but in different ways.
-// It is a judgment call which one is the best. But go for the one you understand the best.
-
-// 1:
 let connectionString =
   process.env.ENVIORMENT == "local"
     ? process.env.DB_CONNECTIONSTRING_LOCAL
     : process.env.DB_CONNECTIONSTRING_PROD;
 
-// 2:
-connectionString = process.env.DB_CONNECTIONSTRING_LOCAL;
-if (process.env.ENVIORMENT != "local") {
-  connectionString = process.env.DB_CONNECTIONSTRING_PROD;
-}
-
-//3:
-connectionString =
-  process.env["DB_CONNECTIONSTRING_" + process.env.ENVIORMENT.toUpperCase()];
-
-// We are using an enviorment variable to get the db credentials
 if (connectionString == undefined) {
   throw "You forgot the db connection string";
 }
 
 export default new DBManager(connectionString);
-
-//

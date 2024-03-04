@@ -6,7 +6,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script type="module" src="./scripts/recipesScript.mjs" defer></script>
     <title>Oppskriftsapp</title>
   </head>
   <body>
@@ -24,6 +23,9 @@
 
       <label for="instruksjoner">Instruksjoner:</label>
       <textarea id="instruksjoner" required></textarea>
+
+      <label for="image">Bilde:</label>
+      <input type="file" id="image" name="image" accept="image/*" />
 
       <button type="button" id="leggTilKnapp">Legg til oppskrift</button>
     </form>
@@ -48,7 +50,6 @@
           });
         };
 
-        // Legg til denne delen for å kunne bruke fjernOppskrift direkte i HTML
         window.fjernOppskrift = function (index) {
           import("./scripts/recipesScript.mjs").then((module) => {
             module.fjernOppskrift(index);
