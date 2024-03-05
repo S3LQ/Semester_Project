@@ -104,21 +104,20 @@ class DBManager {
     return recipe;
   }
 
-  async deleteRecipe(recipe) {
+  async deleteRecipe(recipeId) {
     const client = new pg.Client(this.#credentials);
 
     try {
       await client.connect();
-      await client.query('Delete from "public"."Recipes"  where id = $1;', [
-        recipe.id,
+      await client.query('DELETE FROM "public"."Recipes" WHERE id = $1;', [
+        recipeId,
       ]);
     } catch (error) {
       console.error(error);
+      throw error;
     } finally {
       client.end();
     }
-
-    return recipe;
   }
 
   async createRecipe(recipe) {

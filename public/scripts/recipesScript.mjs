@@ -15,6 +15,9 @@ export function leggTilOppskrift() {
   const imageInput = document.getElementById("image");
   const image = imageInput.files.length > 0 ? imageInput.files[0] : null;
 
+  // Get the user ID
+  const userId = userData.id;
+
   // Check if title, ingredients, and instructions are filled
   if (title && ingredients && instructions) {
     const recipeData = {
@@ -22,6 +25,7 @@ export function leggTilOppskrift() {
       ingredients: ingredients,
       instructions: instructions,
       image: image,
+      userId: userId, // Include the user ID
     };
 
     // Submit recipe data to the server using fetch
@@ -76,6 +80,9 @@ function renderRecipeCard(recipe) {
   const instruksjoner = document.createElement("p");
   instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
 
+  const image = document.createElement("img");
+  image.src = recipe.image;
+
   const editButton = document.createElement("button");
   editButton.innerText = "Edit";
   editButton.onclick = () => redigerOppskrift(recipe.id);
@@ -89,6 +96,7 @@ function renderRecipeCard(recipe) {
   kort.appendChild(instruksjoner);
   kort.appendChild(editButton);
   kort.appendChild(deleteButton);
+  kort.appendChild(image);
 
   kortContainer.appendChild(kort);
 }
@@ -107,6 +115,7 @@ export function fjernOppskrift(recipeCardId) {
       if (response.ok) {
         const kort = document.getElementById(recipeCardId);
         kort.remove();
+        console.log("Recipe deleted successfully:");
       } else {
         throw new Error("Failed to delete recipe.");
       }

@@ -1,8 +1,8 @@
 CREATE TABLE "Recipes" (
-    recipeID integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    tittel text,
-    ingredients text,
-    instructions text,
-    image bytea,
+    recipeID INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    title TEXT,
+    ingredients TEXT,
+    instructions TEXT,
+    image BYTEA
 );
-

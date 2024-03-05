@@ -48,4 +48,24 @@ RECIPE_API.get("/", async (req, res, next) => {
   }
 });
 
+// Endpoint to delete a recipe
+RECIPE_API.delete("/:id", async (req, res, next) => {
+  const recipeId = req.params.id;
+
+  try {
+    // Delete the recipe from the database
+    await DBManager.deleteRecipe(recipeId);
+
+    // Send a success response
+    res
+      .status(HTTPCodes.SuccesfullRespons.Ok)
+      .json({ message: "Recipe deleted successfully" })
+      .end();
+  } catch (error) {
+    console.error("Error deleting recipe:", error);
+    // Send an error response if something goes wrong
+    res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
+  }
+});
+
 export default RECIPE_API;
