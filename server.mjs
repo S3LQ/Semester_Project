@@ -4,6 +4,7 @@ import SuperLogger from "./modules/SuperLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
 import USER_API from "./routes/usersRoute.mjs";
 import RECIPE_API from "./routes/recipeRoute.mjs";
+import DBManager from "./modules/storageManager.mjs"; // Import your database manager module
 
 printDeveloperStartupInportantInformationMSG();
 
@@ -31,6 +32,32 @@ server.get("/", (req, res, next) => {
     .status(200)
     .send(JSON.stringify({ msg: "These are not the droids...." }))
     .end();
+});
+
+// PUT endpoint to update a recipe
+server.put("/recipes/:id", async (req, res) => {
+  const recipeId = req.params.id;
+  const updatedRecipeData = req.body;
+
+  try {
+    console.log("Recipe ID:", recipeId); // Log recipe ID
+    console.log("Updated Recipe Data:", updatedRecipeData); // Log updated recipe data
+
+    // Update the recipe in the database
+    const updatedRecipe = await DBManager.updateRecipe(
+      recipeId,
+      updatedRecipeData
+    );
+
+    console.log("Recipe updated successfully:", updatedRecipe); // Log successful update
+
+    // Send a success response
+    res.status(200).json({ message: "Recipe updated successfully" });
+  } catch (error) {
+    console.error("Error updating recipe:", error);
+    // Send an error response if something goes wrong
+    res.status(500).json({ error: "Failed to update recipe" });
+  }
 });
 
 // DELETE endpoint to delete a recipe

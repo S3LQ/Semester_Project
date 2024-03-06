@@ -124,10 +124,24 @@ button:hover {
   background-color: #2ecc71;
 }
 
-.kort button {
+.deleteButton {
   background-color: #e74c3c;
 }
 
-.kort button:hover {
+.deleteButton:hover {
   background-color: #c0392b;
+}
+
+.edit-button {
+  background-color: rgb(65, 94, 255);
+  margin-right: 10px;
+}
+
+.edit-button:hover {
+  background-color: rgb(36, 55, 163);
+}
+
+.buttons-container button {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the margin as needed for the desired gap */
 }

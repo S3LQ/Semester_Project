@@ -50,9 +50,18 @@
         };
 
         // Function to handle edit button click
-        window.redigerOppskrift = function (index) {
+        window.redigerOppskrift = function (recipeCardId) {
           import("./scripts/recipesScript.mjs").then((module) => {
-            module.redigerOppskrift(index);
+            // Fetch recipe data based on recipeCardId before calling redigerOppskrift
+            fetch(`/recipes/${recipeCardId.split("-")[1]}`)
+              .then((response) => response.json())
+              .then((recipe) => {
+                module.redigerOppskrift(recipeCardId, recipe);
+              })
+              .catch((error) => {
+                console.error("Error fetching recipe:", error);
+                alert("Failed to fetch recipe. Please try again.");
+              });
           });
         };
       });

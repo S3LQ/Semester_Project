@@ -1,11 +1,11 @@
 import DBManager from "./storageManager.mjs";
 
 class Recipe {
-  constructor() {
-    this.title;
-    this.ingredients;
-    this.instructions;
-    this.recipeID;
+  constructor(title, ingredients, instructions, recipeID) {
+    this.title = title;
+    this.ingredients = ingredients;
+    this.instructions = instructions;
+    this.recipeID = recipeID;
   }
 
   async save() {

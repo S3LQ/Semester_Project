@@ -86,14 +86,19 @@ class DBManager {
     }
   }
 
-  async updateRecipe(recipe) {
+  async updateRecipe(recipeId, updatedRecipeData) {
     const client = new pg.Client(this.#credentials);
 
     try {
       await client.connect();
       await client.query(
         'Update "public"."Recipes" set "title" = $1, "ingredients" = $2, "instructions" = $3 where id = $4;',
-        [recipe.title, recipe.ingredients, recipe.instructions, recipe.id]
+        [
+          updatedRecipeData.title,
+          updatedRecipeData.ingredients,
+          updatedRecipeData.instructions,
+          recipeId,
+        ]
       );
     } catch (error) {
       console.error(error);
@@ -101,7 +106,7 @@ class DBManager {
       client.end();
     }
 
-    return recipe;
+    return updatedRecipeData;
   }
 
   async deleteRecipe(recipeId) {

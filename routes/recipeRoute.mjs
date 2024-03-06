@@ -68,4 +68,25 @@ RECIPE_API.delete("/:id", async (req, res, next) => {
   }
 });
 
+// Endpoint to update a recipe
+RECIPE_API.put("/:id", async (req, res, next) => {
+  const recipeId = req.params.id;
+  const updatedRecipeData = req.body;
+
+  try {
+    // Update the recipe in the database using the recipeId and updatedRecipeData
+    await DBManager.updateRecipe(recipeId, updatedRecipeData);
+
+    // Send a success response
+    res
+      .status(HTTPCodes.SuccesfullRespons.Ok)
+      .json({ message: "Recipe updated successfully" })
+      .end();
+  } catch (error) {
+    console.error("Error updating recipe:", error);
+    // Send an error response if something goes wrong
+    res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
+  }
+});
+
 export default RECIPE_API;
