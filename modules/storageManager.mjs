@@ -163,6 +163,21 @@ class DBManager {
       client.end();
     }
   }
+
+  async getAllRecipes() {
+    const client = new pg.Client(this.#credentials);
+
+    try {
+      await client.connect();
+      const output = await client.query('SELECT * FROM "public"."Recipes";');
+      return output.rows;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    } finally {
+      client.end();
+    }
+  }
 }
 
 let connectionString =

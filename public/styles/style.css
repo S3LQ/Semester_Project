@@ -8,37 +8,61 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 50vh; /* Use min-height instead of height for better responsiveness */
   background-color: #f5f5f5;
 }
 
 h1 {
   color: #333;
-  margin-bottom: 20px;
+  margin: 20px 0; /* Add margin to top and bottom */
 }
 
-#leggTilSkjema {
+.header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  order: -1; /* Move the button to the beginning of the flex container */
+  margin-right: auto; /* Push the button to the left */
+}
+
+/* Position the h1 at the center */
+.header h1 {
+  text-align: center;
+  margin: 0 auto; /* Center the h1 horizontally */
+}
+
+/* Adjust the position of the "Legg til oppskrift" button */
+#addRecipeButton {
+  width: 100%; /* Set width to auto to fit the content */
+  margin-top: 20px; /* Add some space between the h1 and the button */
+}
+
+.container {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 300px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-sizing: border-box;
+}
+
+#leggTilSkjema {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
   text-align: center;
+  box-sizing: border-box;
 }
 
-#loginSection,
-#createUserSection {
-  width: 300px;
-  margin-right: 20px;
-}
-
-#showCreateUserButton {
-  margin-top: 10px; /* Legg til ønsket avstand over knappen */
-}
-
-#backToLoginButton {
-  margin-top: 10px; /* Legg til ønsket avstand over knappen */
+form {
+  width: 100%;
 }
 
 label {
@@ -49,9 +73,36 @@ label {
 
 input,
 textarea {
+  max-width: 100%;
   width: 100%;
-  padding: 8px;
+  padding: 10px; /* Increase padding for better touch support */
   margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+}
+
+/* Adjust the width of input and textarea elements */
+input[type="text"],
+textarea {
+  width: 100%; /* Adjust width to fit within the padding */
+}
+
+#leggTilKnapp {
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Increase padding for better touch support */
+  margin-bottom: 16px;
+  margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -62,9 +113,7 @@ textarea {
 button {
   background-color: #4caf50;
   color: #fff;
-  padding: 10px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -76,31 +125,48 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 60%;
 }
 
 .kort {
   background-color: #fff;
+  display: inline-block;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  width: 300px;
+  width: calc(
+    33.33% - 20px
+  ); /* Set width to one-third of the container minus margins */
   transition: transform 0.3s;
   box-sizing: border-box;
+  vertical-align: top; /* Align cards to the top */
+  height: 320px; /* Set a fixed height for each card */
+  overflow: hidden; /* Hide overflow content */
+  transition: transform 0.3s, box-shadow 0.3s, background-image 0.3s;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .kort {
+    width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
 }
 
 .kort:hover {
   transform: scale(1.05);
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+  cursor: pointer;
 }
 
 .kort h3 {
   color: #333;
-  position: relative;
+  margin-top: 0; /* Reset margin */
 }
 
 .kort .tittel-marker {
   color: #555;
-  top: -18px;
   margin-bottom: 10px;
 }
 
@@ -124,6 +190,46 @@ button:hover {
   background-color: #2ecc71;
 }
 
+.kort img {
+  top: 20px; /* Adjust the top position as needed */
+  width: 243px; /* Set the width of the small image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Apply border radius */
+  margin-bottom: 20px;
+}
+
+.enlarged-card .delete-button {
+  background-color: #e74c3c; /* Set background color to red */
+}
+
+.enlarged-card {
+  text-align: center; /* Center all text horizontally */
+}
+
+/* Style for the text elements */
+.enlarged-card h3,
+.enlarged-card p {
+  text-align: center; /* Center text horizontally */
+}
+
+/* Style for the enlarged image */
+.enlarged-card img {
+  float: right; /* Float the image to the right */
+  margin-left: 20px; /* Add margin to separate from text */
+  width: 200px; /* Set the width of the enlarged image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Apply border radius */
+  margin-bottom: 20px;
+}
+
+/* Style for the enlarged image */
+.enlarged-card img {
+  margin-left: 20px; /* Add margin to separate from text */
+  width: 500px; /* Set the width of the enlarged image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Apply border radius */
+}
+
 .deleteButton {
   background-color: #e74c3c;
 }
@@ -134,7 +240,6 @@ button:hover {
 
 .edit-button {
   background-color: rgb(65, 94, 255);
-  margin-right: 10px;
 }
 
 .edit-button:hover {
@@ -143,5 +248,5 @@ button:hover {
 
 .buttons-container button {
   display: inline-block;
-  margin-right: 10px; /* Adjust the margin as needed for the desired gap */
+  margin-right: 10px;
 }

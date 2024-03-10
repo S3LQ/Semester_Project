@@ -7,64 +7,72 @@
     <title>Oppskriftsapp</title>
   </head>
   <body>
-    <h1>
-      <button onclick="window.location.href='index.html'">Tilbake</button>
-      Oppskrifter
-    </h1>
+    <div class="header">
+      <div class="button-container">
+        <button onclick="window.location.href='index.html'">Tilbake</button>
+        <h1 id="pageTitle">Oppskrifter</h1>
+        <!-- Button to toggle the display of the form -->
+        <button id="addRecipeButton">Legg til oppskrift</button>
+      </div>
+    </div>
 
-    <form id="leggTilSkjema">
-      <label for="tittel">Tittel:</label>
-      <input type="text" id="tittel" required />
+    <div id="formWrapper" style="display: none">
+      <div class="container">
+        <form id="leggTilSkjema">
+          <label for="tittel">Tittel:</label>
+          <input type="text" id="tittel" required />
 
-      <label for="ingredienser">Ingredienser:</label>
-      <textarea id="ingredienser" required></textarea>
+          <label for="ingredienser">Ingredienser:</label>
+          <textarea id="ingredienser" required></textarea>
 
-      <label for="instruksjoner">Instruksjoner:</label>
-      <textarea id="instruksjoner" required></textarea>
+          <label for="instruksjoner">Instruksjoner:</label>
+          <textarea id="instruksjoner" required></textarea>
 
-      <label for="image">Bilde:</label>
-      <input type="file" id="image" name="image" accept="image/*" />
-
-      <button type="button" id="leggTilKnapp">Legg til oppskrift</button>
-    </form>
+          <button type="button" id="leggTilKnapp">Legg til oppskrift</button>
+        </form>
+      </div>
+    </div>
 
     <div id="kortContainer">
       <!-- Recipe cards will be dynamically added here with JavaScript -->
     </div>
 
+    <!-- Import your scripts -->
+    <script type="module" src="./scripts/displayRecipesScript.mjs"></script>
+    <script type="module" src="./scripts/recipesScript.mjs"></script>
+
+    <!-- Script to handle button click events -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("leggTilKnapp")
-          .addEventListener("click", function () {
-            import("./scripts/recipesScript.mjs").then((module) => {
-              module.leggTilOppskrift();
-            });
-          });
+      document
+        .getElementById("addRecipeButton")
+        .addEventListener("click", function () {
+          // Toggle the display of the form
+          const formWrapper = document.getElementById("formWrapper");
+          formWrapper.style.display =
+            formWrapper.style.display === "none" ? "block" : "none";
 
-        // Function to handle delete button click
-        window.fjernOppskrift = function (recipeCardId) {
-          import("./scripts/recipesScript.mjs").then((module) => {
-            module.fjernOppskrift(recipeCardId);
-          });
-        };
+          // Hide the addRecipeButton
+          this.style.display = "none";
 
-        // Function to handle edit button click
-        window.redigerOppskrift = function (recipeCardId) {
-          import("./scripts/recipesScript.mjs").then((module) => {
-            // Fetch recipe data based on recipeCardId before calling redigerOppskrift
-            fetch(`/recipes/${recipeCardId.split("-")[1]}`)
-              .then((response) => response.json())
-              .then((recipe) => {
-                module.redigerOppskrift(recipeCardId, recipe);
-              })
-              .catch((error) => {
-                console.error("Error fetching recipe:", error);
-                alert("Failed to fetch recipe. Please try again.");
-              });
-          });
-        };
-      });
+          // Add padding to h1
+          const pageTitle = document.getElementById("pageTitle");
+          pageTitle.style.paddingBottom = "20px"; // Adjust as needed
+        });
+
+      // Listen for click event on the add recipe button
+      document
+        .getElementById("leggTilKnapp")
+        .addEventListener("click", function () {
+          // Hide the form after successfully adding the recipe
+          const formWrapper = document.getElementById("formWrapper");
+          formWrapper.style.display = "none";
+
+          // Show the addRecipeButton again
+          document.getElementById("addRecipeButton").style.display = "block";
+
+          // Remove padding from h1
+          document.getElementById("pageTitle").style.paddingTop = "0";
+        });
     </script>
   </body>
 </html>

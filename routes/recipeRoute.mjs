@@ -40,7 +40,7 @@ RECIPE_API.post("/", async (req, res, next) => {
 // Endpoint to get recipes
 RECIPE_API.get("/", async (req, res, next) => {
   try {
-    const recipes = await DBManager.getRecipe();
+    const recipes = await DBManager.getAllRecipes(); // Corrected method name
     res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipes).end();
   } catch (error) {
     console.error("Error getting recipes:", error);
@@ -85,6 +85,16 @@ RECIPE_API.put("/:id", async (req, res, next) => {
   } catch (error) {
     console.error("Error updating recipe:", error);
     // Send an error response if something goes wrong
+    res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
+  }
+});
+
+RECIPE_API.get("/allrecipes", async (req, res, next) => {
+  try {
+    const recipes = await DBManager.getAllRecipes(); // Assuming you have a function getAllRecipes in your DBManager
+    res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipes).end();
+  } catch (error) {
+    console.error("Error fetching all recipes:", error);
     res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
   }
 });
