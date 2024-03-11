@@ -21,6 +21,7 @@ h1 {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button-container {
@@ -52,6 +53,12 @@ h1 {
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   box-sizing: border-box;
+}
+
+.recipeSection {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 #leggTilSkjema {
@@ -125,7 +132,6 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60%;
 }
 
 .kort {
@@ -135,9 +141,7 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  width: calc(
-    33.33% - 20px
-  ); /* Set width to one-third of the container minus margins */
+  width: 280px;
   transition: transform 0.3s;
   box-sizing: border-box;
   vertical-align: top; /* Align cards to the top */
@@ -145,12 +149,6 @@ button:hover {
   overflow: hidden; /* Hide overflow content */
   transition: transform 0.3s, box-shadow 0.3s, background-image 0.3s;
   position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .kort {
-    width: calc(50% - 20px); /* Adjust width for smaller screens */
-  }
 }
 
 .kort:hover {
@@ -198,10 +196,6 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.enlarged-card .delete-button {
-  background-color: #e74c3c; /* Set background color to red */
-}
-
 .enlarged-card {
   text-align: center; /* Center all text horizontally */
 }
@@ -230,14 +224,6 @@ button:hover {
   border-radius: 8px; /* Apply border radius */
 }
 
-.deleteButton {
-  background-color: #e74c3c;
-}
-
-.deleteButton:hover {
-  background-color: #c0392b;
-}
-
 .edit-button {
   background-color: rgb(65, 94, 255);
 }
@@ -249,4 +235,18 @@ button:hover {
 .buttons-container button {
   display: inline-block;
   margin-right: 10px;
+}
+
+.actionButton {
+  background-color: #e74c3c; /* Set background color to red */
+  color: white; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+.actionButton:hover {
+  background-color: #c0392b; /* Darken background color on hover */
 }
