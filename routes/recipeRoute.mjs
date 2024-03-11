@@ -9,16 +9,25 @@ RECIPE_API.use(express.json());
 
 // Endpoint to create a recipe
 RECIPE_API.post("/", async (req, res, next) => {
-  const { title, ingredients, instructions, image } = req.body;
+  const { title, ingredients, instructions, userId } = req.body;
+
+  console.log("Recipe data received:", {
+    title,
+    ingredients,
+    instructions,
+    userId,
+  }); // Add this line for logging
 
   // Check if all required fields are provided
-  if (title && ingredients && instructions) {
+  if (title && ingredients && instructions && userId) {
     // Create a new Recipe object
     const recipe = new Recipe();
     recipe.title = title;
     recipe.ingredients = ingredients;
     recipe.instructions = instructions;
-    recipe.image = image;
+    recipe.creatorID = userId; // Map userId to creatorID column
+
+    console.log("Recipe object to be saved:", recipe); // Add this line for logging
 
     try {
       // Save the recipe to the database

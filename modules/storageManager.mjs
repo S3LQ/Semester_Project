@@ -131,8 +131,13 @@ class DBManager {
     try {
       await client.connect();
       const output = await client.query(
-        'INSERT INTO "public"."Recipes"("title", "ingredients", "instructions") VALUES($1::Text, $2::Text, $3::Text) RETURNING id;',
-        [recipe.title, recipe.ingredients, recipe.instructions]
+        'INSERT INTO "public"."Recipes"("title", "ingredients", "instructions", "creatorID") VALUES($1::Text, $2::Text, $3::Text, $4::Integer) RETURNING id;',
+        [
+          recipe.title,
+          recipe.ingredients,
+          recipe.instructions,
+          recipe.creatorID,
+        ]
       );
 
       if (output.rows.length == 1) {

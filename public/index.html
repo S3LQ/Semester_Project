@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My App</title>
+    <title>Oppskriftsapp</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -75,7 +75,7 @@
             .then((data) => {
               console.log(data);
               localStorage.setItem("userData", data);
-              window.location.href = "recipes.html";
+              window.location.href = "index.html";
             });
           console.log("User created successfully");
           // Redirect the user to another page or perform any other action
@@ -83,6 +83,15 @@
           console.error("Failed to create user:", error.message);
           // Handle error, e.g., display an error message to the user
         }
+      });
+
+      // Add an event listener to the "Tilbake til Logg inn" button
+      const backToLoginButton = document.getElementById("backToLoginButton");
+      backToLoginButton.addEventListener("click", function () {
+        // Hide the create user section
+        document.getElementById("createUserSection").style.display = "none";
+        // Show the login section
+        document.getElementById("loginSection").style.display = "block";
       });
     </script>
     <script type="module" src="./scripts/loginScript.mjs"></script>

@@ -9,7 +9,9 @@
   <body>
     <div class="header">
       <div class="button-container">
-        <button onclick="window.location.href='index.html'">Tilbake</button>
+        <button onclick="window.location.href='index.html'">
+          Logg ut og gå tilbake
+        </button>
         <h1 id="pageTitle">Alle oppskrifter</h1>
         <!-- Button to toggle the display of the form -->
         <button id="addRecipeButton">Legg til oppskrift</button>
@@ -73,6 +75,14 @@
           // Remove padding from h1
           document.getElementById("pageTitle").style.paddingTop = "0";
         });
+
+      function goBackToLogin() {
+        // Clear user data from local storage
+        localStorage.removeItem("userData");
+
+        // Redirect the user back to the login page
+        window.location.href = "index.html";
+      }
     </script>
   </body>
 </html>

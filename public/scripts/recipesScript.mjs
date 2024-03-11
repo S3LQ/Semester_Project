@@ -2,7 +2,7 @@ export async function leggTilOppskrift() {
   // Check if a user is logged in
   const userData = JSON.parse(localStorage.getItem("userData"));
   console.log("User data:", userData);
-  if (!userData) {
+  if (!userData || !userData[0]) {
     alert("You need to log in to add recipes.");
     return;
   }
@@ -14,7 +14,10 @@ export async function leggTilOppskrift() {
   // You can handle the image input if needed
 
   // Get the user ID
-  const userId = userData.id;
+  const userId = userData[0].id; // Access user ID from the first element
+  console.log("User ID:", userId); // Add this line for logging
+
+  console.log("Recipe data:", { title, ingredients, instructions, userId }); // Add this line for logging
 
   // Check if title, ingredients, and instructions are filled
   if (title && ingredients && instructions) {
