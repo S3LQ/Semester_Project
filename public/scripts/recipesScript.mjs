@@ -99,6 +99,80 @@ function enlargeRecipeCard(recipe) {
   const instruksjoner = document.createElement("p");
   instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
 
+  // Append the description elements
+  enlargedCard.appendChild(tittel);
+  enlargedCard.appendChild(ingredienser);
+  enlargedCard.appendChild(instruksjoner);
+
+  // Check if a user is logged in and if the user ID matches the recipe creator ID
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData && userData[0] && recipe.creatorID === userData[0].id) {
+    // If the user is the creator, show edit and delete buttons
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("actionButton");
+    deleteButton.innerText = "Slett";
+    deleteButton.onclick = () => fjernOppskrift(recipe.id);
+
+    const editButton = document.createElement("button");
+    editButton.innerText = "Rediger";
+    editButton.classList.add("edit-button");
+    editButton.onclick = () => {
+      // Hide the edit button itself
+      editButton.style.display = "none";
+      // Hide the delete button
+      deleteButton.style.display = "none";
+
+      // Remove text content and add input fields for editing
+      tittel.innerHTML =
+        '<input type="text" id="editedTitle" value="' + recipe.title + '">';
+      ingredienser.innerHTML =
+        '<textarea id="editedIngredients">' +
+        recipe.ingredients +
+        "</textarea>";
+      instruksjoner.innerHTML =
+        '<textarea id="editedInstructions">' +
+        recipe.instructions +
+        "</textarea>";
+
+      // Create and append save and cancel buttons
+      const saveButton = document.createElement("button");
+      saveButton.innerText = "Lagre";
+      saveButton.onclick = () => saveEditedRecipe(recipe.id);
+
+      const cancelButton = document.createElement("button");
+      cancelButton.classList.add("actionButton");
+      cancelButton.innerText = "Avbryt";
+      cancelButton.onclick = () => {
+        // Restore original text content
+        tittel.innerText = " " + recipe.title;
+        ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
+        instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
+
+        // Remove save and cancel buttons
+        saveButton.remove();
+        cancelButton.remove();
+
+        // Show the edit button again
+        editButton.style.display = "block";
+        // Show the delete button again
+        deleteButton.style.display = "block";
+        // Show the back button again
+        backButton.style.display = "block";
+      };
+
+      // Hide back button
+      backButton.style.display = "none";
+
+      enlargedCard.appendChild(saveButton);
+      enlargedCard.appendChild(cancelButton);
+    };
+
+    // Append the delete button
+    enlargedCard.appendChild(deleteButton);
+    // Append the edit button
+    enlargedCard.appendChild(editButton);
+  }
+
   const backButton = document.createElement("button");
   backButton.innerText = "Tilbake til alle oppskrifter";
   backButton.onclick = () => {
@@ -109,61 +183,8 @@ function enlargeRecipeCard(recipe) {
     window.location.reload();
   };
 
-  const deleteButton = document.createElement("button");
-  deleteButton.classList.add("actionButton");
-  deleteButton.innerText = "Slett";
-  deleteButton.onclick = () => fjernOppskrift(recipe.id);
-
-  const editButton = document.createElement("button");
-  editButton.innerText = "Rediger";
-  editButton.classList.add("edit-button");
-  editButton.onclick = () => {
-    // Remove text content and add input fields for editing
-    tittel.innerHTML =
-      '<input type="text" id="editedTitle" value="' + recipe.title + '">';
-    ingredienser.innerHTML =
-      '<textarea id="editedIngredients">' + recipe.ingredients + "</textarea>";
-    instruksjoner.innerHTML =
-      '<textarea id="editedInstructions">' +
-      recipe.instructions +
-      "</textarea>";
-    // Create and append save and cancel buttons
-    const saveButton = document.createElement("button");
-    saveButton.innerText = "Lagre";
-    saveButton.onclick = () => saveEditedRecipe(recipe.id);
-
-    const cancelButton = document.createElement("button");
-    cancelButton.classList.add("actionButton");
-    cancelButton.innerText = "Avbryt";
-    cancelButton.onclick = () => {
-      // Restore original text content
-      tittel.innerText = " " + recipe.title;
-      ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
-      instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
-      // Remove save and cancel buttons
-      saveButton.remove();
-      cancelButton.remove();
-      // Show edit button
-      editButton.style.display = "block";
-      backButton.style.display = "block";
-      deleteButton.style.display = "block";
-    };
-
-    // Hide back and delete buttons
-    backButton.style.display = "none";
-    deleteButton.style.display = "none";
-    editButton.style.display = "none";
-
-    enlargedCard.appendChild(saveButton);
-    enlargedCard.appendChild(cancelButton);
-  };
-
-  enlargedCard.appendChild(tittel);
-  enlargedCard.appendChild(ingredienser);
-  enlargedCard.appendChild(instruksjoner);
+  // Append the back button
   enlargedCard.appendChild(backButton);
-  enlargedCard.appendChild(editButton);
-  enlargedCard.appendChild(deleteButton);
 
   kortContainer.appendChild(enlargedCard);
 }
@@ -175,6 +196,15 @@ export function renderRecipeCard(recipe) {
   const kort = document.createElement("div");
   kort.classList.add("kort");
   kort.id = `kort-${recipe.id}`;
+
+  // Add a trademark if the user ID matches the creator ID
+  const userData = JSON.parse(localStorage.getItem("userData"));
+  if (userData && userData[0] && recipe.creatorID === userData[0].id) {
+    const trademark = document.createElement("div");
+    trademark.classList.add("trademark");
+    trademark.innerHTML = "Din Oppskrift";
+    kort.appendChild(trademark);
+  }
 
   const tittel = document.createElement("h3");
   tittel.innerText = " " + recipe.title;
