@@ -19138,3 +19138,56 @@ Database connection  postgresql://localhost:5433/tveitsindre
 Database connection  postgresql://localhost:5433/tveitsindre
 ####################
 Server enviromentlocal
+Server enviromentlocal
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+3:40:02 PM [32mGET[39m /recipes.html
+3:40:02 PM [32mGET[39m /styles/style.css
+3:40:02 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+3:40:02 PM [32mGET[39m /scripts/recipesScript.mjs
+3:40:02 PM [32mGET[39m /recipes
+3:40:02 PM [32mGET[39m /IMG/FoodImage.jpg
+3:40:02 PM [32mGET[39m /index.html
+3:40:02 PM [32mGET[39m /styles/style.css
+3:40:02 PM [32mGET[39m /scripts/loginScript.mjs
+3:40:02 PM [32mGET[39m /scripts/postToUsers.mjs
+3:40:03 PM [32mGET[39m /index.html
+3:40:03 PM [32mGET[39m /styles/style.css
+3:40:03 PM [32mGET[39m /scripts/loginScript.mjs
+3:40:03 PM [32mGET[39m /scripts/postToUsers.mjs
+3:40:06 PM [33mPOST[39m /user
+3:40:06 PM [32mGET[39m /recipes.html
+3:40:07 PM [32mGET[39m /styles/style.css
+3:40:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+3:40:07 PM [32mGET[39m /scripts/recipesScript.mjs
+3:40:07 PM [32mGET[39m /recipes
+3:40:07 PM [32mGET[39m /IMG/FoodImage.jpg
+3:52:18 PM [32mGET[39m /recipes.html
+3:52:18 PM [32mGET[39m /styles/style.css
+3:52:18 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+3:52:18 PM [32mGET[39m /scripts/recipesScript.mjs
+3:52:18 PM [32mGET[39m /recipes
+3:52:19 PM [32mGET[39m /IMG/FoodImage.jpg
+3:52:22 PM [33mPOST[39m /recipes
+3:52:22 PM [32mGET[39m /recipes.html
+3:52:22 PM [32mGET[39m /styles/style.css
+3:52:22 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+3:52:22 PM [32mGET[39m /scripts/recipesScript.mjs
+3:52:22 PM [32mGET[39m /recipes
+3:52:22 PM [32mGET[39m /IMG/FoodImage.jpg
+3:52:33 PM [33mPOST[39m /recipes
+3:52:33 PM [32mGET[39m /recipes.html
+3:52:33 PM [32mGET[39m /styles/style.css
+3:52:33 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+3:52:33 PM [32mGET[39m /scripts/recipesScript.mjs
+3:52:33 PM [32mGET[39m /recipes
+3:52:33 PM [32mGET[39m /IMG/FoodImage.jpg
