@@ -1,35 +1,32 @@
-export async function leggTilOppskrift() {
-  // Check if a user is logged in
+// Function to create a new recipe
+export async function createRecipe() {
+  // Retrieve user data from local storage
   const userData = JSON.parse(localStorage.getItem("userData"));
-  console.log("User data:", userData);
+  // Check if user data exists and if it's an array with at least one element
   if (!userData || !userData[0]) {
+    // Alert user to log in if not authenticated
     alert("You need to log in to add recipes.");
     return;
   }
 
-  // Retrieve recipe data from the form
+  // Retrieve input values for title, ingredients, and instructions
   const title = document.getElementById("tittel").value;
   const ingredients = document.getElementById("ingredienser").value;
   const instructions = document.getElementById("instruksjoner").value;
-  // You can handle the image input if needed
+  const userId = userData[0].id;
 
-  // Get the user ID
-  const userId = userData[0].id; // Access user ID from the first element
-  console.log("User ID:", userId); // Add this line for logging
-
-  console.log("Recipe data:", { title, ingredients, instructions, userId }); // Add this line for logging
-
-  // Check if title, ingredients, and instructions are filled
+  // Check if all required fields are filled
   if (title && ingredients && instructions) {
+    // Prepare recipe data object
     const recipeData = {
       title: title,
       ingredients: ingredients,
       instructions: instructions,
-      userId: userId, // Include the user ID
+      userId: userId,
     };
 
-    // Submit recipe data to the server using fetch
     try {
+      // Send POST request to create a new recipe
       const response = await fetch("/recipes", {
         method: "POST",
         headers: {
@@ -37,92 +34,87 @@ export async function leggTilOppskrift() {
         },
         body: JSON.stringify(recipeData),
       });
+      // Check if the response is ok
       if (response.ok) {
-        const recipe = await response.json();
-        console.log("Recipe added successfully:", recipe);
-
-        // Reload the page to display the newly added recipe
+        // Reload the page to display the new recipe
         location.reload();
       } else {
+        // Throw an error if failed to add the recipe
         throw new Error("Failed to add recipe.");
       }
     } catch (error) {
+      // Log and alert if there's an error adding the recipe
       console.error("Error adding recipe:", error);
       alert("Failed to add recipe. Please try again.");
     }
   } else {
+    // Alert user to fill out all required fields
     alert("Fill out all required fields.");
   }
 }
 
-// Add event listener to the "Legg til oppskrift" button
+// Event listener to execute createRecipe function when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", function () {
   const leggTilKnapp = document.getElementById("leggTilKnapp");
-  leggTilKnapp.addEventListener("click", leggTilOppskrift);
+  leggTilKnapp.addEventListener("click", createRecipe);
 });
 
-// Function to toggle the display of the "legg til oppskrift" form
-function toggleAddRecipeForm() {
-  const form = document.getElementById("leggTilSkjema");
-  form.style.display = form.style.display === "none" ? "block" : "none";
-}
-
+// Function to enlarge a recipe card
 function enlargeRecipeCard(recipe) {
+  // Hide the button container
   const buttonContainer = document.querySelector(".button-container");
   buttonContainer.style.display = "none";
 
+  // Clear the container holding the recipe cards
   const kortContainer = document.getElementById("kortContainer");
   kortContainer.innerHTML = "";
 
+  // Hide the add recipe button and page title
   const addRecipeButton = document.getElementById("addRecipeButton");
   addRecipeButton.style.display = "none";
-
   const h1Element = document.querySelector("h1");
   h1Element.style.display = "none";
 
-  // Create a new enlarged card
+  // Create an enlarged recipe card
   const enlargedCard = document.createElement("div");
   enlargedCard.classList.add("enlarged-card");
 
-  // Create and set the image element with the stock image source
+  // Create and append image element
   const image = document.createElement("img");
   image.src = "./IMG/FoodImage.jpg";
   image.alt = "Stock Image";
   enlargedCard.appendChild(image);
 
+  // Create and append elements for title, ingredients, and instructions
   const tittel = document.createElement("h3");
   tittel.innerText = " " + recipe.title;
-
   const ingredienser = document.createElement("p");
   ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
-
   const instruksjoner = document.createElement("p");
   instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
-
-  // Append the description elements
   enlargedCard.appendChild(tittel);
   enlargedCard.appendChild(ingredienser);
   enlargedCard.appendChild(instruksjoner);
 
-  // Check if a user is logged in and if the user ID matches the recipe creator ID
+  // Check if the user is the creator of the recipe to show edit and delete buttons
   const userData = JSON.parse(localStorage.getItem("userData"));
   if (userData && userData[0] && recipe.creatorID === userData[0].id) {
-    // If the user is the creator, show edit and delete buttons
+    // Create and append delete button
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("actionButton");
     deleteButton.innerText = "Slett";
-    deleteButton.onclick = () => fjernOppskrift(recipe.id);
+    deleteButton.onclick = () => deleteRecipe(recipe.id);
 
+    // Create and append edit button
     const editButton = document.createElement("button");
     editButton.innerText = "Rediger";
     editButton.classList.add("edit-button");
     editButton.onclick = () => {
-      // Hide the edit button itself
+      // Hide edit and delete buttons
       editButton.style.display = "none";
-      // Hide the delete button
       deleteButton.style.display = "none";
 
-      // Remove text content and add input fields for editing
+      // Replace title, ingredients, and instructions with input fields for editing
       tittel.innerHTML =
         '<input type="text" id="editedTitle" value="' + recipe.title + '">';
       ingredienser.innerHTML =
@@ -134,16 +126,17 @@ function enlargeRecipeCard(recipe) {
         recipe.instructions +
         "</textarea>";
 
-      // Create and append save and cancel buttons
+      // Create and append save button
       const saveButton = document.createElement("button");
       saveButton.innerText = "Lagre";
       saveButton.onclick = () => saveEditedRecipe(recipe.id);
 
+      // Create and append cancel button
       const cancelButton = document.createElement("button");
       cancelButton.classList.add("actionButton");
       cancelButton.innerText = "Avbryt";
       cancelButton.onclick = () => {
-        // Restore original text content
+        // Reset title, ingredients, and instructions
         tittel.innerText = " " + recipe.title;
         ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
         instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
@@ -152,52 +145,50 @@ function enlargeRecipeCard(recipe) {
         saveButton.remove();
         cancelButton.remove();
 
-        // Show the edit button again
+        // Show edit and delete buttons
         editButton.style.display = "block";
-        // Show the delete button again
         deleteButton.style.display = "block";
-        // Show the back button again
         backButton.style.display = "block";
       };
 
-      // Hide back button
       backButton.style.display = "none";
 
+      // Append save and cancel buttons
       enlargedCard.appendChild(saveButton);
       enlargedCard.appendChild(cancelButton);
     };
 
-    // Append the delete button
+    // Append delete and edit buttons
     enlargedCard.appendChild(deleteButton);
-    // Append the edit button
     enlargedCard.appendChild(editButton);
   }
 
+  // Create and append back button
   const backButton = document.createElement("button");
   backButton.innerText = "Tilbake til alle oppskrifter";
   backButton.onclick = () => {
-    // Call displayAllRecipes to render all recipes again
+    // Display all recipes and remove the enlarged card
     displayAllRecipes();
-    // Clear the enlarged card
     enlargedCard.remove();
     window.location.reload();
   };
 
-  // Append the back button
   enlargedCard.appendChild(backButton);
 
+  // Append the enlarged card to the container
   kortContainer.appendChild(enlargedCard);
 }
 
-// Function to render a single recipe card in its original format with edit and delete buttons
+// Function to render a recipe card
 export function renderRecipeCard(recipe) {
   const kortContainer = document.getElementById("kortContainer");
 
+  // Create a new card element
   const kort = document.createElement("div");
   kort.classList.add("kort");
   kort.id = `kort-${recipe.id}`;
 
-  // Add a trademark if the user ID matches the creator ID
+  // Check if the user is the creator of the recipe to display a trademark
   const userData = JSON.parse(localStorage.getItem("userData"));
   if (userData && userData[0] && recipe.creatorID === userData[0].id) {
     const trademark = document.createElement("div");
@@ -206,51 +197,59 @@ export function renderRecipeCard(recipe) {
     kort.appendChild(trademark);
   }
 
+  // Create elements for title, ingredients, and instructions
   const tittel = document.createElement("h3");
   tittel.innerText = " " + recipe.title;
-  tittel.classList.add("tittel"); // Add class for title
+  tittel.classList.add("tittel");
   tittel.id = `tittel-${recipe.id}`;
-
   const ingredienser = document.createElement("p");
   ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
-  ingredienser.classList.add("ingredienser"); // Add class for ingredients
+  ingredienser.classList.add("ingredienser");
   ingredienser.id = `ingredienser-${recipe.id}`;
-
   const instruksjoner = document.createElement("p");
   instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
-  instruksjoner.classList.add("instruksjoner"); // Add class for instructions
+  instruksjoner.classList.add("instruksjoner");
   instruksjoner.id = `instruksjoner-${recipe.id}`;
 
-  // Create and set the image element with the stock image source
+  // Create and append image element
   const image = document.createElement("img");
   image.src = "./IMG/FoodImage.jpg";
   image.alt = "Stock Image";
   kort.appendChild(image);
 
+  // Append title, ingredients, and instructions to the card
   kort.appendChild(tittel);
   kort.appendChild(ingredienser);
   kort.appendChild(instruksjoner);
 
-  // Add event listener to the recipe card
+  // Add event listener to enlarge the card when clicked
   kort.addEventListener("click", () => enlargeRecipeCard(recipe));
 
+  // Append the card to the container
   kortContainer.appendChild(kort);
 }
 
+// Function to display all recipes
 export async function displayAllRecipes() {
   try {
+    // Fetch all recipes from the server
     const response = await fetch("/recipes");
+    // Check if the response is ok
     if (!response.ok) {
       throw new Error("Failed to fetch recipes.");
     }
+    // Extract recipes from the response
     const recipes = await response.json();
+    // Get the container for recipe cards
     const kortContainer = document.getElementById("kortContainer");
-    kortContainer.innerHTML = ""; // Clear existing cards before rendering
+    // Clear the container
+    kortContainer.innerHTML = "";
 
-    const renderedRecipeIds = new Set(); // Track rendered recipe IDs
+    // Keep track of rendered recipe ids to avoid duplicates
+    const renderedRecipeIds = new Set();
 
+    // Render each recipe card
     recipes.forEach((recipe) => {
-      // Check if recipe has already been rendered
       if (!renderedRecipeIds.has(recipe.id)) {
         renderRecipeCard(recipe);
         renderedRecipeIds.add(recipe.id);
@@ -258,25 +257,25 @@ export async function displayAllRecipes() {
     });
   } catch (error) {
     console.error("Error fetching all recipes:", error);
-    // Handle error
   }
 }
 
-// Function to remove a recipe by its ID
-export function fjernOppskrift(recipeId) {
+// Function to delete a recipe
+export function deleteRecipe(recipeId) {
+  // Send a DELETE request to delete the specified recipe
   fetch(`/recipes/${recipeId}`, {
     method: "DELETE",
   })
     .then((response) => {
       if (response.ok) {
-        console.log("Recipe deleted successfully:", recipeId);
         // Reload the page after successful deletion
         window.location.reload();
-        // Additionally, show the add recipe button, h1, and back button
+        // Show the button container, add recipe button, and page title
         document.getElementById("button-container").style.display = "block";
         document.getElementById("addRecipeButton").style.display = "block";
         document.getElementById("h1").style.display = "block";
       } else {
+        // Throw an error if failed to delete the recipe
         throw new Error("Failed to delete recipe.");
       }
     })
@@ -285,35 +284,37 @@ export function fjernOppskrift(recipeId) {
     });
 }
 
-export async function redigerOppskrift(recipe) {
-  // Check if a user is logged in
+// Function to edit a recipe
+export async function editRecipe(recipe) {
+  // Retrieve user data from local storage
   const userData = JSON.parse(localStorage.getItem("userData"));
-  console.log("User data:", userData);
+  // Check if user data exists
   if (!userData) {
+    // Alert user to log in if not authenticated
     alert("You need to log in to edit recipes.");
     return;
   }
 
-  // Retrieve recipe data from the form
+  // Prompt the user to enter new title, ingredients, and instructions
   const title = prompt("Enter new title:", recipe.title);
   const ingredients = prompt("Enter new ingredients:", recipe.ingredients);
   const instructions = prompt("Enter new instructions:", recipe.instructions);
-  // You can handle the image input if needed
 
-  // Get the user ID
+  // Get user ID
   const userId = userData.id;
 
-  // Check if title, ingredients, and instructions are filled
+  // Check if all required fields are filled
   if (title && ingredients && instructions) {
+    // Prepare updated recipe data object
     const updatedRecipeData = {
       title: title,
       ingredients: ingredients,
       instructions: instructions,
-      userId: userId, // Include the user ID
+      userId: userId,
     };
 
-    // Submit updated recipe data to the server using fetch
     try {
+      // Send PUT request to update the recipe
       const response = await fetch(`/recipes/${recipe.id}`, {
         method: "PUT",
         headers: {
@@ -321,32 +322,34 @@ export async function redigerOppskrift(recipe) {
         },
         body: JSON.stringify(updatedRecipeData),
       });
+      // Check if the response is ok
       if (response.ok) {
-        const updatedRecipe = await response.json();
-        console.log("Recipe updated successfully:", updatedRecipe);
-
-        // Reload the page to display the updated recipe
+        // Reload the page after successful update
         location.reload();
       } else {
+        // Throw an error if failed to update the recipe
         throw new Error("Failed to update recipe.");
       }
     } catch (error) {
+      // Log and alert if there's an error updating the recipe
       console.error("Error updating recipe:", error);
       alert("Failed to update recipe. Please try again.");
     }
   } else {
+    // Alert user to fill out all required fields
     alert("Fill out all required fields.");
   }
 }
 
+// Function to save edited recipe
 async function saveEditedRecipe(recipeId) {
-  // Retrieve edited data from input fields
+  // Retrieve edited title, ingredients, and instructions from input fields
   const editedTitle = document.getElementById("editedTitle").value;
   const editedIngredients = document.getElementById("editedIngredients").value;
   const editedInstructions =
     document.getElementById("editedInstructions").value;
 
-  // Construct updated recipe object
+  // Prepare updated recipe data object
   const updatedRecipeData = {
     title: editedTitle,
     ingredients: editedIngredients,
@@ -354,7 +357,7 @@ async function saveEditedRecipe(recipeId) {
   };
 
   try {
-    // Send PUT request to update the recipe in the database
+    // Send PUT request to update the recipe
     const response = await fetch(`/recipes/${recipeId}`, {
       method: "PUT",
       headers: {
@@ -363,16 +366,16 @@ async function saveEditedRecipe(recipeId) {
       body: JSON.stringify(updatedRecipeData),
     });
 
+    // Check if the response is ok
     if (response.ok) {
-      const updatedRecipe = await response.json();
-      console.log("Recipe updated successfully:", updatedRecipe);
-
-      // Reload the page to display the updated recipe
+      // Reload the page after successful update
       location.reload();
     } else {
+      // Throw an error if failed to update the recipe
       throw new Error("Failed to update recipe.");
     }
   } catch (error) {
+    // Log and alert if there's an error updating the recipe
     console.error("Error updating recipe:", error);
     alert("Failed to update recipe. Please try again.");
   }

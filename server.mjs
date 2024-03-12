@@ -4,29 +4,34 @@ import SuperLogger from "./modules/SuperLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
 import USER_API from "./routes/usersRoute.mjs";
 import RECIPE_API from "./routes/recipeRoute.mjs";
-import DBManager from "./modules/storageManager.mjs"; // Import your database manager module
+import DBManager from "./modules/storageManager.mjs";
 
+// Print important startup information for developers
 printDeveloperStartupInportantInformationMSG();
 
-// Creating an instance of the server
+// Create an instance of Express server
 const server = express();
-// Selecting a port for the server to use.
+
+// Define the port number from environment variable or use 8080 as default
 const port = process.env.PORT || 8080;
 server.set("port", port);
 
-// Enable logging for server
+// Create an instance of SuperLogger for logging
 const logger = new SuperLogger();
-server.use(logger.createAutoHTTPRequestLogger()); // Will log all HTTP method requests
 
-// Defining a folder that will contain static files.
+// Use the auto HTTP request logger middleware provided by SuperLogger
+server.use(logger.createAutoHTTPRequestLogger());
+
+// Serve static files from the "public" directory
 server.use(express.static("public"));
 
-// Telling the server to use the USER_API (all urls that use this code will have to have the /user after the base address)
+// Define routes for user-related operations
 server.use("/user", USER_API);
 
+// Define routes for recipe-related operations
 server.use("/recipes", RECIPE_API);
 
-// A GET request handler example
+// Define a basic route handler for the root path
 server.get("/", (req, res, next) => {
   res
     .status(200)
@@ -34,43 +39,34 @@ server.get("/", (req, res, next) => {
     .end();
 });
 
-// PUT endpoint to update a recipe
+// Define a route handler for updating a recipe by its ID
 server.put("/recipes/:id", async (req, res) => {
   const recipeId = req.params.id;
   const updatedRecipeData = req.body;
 
   try {
-    console.log("Recipe ID:", recipeId); // Log recipe ID
-    console.log("Updated Recipe Data:", updatedRecipeData); // Log updated recipe data
-
-    // Update the recipe in the database
+    // Update the recipe in the database using the provided data
     const updatedRecipe = await DBManager.updateRecipe(
       recipeId,
       updatedRecipeData
     );
 
-    console.log("Recipe updated successfully:", updatedRecipe); // Log successful update
-
-    // Send a success response
+    // Respond with a success message
     res.status(200).json({ message: "Recipe updated successfully" });
   } catch (error) {
+    // Handle errors and respond with an error message
     console.error("Error updating recipe:", error);
-    // Send an error response if something goes wrong
     res.status(500).json({ error: "Failed to update recipe" });
   }
 });
 
-// DELETE endpoint to delete a recipe
+// Define a route handler for deleting a recipe by its ID
 server.delete("/recipes/:id", (req, res) => {
-  // Here you can handle the deletion of a recipe using the recipe ID
   const recipeId = req.params.id;
 
-  // Implement your logic to delete the recipe from the database
-
+  // Respond with a success message
   res.status(200).json({ message: "Recipe deleted successfully" });
 });
 
-// Start the server
-server.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// Start the server and listen on the specified port
+server.listen(port, () => {});

@@ -1,8 +1,5 @@
-// Function to create a user
 async function postToUsers(user) {
   try {
-    // Create a user object with the provided data
-
     // Send a POST request to your backend endpoint to store the user data
     const response = await fetch("/user", {
       method: "POST",
@@ -21,6 +18,7 @@ async function postToUsers(user) {
     // Return the created user object
     return response;
   } catch (error) {
+    alert("User does not exist. Create a user.");
     console.error("Error connecting:", error.message);
     // Throw the error to be handled by the caller
     throw error;

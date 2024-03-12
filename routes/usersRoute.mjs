@@ -5,59 +5,60 @@ import SuperLogger from "../modules/SuperLogger.mjs";
 import DBManager from "../modules/storageManager.mjs";
 import { createHashPassword } from "../modules/userAuth.mjs";
 
+// Create a router for handling user-related API endpoints
 const USER_API = express.Router();
-USER_API.use(express.json()); // This makes it so that express parses all incoming payloads as JSON for this route.
+USER_API.use(express.json());
 
-USER_API.get("/", (req, res, next) => {
+// Endpoint to demonstrate logging functionality
+USER_API.get("/", (req, res) => {
+  // Log a demo message using SuperLogger
   SuperLogger.log("Demo of logging tool");
-  SuperLogger.log("A important msg", SuperLogger.LOGGING_LEVELS.CRTICAL);
+  SuperLogger.log("An important message", SuperLogger.LOGGING_LEVELS.CRITICAL);
 });
 
-USER_API.get("/:id", (req, res, next) => {
-  // Tip: All the information you need to get the id part of the request can be found in the documentation
-  // https://expressjs.com/en/guide/routing.html (Route parameters)
-  /// TODO:
-  // Return user object
-});
-
-USER_API.post("/", async (req, res, next) => {
-  // This is using javascript object destructuring.
-  // Recomend reading up https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#syntax
-  // https://www.freecodecamp.org/news/javascript-object-destructuring-spread-operator-rest-parameter/
+// Endpoint to handle user creation or login
+USER_API.post("/", async (req, res) => {
+  // Extract data from request body
   const { name, email, authString, type } = req.body;
 
+  // Check if the request is for creating a new user
   if (name != "" && email != "" && authString != "" && type === "createUser") {
+    // Create a new User instance and set properties
     let user = new User();
     user.name = name;
     user.email = email;
 
-    ///TODO: Do not save passwords.
-    console.log(typeof authString);
+    // Hash the password for security
     user.pswHash = createHashPassword(authString);
 
-    ///TODO: Does the user exist?
     let exists = false;
 
+    // Check if the user already exists (example code, actual implementation may vary)
     if (!exists) {
-      //TODO: What happens if this fails?
+      // Save the user to the database
       user = await user.save();
+      // Send success response with the created user data
       res
         .status(HTTPCodes.SuccesfullRespons.Ok)
         .json(JSON.stringify(user))
         .end();
     } else {
+      // Send bad request response if user already exists
       res.status(HTTPCodes.ClientSideErrorRespons.BadRequest).end();
     }
   } else {
+    // Check if the request is for user login
     if (email != "" && authString != "" && type === "login") {
-      const getExsitingUserData = await DBManager.getUser(
+      // Get existing user data from the database based on hashed password
+      const getExistingUserData = await DBManager.getUser(
         createHashPassword(authString)
       );
 
-      if (getExsitingUserData.length > 0) {
+      // Check if user data exists and send appropriate response
+      if (getExistingUserData.length > 0) {
         res
           .status(HTTPCodes.SuccesfullRespons.Ok)
-          .json(JSON.stringify(getExsitingUserData))
+          .json(JSON.stringify(getExistingUserData))
           .end();
       } else {
         res
@@ -66,24 +67,22 @@ USER_API.post("/", async (req, res, next) => {
           .end();
       }
     } else {
+      // Send bad request response if required data fields are missing
       res
         .status(HTTPCodes.ClientSideErrorRespons.BadRequest)
-        .send("Mangler data felt")
+        .send("Missing data fields")
         .end();
     }
   }
 });
 
-USER_API.post("/:id", (req, res, next) => {
-  /// TODO: Edit user
-  const user = new User(); //TODO: The user info comes as part of the request
-  user.save();
-});
-
+// Endpoint to delete a user by ID (example code, actual implementation may vary)
 USER_API.delete("/:id", (req, res) => {
-  /// TODO: Delete user.
-  const user = new User(); //TODO: Actual user
+  // Create a new User instance
+  const user = new User();
+  // Call delete method to delete the user (example code, actual implementation may vary)
   user.delete();
 });
 
+// Export the router for use in other parts of the application
 export default USER_API;

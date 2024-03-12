@@ -1,111 +1,98 @@
-// recipeRoute.mjs
 import express from "express";
 import DBManager from "../modules/storageManager.mjs";
 import Recipe from "../modules/recipe.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 
+// Create a router for handling recipe-related API endpoints
 const RECIPE_API = express.Router();
 RECIPE_API.use(express.json());
 
-// Endpoint to create a recipe
-RECIPE_API.post("/", async (req, res, next) => {
+// Endpoint to handle creation of a new recipe
+RECIPE_API.post("/", async (req, res) => {
+  // Extract data from request body
   const { title, ingredients, instructions, userId } = req.body;
-
-  console.log("Recipe data received:", {
-    title,
-    ingredients,
-    instructions,
-    userId,
-  }); // Add this line for logging
 
   // Check if all required fields are provided
   if (title && ingredients && instructions && userId) {
-    // Create a new Recipe object
+    // Create a new Recipe instance with provided data
     const recipe = new Recipe();
     recipe.title = title;
     recipe.ingredients = ingredients;
     recipe.instructions = instructions;
-    recipe.creatorID = userId; // Map userId to creatorID column
-
-    console.log("Recipe object to be saved:", recipe); // Add this line for logging
+    recipe.creatorID = userId;
 
     try {
-      // Save the recipe to the database
+      // Call DBManager to create the recipe in the database
       await DBManager.createRecipe(recipe);
 
-      // Send a success response with the created recipe
-      res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipe).end();
+      // Send success response with the created recipe data
+      res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipe);
     } catch (error) {
+      // Handle and log errors if any occurred during recipe creation
       console.error("Error creating recipe:", error);
-      // Send an error response if something goes wrong
       res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
     }
   } else {
-    // Send a bad request response if any required field is missing
+    // Send bad request response if any required field is missing
     res.status(HTTPCodes.ClientSideErrorRespons.BadRequest).end();
   }
 });
 
-// Endpoint to get recipes
-RECIPE_API.get("/", async (req, res, next) => {
+// Endpoint to retrieve all recipes
+RECIPE_API.get("/", async (req, res) => {
   try {
-    const recipes = await DBManager.getAllRecipes(); // Corrected method name
-    res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipes).end();
+    // Retrieve all recipes from the database using DBManager
+    const recipes = await DBManager.getAllRecipes();
+
+    // Send success response with the retrieved recipes
+    res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipes);
   } catch (error) {
+    // Handle and log errors if any occurred during retrieval of recipes
     console.error("Error getting recipes:", error);
     res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
   }
 });
 
-// Endpoint to delete a recipe
-RECIPE_API.delete("/:id", async (req, res, next) => {
+// Endpoint to delete a recipe by its ID
+RECIPE_API.delete("/:id", async (req, res) => {
+  // Extract recipe ID from request parameters
   const recipeId = req.params.id;
 
   try {
-    // Delete the recipe from the database
+    // Call DBManager to delete the recipe from the database
     await DBManager.deleteRecipe(recipeId);
 
-    // Send a success response
+    // Send success response indicating successful deletion
     res
       .status(HTTPCodes.SuccesfullRespons.Ok)
-      .json({ message: "Recipe deleted successfully" })
-      .end();
+      .json({ message: "Recipe deleted successfully" });
   } catch (error) {
+    // Handle and log errors if any occurred during deletion of recipe
     console.error("Error deleting recipe:", error);
-    // Send an error response if something goes wrong
     res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
   }
 });
 
-// Endpoint to update a recipe
-RECIPE_API.put("/:id", async (req, res, next) => {
+// Endpoint to update a recipe by its ID
+RECIPE_API.put("/:id", async (req, res) => {
+  // Extract recipe ID and updated recipe data from request parameters and body
   const recipeId = req.params.id;
   const updatedRecipeData = req.body;
 
   try {
-    // Update the recipe in the database using the recipeId and updatedRecipeData
+    // Call DBManager to update the recipe in the database
     await DBManager.updateRecipe(recipeId, updatedRecipeData);
 
-    // Send a success response
+    // Send success response indicating successful update
     res
       .status(HTTPCodes.SuccesfullRespons.Ok)
-      .json({ message: "Recipe updated successfully" })
-      .end();
+      .json({ message: "Recipe updated successfully" });
   } catch (error) {
+    // Handle and log errors if any occurred during update of recipe
     console.error("Error updating recipe:", error);
-    // Send an error response if something goes wrong
     res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
   }
 });
 
-RECIPE_API.get("/allrecipes", async (req, res, next) => {
-  try {
-    const recipes = await DBManager.getAllRecipes(); // Assuming you have a function getAllRecipes in your DBManager
-    res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipes).end();
-  } catch (error) {
-    console.error("Error fetching all recipes:", error);
-    res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
-  }
-});
-
+// Export the router for use in other parts of the application
 export default RECIPE_API;

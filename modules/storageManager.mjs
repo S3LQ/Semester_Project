@@ -1,10 +1,9 @@
 import pg from "pg";
-import SuperLogger from "./SuperLogger.mjs";
-import Recipe from "./recipe.mjs";
 
 class DBManager {
   #credentials = {};
 
+  // Constructor to initialize the database credentials
   constructor(connectionString) {
     this.#credentials = {
       connectionString,
@@ -12,6 +11,7 @@ class DBManager {
     };
   }
 
+  // Function to update a user in the database
   async updateUser(user) {
     const client = new pg.Client(this.#credentials);
 
@@ -30,6 +30,7 @@ class DBManager {
     return user;
   }
 
+  // Function to delete a user from the database
   async deleteUser(user) {
     const client = new pg.Client(this.#credentials);
 
@@ -47,6 +48,7 @@ class DBManager {
     return user;
   }
 
+  // Function to create a new user in the database
   async createUser(user) {
     const client = new pg.Client(this.#credentials);
 
@@ -69,6 +71,7 @@ class DBManager {
     return user;
   }
 
+  // Function to get a user from the database based on password hash
   async getUser(pswHash) {
     const client = new pg.Client(this.#credentials);
 
@@ -86,6 +89,7 @@ class DBManager {
     }
   }
 
+  // Function to update a recipe in the database
   async updateRecipe(recipeId, updatedRecipeData) {
     const client = new pg.Client(this.#credentials);
 
@@ -109,6 +113,7 @@ class DBManager {
     return updatedRecipeData;
   }
 
+  // Function to delete a recipe from the database
   async deleteRecipe(recipeId) {
     const client = new pg.Client(this.#credentials);
 
@@ -125,6 +130,7 @@ class DBManager {
     }
   }
 
+  // Function to create a new recipe in the database
   async createRecipe(recipe) {
     const client = new pg.Client(this.#credentials);
 
@@ -152,6 +158,7 @@ class DBManager {
     return recipe;
   }
 
+  // Function to get a recipe from the database by its ID
   async getRecipe(id) {
     const client = new pg.Client(this.#credentials);
 
@@ -169,6 +176,7 @@ class DBManager {
     }
   }
 
+  // Function to get all recipes from the database
   async getAllRecipes() {
     const client = new pg.Client(this.#credentials);
 

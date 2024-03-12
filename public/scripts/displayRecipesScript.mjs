@@ -1,49 +1,40 @@
 import { renderRecipeCard } from "./recipesScript.mjs";
 
-// Function to fetch all recipes from the server
-async function fetchAllRecipes() {
-  try {
-    const response = await fetch("/recipes");
-    if (response.ok) {
-      const recipes = await response.json();
-      console.log("Retrieved recipes:", recipes); // Log the retrieved recipes
-      return recipes;
-    } else {
-      throw new Error("Failed to fetch recipes");
-    }
-  } catch (error) {
-    console.error("Error fetching recipes:", error);
-    throw error;
-  }
-}
-
-// Function to display all recipes on the UI
+// Function to fetch and display all recipes
 export async function displayAllRecipes() {
   try {
+    // Fetch recipes from the server
     const response = await fetch("/recipes");
+
+    // Check if the response is successful
     if (!response.ok) {
+      // If not successful, throw an error
       throw new Error("Failed to fetch recipes.");
     }
+
+    // Parse the response as JSON
     const recipes = await response.json();
+
+    // Render each recipe card on the page
     recipes.forEach((recipe) => {
       renderRecipeCard(recipe);
     });
   } catch (error) {
+    // Catch any errors that occur during fetching or rendering
     console.error("Error fetching all recipes:", error);
-    // Handle error
   }
 }
 
+// Event listener for when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", function () {
+  // Call the function to display all recipes
   displayAllRecipes();
 
-  // Get reference to the form
+  // Get the elements for adding a new recipe
   const leggTilSkjema = document.getElementById("leggTilSkjema");
-
-  // Get reference to the "legg til oppskrift" button
   const leggTilKnapp = document.getElementById("leggTilKnapp");
 
-  // Add event listener to the button to toggle the form display
+  // Event listener for toggling the display of the add recipe form
   leggTilKnapp.addEventListener("click", function () {
     if (
       leggTilSkjema.style.display === "none" ||

@@ -17534,3 +17534,1607 @@ Database connection  postgresql://localhost:5433/tveitsindre
 9:26:57 PM [32mGET[39m /scripts/recipesScript.mjs
 9:26:57 PM [32mGET[39m /recipes
 9:26:57 PM [32mGET[39m /IMG/FoodImage.jpg
+9:28:36 PM [32mGET[39m /recipes.html
+9:28:36 PM [32mGET[39m /styles/style.css
+9:28:36 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:28:36 PM [32mGET[39m /scripts/recipesScript.mjs
+9:28:36 PM [32mGET[39m /recipes
+9:28:36 PM [32mGET[39m /IMG/FoodImage.jpg
+9:28:57 PM [32mGET[39m /recipes
+9:28:57 PM [32mGET[39m /recipes.html
+9:28:57 PM [32mGET[39m /styles/style.css
+9:28:57 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:28:57 PM [32mGET[39m /scripts/recipesScript.mjs
+9:28:57 PM [32mGET[39m /recipes
+9:28:57 PM [32mGET[39m /IMG/FoodImage.jpg
+9:29:04 PM [32mGET[39m /recipes
+9:29:04 PM [32mGET[39m /recipes.html
+9:29:04 PM [32mGET[39m /styles/style.css
+9:29:04 PM [32mGET[39m /scripts/recipesScript.mjs
+9:29:04 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:29:04 PM [32mGET[39m /recipes
+9:29:04 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+1:10:57 PM [32mGET[39m /recipes.html
+1:10:57 PM [32mGET[39m /styles/style.css
+1:10:57 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:10:57 PM [32mGET[39m /scripts/recipesScript.mjs
+1:10:57 PM [32mGET[39m /recipes
+1:10:57 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:11:07 PM [32mGET[39m /recipes.html
+1:11:07 PM [32mGET[39m /styles/style.css
+1:11:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:07 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:07 PM [32mGET[39m /recipes
+1:11:07 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:08 PM [32mGET[39m /index.html
+1:11:08 PM [32mGET[39m /styles/style.css
+1:11:08 PM [32mGET[39m /scripts/loginScript.mjs
+1:11:08 PM [32mGET[39m /scripts/postToUsers.mjs
+1:11:09 PM [32mGET[39m /index.html
+1:11:09 PM [32mGET[39m /styles/style.css
+1:11:09 PM [32mGET[39m /scripts/loginScript.mjs
+1:11:09 PM [32mGET[39m /scripts/postToUsers.mjs
+1:11:12 PM [33mPOST[39m /user
+1:11:13 PM [32mGET[39m /recipes.html
+1:11:13 PM [32mGET[39m /styles/style.css
+1:11:13 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:13 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:13 PM [32mGET[39m /recipes
+1:11:13 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:28 PM [33mPUT[39m /recipes/480
+1:11:28 PM [32mGET[39m /recipes.html
+1:11:28 PM [32mGET[39m /styles/style.css
+1:11:28 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:28 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:28 PM [32mGET[39m /recipes
+1:11:28 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:38 PM [33mPUT[39m /recipes/480
+1:11:38 PM [32mGET[39m /recipes.html
+1:11:38 PM [32mGET[39m /styles/style.css
+1:11:38 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:38 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:38 PM [32mGET[39m /recipes
+1:11:38 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:42 PM [31mDELETE[39m /recipes/481
+1:11:42 PM [32mGET[39m /recipes.html
+1:11:42 PM [32mGET[39m /styles/style.css
+1:11:42 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:42 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:42 PM [32mGET[39m /recipes
+1:11:42 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:48 PM [33mPOST[39m /recipes
+1:11:48 PM [32mGET[39m /recipes.html
+1:11:48 PM [32mGET[39m /styles/style.css
+1:11:48 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:11:48 PM [32mGET[39m /scripts/recipesScript.mjs
+1:11:48 PM [32mGET[39m /recipes
+1:11:48 PM [32mGET[39m /IMG/FoodImage.jpg
+1:11:52 PM [32mGET[39m /index.html
+1:11:52 PM [32mGET[39m /styles/style.css
+1:11:52 PM [32mGET[39m /scripts/loginScript.mjs
+1:11:52 PM [32mGET[39m /scripts/postToUsers.mjs
+1:11:57 PM [33mPOST[39m /user
+1:12:00 PM [32mGET[39m /styles/style.css
+1:12:08 PM [33mPOST[39m /user
+1:12:08 PM [32mGET[39m /recipes.html
+1:12:08 PM [32mGET[39m /styles/style.css
+1:12:08 PM [32mGET[39m /scripts/recipesScript.mjs
+1:12:08 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:12:08 PM [32mGET[39m /recipes
+1:12:08 PM [32mGET[39m /IMG/FoodImage.jpg
+1:12:12 PM [32mGET[39m /index.html
+1:12:12 PM [32mGET[39m /styles/style.css
+1:12:12 PM [32mGET[39m /scripts/loginScript.mjs
+1:12:12 PM [32mGET[39m /scripts/postToUsers.mjs
+1:12:17 PM [33mPOST[39m /user
+1:12:17 PM [32mGET[39m /recipes.html
+1:12:17 PM [32mGET[39m /styles/style.css
+1:12:17 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:12:17 PM [32mGET[39m /scripts/recipesScript.mjs
+1:12:17 PM [32mGET[39m /recipes
+1:12:17 PM [32mGET[39m /IMG/FoodImage.jpg
+1:14:23 PM [32mGET[39m /index.html
+1:14:23 PM [32mGET[39m /styles/style.css
+1:14:23 PM [32mGET[39m /scripts/loginScript.mjs
+1:14:23 PM [32mGET[39m /scripts/postToUsers.mjs
+1:14:26 PM [33mPOST[39m /user
+1:14:44 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:14:54 PM [32mGET[39m /index.html
+1:14:54 PM [32mGET[39m /styles/style.css
+1:14:54 PM [32mGET[39m /scripts/loginScript.mjs
+1:14:54 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:15:06 PM [32mGET[39m /index.html
+1:15:06 PM [32mGET[39m /styles/style.css
+1:15:06 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:06 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:15:16 PM [32mGET[39m /index.html
+1:15:16 PM [32mGET[39m /styles/style.css
+1:15:16 PM [32mGET[39m /scripts/loginScript.mjs
+1:15:16 PM [32mGET[39m /scripts/postToUsers.mjs
+1:15:18 PM [33mPOST[39m /user
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:17:57 PM [32mGET[39m /index.html
+1:17:57 PM [32mGET[39m /styles/style.css
+1:17:57 PM [32mGET[39m /scripts/loginScript.mjs
+1:17:57 PM [32mGET[39m /scripts/postToUsers.mjs
+1:18:01 PM [33mPOST[39m /user
+1:18:50 PM [33mPOST[39m /user
+1:18:50 PM [32mGET[39m /recipes.html
+1:18:50 PM [32mGET[39m /styles/style.css
+1:18:50 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:18:50 PM [32mGET[39m /scripts/recipesScript.mjs
+1:18:50 PM [32mGET[39m /recipes
+1:18:50 PM [32mGET[39m /IMG/FoodImage.jpg
+1:19:27 PM [32mGET[39m /recipes
+1:19:27 PM [32mGET[39m /recipes.html
+1:19:27 PM [32mGET[39m /styles/style.css
+1:19:27 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:19:27 PM [32mGET[39m /scripts/recipesScript.mjs
+1:19:27 PM [32mGET[39m /recipes
+1:19:27 PM [32mGET[39m /IMG/FoodImage.jpg
+1:19:30 PM [32mGET[39m /recipes
+1:19:30 PM [32mGET[39m /recipes.html
+1:19:30 PM [32mGET[39m /styles/style.css
+1:19:30 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:19:30 PM [32mGET[39m /scripts/recipesScript.mjs
+1:19:30 PM [32mGET[39m /recipes
+1:19:30 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:27:15 PM [32mGET[39m /recipes.html
+1:27:15 PM [32mGET[39m /styles/style.css
+1:27:15 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:27:15 PM [32mGET[39m /scripts/recipesScript.mjs
+1:27:15 PM [32mGET[39m /recipes
+1:27:16 PM [32mGET[39m /IMG/FoodImage.jpg
+1:27:19 PM [33mPOST[39m /recipes
+1:27:19 PM [32mGET[39m /recipes.html
+1:27:19 PM [32mGET[39m /styles/style.css
+1:27:19 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:27:19 PM [32mGET[39m /scripts/recipesScript.mjs
+1:27:19 PM [32mGET[39m /recipes
+1:27:19 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviorment local
+####################
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+1:32:12 PM [32mGET[39m /recipes.html
+1:32:12 PM [32mGET[39m /styles/style.css
+1:32:12 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:32:12 PM [32mGET[39m /scripts/recipesScript.mjs
+1:32:12 PM [32mGET[39m /recipes
+1:32:12 PM [32mGET[39m /IMG/FoodImage.jpg
+1:32:15 PM [33mPOST[39m /recipes
+1:32:15 PM [32mGET[39m /recipes.html
+1:32:15 PM [32mGET[39m /styles/style.css
+1:32:15 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:32:15 PM [32mGET[39m /scripts/recipesScript.mjs
+1:32:15 PM [32mGET[39m /recipes
+1:32:16 PM [32mGET[39m /IMG/FoodImage.jpg
+1:32:21 PM [33mPUT[39m /recipes/487
+1:32:21 PM [32mGET[39m /recipes.html
+1:32:21 PM [32mGET[39m /styles/style.css
+1:32:21 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:32:21 PM [32mGET[39m /scripts/recipesScript.mjs
+1:32:22 PM [32mGET[39m /recipes
+1:32:22 PM [32mGET[39m /IMG/FoodImage.jpg
+1:32:25 PM [31mDELETE[39m /recipes/484
+1:32:25 PM [32mGET[39m /recipes.html
+1:32:25 PM [32mGET[39m /styles/style.css
+1:32:25 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:32:25 PM [32mGET[39m /scripts/recipesScript.mjs
+1:32:25 PM [32mGET[39m /recipes
+1:32:26 PM [32mGET[39m /IMG/FoodImage.jpg
+1:32:27 PM [32mGET[39m /recipes.html
+1:32:27 PM [32mGET[39m /styles/style.css
+1:32:27 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:32:27 PM [32mGET[39m /scripts/recipesScript.mjs
+1:32:27 PM [32mGET[39m /recipes
+1:32:28 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:35:34 PM [32mGET[39m /recipes.html
+1:35:34 PM [32mGET[39m /styles/style.css
+1:35:34 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:35:34 PM [32mGET[39m /scripts/recipesScript.mjs
+1:35:34 PM [32mGET[39m /recipes
+1:35:34 PM [32mGET[39m /IMG/FoodImage.jpg
+1:35:38 PM [32mGET[39m /recipes.html
+1:35:38 PM [32mGET[39m /styles/style.css
+1:35:38 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:35:39 PM [32mGET[39m /scripts/recipesScript.mjs
+1:35:39 PM [32mGET[39m /recipes
+1:35:39 PM [32mGET[39m /IMG/FoodImage.jpg
+1:35:51 PM [32mGET[39m /recipes.html
+1:35:51 PM [32mGET[39m /styles/style.css
+1:35:51 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:35:51 PM [32mGET[39m /scripts/recipesScript.mjs
+1:35:51 PM [32mGET[39m /recipes
+1:35:51 PM [32mGET[39m /IMG/FoodImage.jpg
+1:36:05 PM [32mGET[39m /recipes.html
+1:36:05 PM [32mGET[39m /styles/style.css
+1:36:05 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:36:05 PM [32mGET[39m /scripts/recipesScript.mjs
+1:36:05 PM [32mGET[39m /recipes
+1:36:05 PM [32mGET[39m /IMG/FoodImage.jpg
+1:36:18 PM [32mGET[39m /recipes.html
+1:36:18 PM [32mGET[39m /styles/style.css
+1:36:18 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:36:18 PM [32mGET[39m /scripts/recipesScript.mjs
+1:36:18 PM [32mGET[39m /recipes
+1:36:19 PM [32mGET[39m /IMG/FoodImage.jpg
+1:36:25 PM [32mGET[39m /recipes.html
+1:36:25 PM [32mGET[39m /styles/style.css
+1:36:25 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:36:25 PM [32mGET[39m /scripts/recipesScript.mjs
+1:36:25 PM [32mGET[39m /recipes
+1:36:25 PM [32mGET[39m /IMG/FoodImage.jpg
+1:39:03 PM [32mGET[39m /recipes.html
+1:39:03 PM [32mGET[39m /styles/style.css
+1:39:03 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:39:03 PM [32mGET[39m /scripts/recipesScript.mjs
+1:39:03 PM [32mGET[39m /recipes
+1:39:03 PM [32mGET[39m /IMG/FoodImage.jpg
+1:39:05 PM [32mGET[39m /recipes.html
+1:39:05 PM [32mGET[39m /styles/style.css
+1:39:05 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:39:05 PM [32mGET[39m /scripts/recipesScript.mjs
+1:39:05 PM [32mGET[39m /recipes
+1:39:05 PM [32mGET[39m /IMG/FoodImage.jpg
+1:39:09 PM [32mGET[39m /recipes.html
+1:39:09 PM [32mGET[39m /styles/style.css
+1:39:09 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:39:09 PM [32mGET[39m /scripts/recipesScript.mjs
+1:39:09 PM [32mGET[39m /recipes
+1:39:09 PM [32mGET[39m /IMG/FoodImage.jpg
+1:40:45 PM [32mGET[39m /recipes.html
+1:40:45 PM [32mGET[39m /styles/style.css
+1:40:45 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:40:45 PM [32mGET[39m /scripts/recipesScript.mjs
+1:40:45 PM [32mGET[39m /recipes
+1:40:45 PM [32mGET[39m /IMG/FoodImage.jpg
+1:40:46 PM [32mGET[39m /recipes.html
+1:40:46 PM [32mGET[39m /styles/style.css
+1:40:46 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:40:46 PM [32mGET[39m /scripts/recipesScript.mjs
+1:40:46 PM [32mGET[39m /recipes
+1:40:46 PM [32mGET[39m /IMG/FoodImage.jpg
+1:41:13 PM [32mGET[39m /recipes.html
+1:41:13 PM [32mGET[39m /styles/style.css
+1:41:13 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:41:13 PM [32mGET[39m /scripts/recipesScript.mjs
+1:41:13 PM [32mGET[39m /recipes
+1:41:13 PM [32mGET[39m /IMG/FoodImage.jpg
+1:41:16 PM [32mGET[39m /recipes.html
+1:41:16 PM [32mGET[39m /styles/style.css
+1:41:16 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:41:16 PM [32mGET[39m /scripts/recipesScript.mjs
+1:41:16 PM [32mGET[39m /recipes
+1:41:16 PM [32mGET[39m /IMG/FoodImage.jpg
+1:41:17 PM [32mGET[39m /index.html
+1:41:17 PM [32mGET[39m /styles/style.css
+1:41:17 PM [32mGET[39m /scripts/loginScript.mjs
+1:41:17 PM [32mGET[39m /scripts/postToUsers.mjs
+1:41:20 PM [33mPOST[39m /user
+1:41:20 PM [32mGET[39m /recipes.html
+1:41:20 PM [32mGET[39m /styles/style.css
+1:41:20 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:41:20 PM [32mGET[39m /scripts/recipesScript.mjs
+1:41:20 PM [32mGET[39m /recipes
+1:41:21 PM [32mGET[39m /IMG/FoodImage.jpg
+1:41:37 PM [32mGET[39m /recipes.html
+1:41:37 PM [32mGET[39m /styles/style.css
+1:41:37 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:41:37 PM [32mGET[39m /scripts/recipesScript.mjs
+1:41:38 PM [32mGET[39m /recipes
+1:41:38 PM [32mGET[39m /IMG/FoodImage.jpg
+1:41:41 PM [32mGET[39m /recipes.html
+1:41:41 PM [32mGET[39m /styles/style.css
+1:41:41 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:41:41 PM [32mGET[39m /scripts/recipesScript.mjs
+1:41:41 PM [32mGET[39m /recipes
+1:41:41 PM [32mGET[39m /IMG/FoodImage.jpg
+1:43:31 PM [32mGET[39m /recipes.html
+1:43:31 PM [32mGET[39m /styles/style.css
+1:43:31 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:43:31 PM [32mGET[39m /scripts/recipesScript.mjs
+1:43:31 PM [32mGET[39m /recipes
+1:43:31 PM [32mGET[39m /IMG/FoodImage.jpg
+1:43:31 PM [32mGET[39m /recipes.html
+1:43:31 PM [32mGET[39m /styles/style.css
+1:43:31 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:43:31 PM [32mGET[39m /scripts/recipesScript.mjs
+1:43:31 PM [32mGET[39m /recipes
+1:43:32 PM [32mGET[39m /IMG/FoodImage.jpg
+1:45:27 PM [32mGET[39m /recipes.html
+1:45:27 PM [32mGET[39m /styles/style.css
+1:45:27 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:45:27 PM [32mGET[39m /scripts/recipesScript.mjs
+1:45:27 PM [32mGET[39m /recipes
+1:45:27 PM [32mGET[39m /IMG/FoodImage.jpg
+1:45:30 PM [32mGET[39m /recipes
+1:45:30 PM [32mGET[39m /recipes.html
+1:45:30 PM [32mGET[39m /styles/style.css
+1:45:30 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:45:30 PM [32mGET[39m /scripts/recipesScript.mjs
+1:45:30 PM [32mGET[39m /recipes
+1:45:31 PM [32mGET[39m /IMG/FoodImage.jpg
+1:45:31 PM [32mGET[39m /recipes.html
+1:45:31 PM [32mGET[39m /styles/style.css
+1:45:31 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:45:31 PM [32mGET[39m /scripts/recipesScript.mjs
+1:45:31 PM [32mGET[39m /recipes
+1:45:31 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviorment local
+1:50:08 PM [32mGET[39m /recipes.html
+1:50:08 PM [32mGET[39m /styles/style.css
+1:50:08 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:50:08 PM [32mGET[39m /scripts/recipesScript.mjs
+1:50:08 PM [32mGET[39m /recipes
+1:50:08 PM [32mGET[39m /IMG/FoodImage.jpg
+1:50:09 PM [32mGET[39m /index.html
+1:50:09 PM [32mGET[39m /styles/style.css
+1:50:09 PM [32mGET[39m /scripts/loginScript.mjs
+1:50:09 PM [32mGET[39m /scripts/postToUsers.mjs
+1:50:13 PM [33mPOST[39m /user
+1:50:13 PM [32mGET[39m /recipes.html
+1:50:13 PM [32mGET[39m /styles/style.css
+1:50:13 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:50:13 PM [32mGET[39m /scripts/recipesScript.mjs
+1:50:13 PM [32mGET[39m /recipes
+1:50:13 PM [32mGET[39m /IMG/FoodImage.jpg
+1:50:20 PM [33mPUT[39m /recipes/480
+1:50:20 PM [32mGET[39m /recipes.html
+1:50:20 PM [32mGET[39m /styles/style.css
+1:50:20 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:50:20 PM [32mGET[39m /scripts/recipesScript.mjs
+1:50:20 PM [32mGET[39m /recipes
+1:50:20 PM [32mGET[39m /IMG/FoodImage.jpg
+1:50:22 PM [32mGET[39m /recipes.html
+1:50:22 PM [32mGET[39m /styles/style.css
+1:50:22 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:50:22 PM [32mGET[39m /scripts/recipesScript.mjs
+1:50:22 PM [32mGET[39m /recipes
+1:50:22 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server enviorment local
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+1:55:01 PM [32mGET[39m /recipes.html
+1:55:01 PM [32mGET[39m /styles/style.css
+1:55:01 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:55:01 PM [32mGET[39m /scripts/recipesScript.mjs
+1:55:01 PM [32mGET[39m /recipes
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:55:26 PM [32mGET[39m /recipes.html
+1:55:26 PM [32mGET[39m /styles/style.css
+1:55:26 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:55:26 PM [32mGET[39m /scripts/recipesScript.mjs
+1:55:26 PM [32mGET[39m /recipes
+1:55:27 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+1:55:37 PM [32mGET[39m /recipes.html
+1:55:37 PM [32mGET[39m /styles/style.css
+1:55:37 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:55:37 PM [32mGET[39m /scripts/recipesScript.mjs
+1:55:37 PM [32mGET[39m /recipes
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+1:56:29 PM [32mGET[39m /recipes.html
+1:56:29 PM [32mGET[39m /styles/style.css
+1:56:29 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:56:29 PM [32mGET[39m /scripts/recipesScript.mjs
+1:56:29 PM [32mGET[39m /recipes
+1:56:29 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+1:58:59 PM [32mGET[39m /recipes.html
+1:58:59 PM [32mGET[39m /styles/style.css
+1:58:59 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:58:59 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:00 PM [32mGET[39m /recipes
+1:59:00 PM [32mGET[39m /IMG/FoodImage.jpg
+1:59:00 PM [32mGET[39m /recipes.html
+1:59:00 PM [32mGET[39m /styles/style.css
+1:59:00 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:59:00 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:00 PM [32mGET[39m /recipes
+1:59:01 PM [32mGET[39m /IMG/FoodImage.jpg
+1:59:04 PM [32mGET[39m /recipes
+1:59:04 PM [32mGET[39m /recipes.html
+1:59:04 PM [32mGET[39m /styles/style.css
+1:59:04 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:59:04 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:04 PM [32mGET[39m /recipes
+1:59:04 PM [32mGET[39m /IMG/FoodImage.jpg
+1:59:07 PM [32mGET[39m /recipes
+1:59:07 PM [32mGET[39m /recipes.html
+1:59:07 PM [32mGET[39m /styles/style.css
+1:59:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:59:07 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:07 PM [32mGET[39m /recipes
+1:59:07 PM [32mGET[39m /IMG/FoodImage.jpg
+1:59:11 PM [33mPUT[39m /recipes/486
+1:59:11 PM [32mGET[39m /recipes.html
+1:59:11 PM [32mGET[39m /styles/style.css
+1:59:11 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:59:11 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:11 PM [32mGET[39m /recipes
+1:59:11 PM [32mGET[39m /IMG/FoodImage.jpg
+1:59:12 PM [32mGET[39m /index.html
+1:59:12 PM [32mGET[39m /styles/style.css
+1:59:12 PM [32mGET[39m /scripts/loginScript.mjs
+1:59:12 PM [32mGET[39m /scripts/postToUsers.mjs
+1:59:16 PM [33mPOST[39m /user
+1:59:16 PM [32mGET[39m /recipes.html
+1:59:16 PM [32mGET[39m /styles/style.css
+1:59:16 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+1:59:16 PM [32mGET[39m /scripts/recipesScript.mjs
+1:59:16 PM [32mGET[39m /recipes
+1:59:16 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:00:10 PM [32mGET[39m /recipes.html
+2:00:10 PM [32mGET[39m /styles/style.css
+2:00:10 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:00:10 PM [32mGET[39m /scripts/recipesScript.mjs
+2:00:10 PM [32mGET[39m /recipes
+2:00:10 PM [32mGET[39m /IMG/FoodImage.jpg
+2:00:13 PM [32mGET[39m /recipes
+2:00:13 PM [32mGET[39m /recipes.html
+2:00:13 PM [32mGET[39m /styles/style.css
+2:00:13 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:00:13 PM [32mGET[39m /scripts/recipesScript.mjs
+2:00:13 PM [32mGET[39m /recipes
+2:00:13 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:10:09 PM [32mGET[39m /recipes.html
+2:10:09 PM [32mGET[39m /styles/style.css
+2:10:09 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:10:09 PM [32mGET[39m /scripts/recipesScript.mjs
+2:10:09 PM [32mGET[39m /recipes
+2:10:09 PM [32mGET[39m /IMG/FoodImage.jpg
+2:10:14 PM [33mPUT[39m /recipes/488
+2:10:14 PM [32mGET[39m /recipes.html
+2:10:14 PM [32mGET[39m /styles/style.css
+2:10:14 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:10:14 PM [32mGET[39m /scripts/recipesScript.mjs
+2:10:14 PM [32mGET[39m /recipes
+2:10:14 PM [32mGET[39m /IMG/FoodImage.jpg
+2:10:18 PM [32mGET[39m /recipes.html
+2:10:18 PM [32mGET[39m /styles/style.css
+2:10:18 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:10:18 PM [32mGET[39m /scripts/recipesScript.mjs
+2:10:18 PM [32mGET[39m /recipes
+2:10:18 PM [32mGET[39m /IMG/FoodImage.jpg
+2:10:24 PM [33mPUT[39m /recipes/480
+2:10:24 PM [32mGET[39m /recipes.html
+2:10:24 PM [32mGET[39m /styles/style.css
+2:10:24 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:10:24 PM [32mGET[39m /scripts/recipesScript.mjs
+2:10:24 PM [32mGET[39m /recipes
+2:10:24 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+2:11:25 PM [32mGET[39m /recipes.html
+2:11:25 PM [32mGET[39m /styles/style.css
+2:11:25 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:11:25 PM [32mGET[39m /scripts/recipesScript.mjs
+2:11:25 PM [32mGET[39m /recipes
+2:11:25 PM [32mGET[39m /IMG/FoodImage.jpg
+2:11:28 PM [33mPOST[39m /recipes
+2:11:29 PM [32mGET[39m /recipes.html
+2:11:29 PM [32mGET[39m /styles/style.css
+2:11:29 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:11:29 PM [32mGET[39m /scripts/recipesScript.mjs
+2:11:29 PM [32mGET[39m /recipes
+2:11:29 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:11:58 PM [32mGET[39m /recipes.html
+2:11:58 PM [32mGET[39m /styles/style.css
+2:11:58 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:11:58 PM [32mGET[39m /scripts/recipesScript.mjs
+2:11:58 PM [32mGET[39m /recipes
+2:11:59 PM [32mGET[39m /IMG/FoodImage.jpg
+2:12:04 PM [33mPUT[39m /recipes/487
+2:12:04 PM [32mGET[39m /recipes.html
+2:12:04 PM [32mGET[39m /styles/style.css
+2:12:04 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:12:04 PM [32mGET[39m /scripts/recipesScript.mjs
+2:12:04 PM [32mGET[39m /recipes
+2:12:04 PM [32mGET[39m /IMG/FoodImage.jpg
+2:12:07 PM [32mGET[39m /recipes.html
+2:12:07 PM [32mGET[39m /styles/style.css
+2:12:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:12:07 PM [32mGET[39m /scripts/recipesScript.mjs
+2:12:08 PM [32mGET[39m /recipes
+2:12:08 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:14:17 PM [32mGET[39m /recipes.html
+2:14:17 PM [32mGET[39m /styles/style.css
+2:14:17 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:17 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:17 PM [32mGET[39m /recipes
+2:14:17 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:18 PM [32mGET[39m /recipes.html
+2:14:18 PM [32mGET[39m /styles/style.css
+2:14:18 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:18 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:18 PM [32mGET[39m /recipes
+2:14:18 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:22 PM [33mPOST[39m /recipes
+2:14:22 PM [32mGET[39m /recipes.html
+2:14:22 PM [32mGET[39m /styles/style.css
+2:14:22 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:22 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:22 PM [32mGET[39m /recipes
+2:14:22 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:28 PM [31mDELETE[39m /recipes/490
+2:14:28 PM [32mGET[39m /recipes.html
+2:14:28 PM [32mGET[39m /styles/style.css
+2:14:28 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:28 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:28 PM [32mGET[39m /recipes
+2:14:28 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:31 PM [31mDELETE[39m /recipes/488
+2:14:31 PM [32mGET[39m /recipes.html
+2:14:31 PM [32mGET[39m /styles/style.css
+2:14:31 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:31 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:31 PM [32mGET[39m /recipes
+2:14:31 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:33 PM [31mDELETE[39m /recipes/486
+2:14:33 PM [32mGET[39m /recipes.html
+2:14:33 PM [32mGET[39m /styles/style.css
+2:14:33 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:33 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:33 PM [32mGET[39m /recipes
+2:14:33 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:34 PM [31mDELETE[39m /recipes/480
+2:14:34 PM [32mGET[39m /recipes.html
+2:14:34 PM [32mGET[39m /styles/style.css
+2:14:34 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:34 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:34 PM [32mGET[39m /recipes
+2:14:34 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:35 PM [31mDELETE[39m /recipes/489
+2:14:35 PM [32mGET[39m /recipes.html
+2:14:35 PM [32mGET[39m /styles/style.css
+2:14:35 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:35 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:35 PM [32mGET[39m /recipes
+2:14:36 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:37 PM [31mDELETE[39m /recipes/487
+2:14:37 PM [32mGET[39m /recipes.html
+2:14:37 PM [32mGET[39m /styles/style.css
+2:14:37 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:37 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:37 PM [32mGET[39m /recipes
+2:14:37 PM [32mGET[39m /IMG/FoodImage.jpg
+2:14:38 PM [32mGET[39m /recipes.html
+2:14:38 PM [32mGET[39m /styles/style.css
+2:14:38 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:14:38 PM [32mGET[39m /scripts/recipesScript.mjs
+2:14:38 PM [32mGET[39m /recipes
+2:14:38 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+2:15:07 PM [33mPOST[39m /recipes
+2:15:07 PM [32mGET[39m /recipes.html
+2:15:07 PM [32mGET[39m /styles/style.css
+2:15:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:15:07 PM [32mGET[39m /scripts/recipesScript.mjs
+2:15:07 PM [32mGET[39m /recipes
+2:15:07 PM [32mGET[39m /IMG/FoodImage.jpg
+2:15:23 PM [33mPUT[39m /recipes/491
+2:15:23 PM [32mGET[39m /recipes.html
+2:15:23 PM [32mGET[39m /styles/style.css
+2:15:23 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:15:23 PM [32mGET[39m /scripts/recipesScript.mjs
+2:15:23 PM [32mGET[39m /recipes
+2:15:23 PM [32mGET[39m /IMG/FoodImage.jpg
+2:16:04 PM [33mPOST[39m /recipes
+2:16:04 PM [32mGET[39m /recipes.html
+2:16:04 PM [32mGET[39m /styles/style.css
+2:16:04 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:16:04 PM [32mGET[39m /scripts/recipesScript.mjs
+2:16:04 PM [32mGET[39m /recipes
+2:16:04 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:17:22 PM [32mGET[39m /recipes.html
+2:17:22 PM [32mGET[39m /styles/style.css
+2:17:22 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:17:22 PM [32mGET[39m /scripts/recipesScript.mjs
+2:17:22 PM [32mGET[39m /recipes
+2:17:22 PM [32mGET[39m /IMG/FoodImage.jpg
+2:17:24 PM [32mGET[39m /index.html
+2:17:24 PM [32mGET[39m /styles/style.css
+2:17:24 PM [32mGET[39m /scripts/loginScript.mjs
+2:17:24 PM [32mGET[39m /scripts/postToUsers.mjs
+2:17:31 PM [33mPOST[39m /user
+2:17:31 PM [32mGET[39m /recipes.html
+2:17:31 PM [32mGET[39m /styles/style.css
+2:17:31 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:17:31 PM [32mGET[39m /scripts/recipesScript.mjs
+2:17:31 PM [32mGET[39m /recipes
+2:17:31 PM [32mGET[39m /IMG/FoodImage.jpg
+2:17:42 PM [33mPUT[39m /recipes/470
+2:17:42 PM [32mGET[39m /recipes.html
+2:17:42 PM [32mGET[39m /styles/style.css
+2:17:42 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:17:42 PM [32mGET[39m /scripts/recipesScript.mjs
+2:17:42 PM [32mGET[39m /recipes
+2:17:42 PM [32mGET[39m /IMG/FoodImage.jpg
+2:17:44 PM [32mGET[39m /recipes.html
+2:17:44 PM [32mGET[39m /styles/style.css
+2:17:44 PM [32mGET[39m /scripts/recipesScript.mjs
+2:17:44 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:17:44 PM [32mGET[39m /recipes
+2:17:44 PM [32mGET[39m /IMG/FoodImage.jpg
+2:17:54 PM [32mGET[39m /index.html
+2:17:54 PM [32mGET[39m /styles/style.css
+2:17:54 PM [32mGET[39m /scripts/loginScript.mjs
+2:17:54 PM [32mGET[39m /scripts/postToUsers.mjs
+2:17:59 PM [33mPOST[39m /user
+2:17:59 PM [32mGET[39m /index.html
+2:17:59 PM [32mGET[39m /styles/style.css
+2:17:59 PM [32mGET[39m /scripts/loginScript.mjs
+2:17:59 PM [32mGET[39m /scripts/postToUsers.mjs
+2:18:03 PM [33mPOST[39m /user
+2:18:03 PM [32mGET[39m /recipes.html
+2:18:03 PM [32mGET[39m /styles/style.css
+2:18:03 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:18:03 PM [32mGET[39m /scripts/recipesScript.mjs
+2:18:03 PM [32mGET[39m /recipes
+2:18:03 PM [32mGET[39m /IMG/FoodImage.jpg
+2:18:10 PM [33mPOST[39m /recipes
+2:18:10 PM [32mGET[39m /recipes.html
+2:18:10 PM [32mGET[39m /styles/style.css
+2:18:10 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:18:10 PM [32mGET[39m /scripts/recipesScript.mjs
+2:18:10 PM [32mGET[39m /recipes
+2:18:10 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:19:46 PM [32mGET[39m /recipes.html
+2:19:47 PM [32mGET[39m /styles/style.css
+2:19:47 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:19:47 PM [32mGET[39m /scripts/recipesScript.mjs
+2:19:47 PM [32mGET[39m /recipes
+2:19:47 PM [32mGET[39m /IMG/FoodImage.jpg
+2:19:48 PM [32mGET[39m /index.html
+2:19:48 PM [32mGET[39m /styles/style.css
+2:19:48 PM [32mGET[39m /scripts/loginScript.mjs
+2:19:48 PM [32mGET[39m /scripts/postToUsers.mjs
+2:19:51 PM [33mPOST[39m /user
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:20:03 PM [32mGET[39m /index.html
+2:20:03 PM [32mGET[39m /styles/style.css
+2:20:03 PM [32mGET[39m /scripts/loginScript.mjs
+2:20:03 PM [32mGET[39m /scripts/postToUsers.mjs
+2:20:06 PM [33mPOST[39m /user
+2:20:07 PM [32mGET[39m /recipes.html
+2:20:07 PM [32mGET[39m /styles/style.css
+2:20:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:20:07 PM [32mGET[39m /scripts/recipesScript.mjs
+2:20:07 PM [32mGET[39m /recipes
+2:20:07 PM [32mGET[39m /IMG/FoodImage.jpg
+2:20:15 PM [32mGET[39m /index.html
+2:20:15 PM [32mGET[39m /styles/style.css
+2:20:15 PM [32mGET[39m /scripts/loginScript.mjs
+2:20:15 PM [32mGET[39m /scripts/postToUsers.mjs
+2:20:23 PM [33mPOST[39m /user
+2:20:23 PM [32mGET[39m /index.html
+2:20:23 PM [32mGET[39m /styles/style.css
+2:20:23 PM [32mGET[39m /scripts/loginScript.mjs
+2:20:23 PM [32mGET[39m /scripts/postToUsers.mjs
+2:20:27 PM [33mPOST[39m /user
+2:20:27 PM [32mGET[39m /recipes.html
+2:20:27 PM [32mGET[39m /styles/style.css
+2:20:27 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:20:27 PM [32mGET[39m /scripts/recipesScript.mjs
+2:20:27 PM [32mGET[39m /recipes
+2:20:28 PM [32mGET[39m /IMG/FoodImage.jpg
+2:21:23 PM [32mGET[39m /recipes.html
+2:21:23 PM [32mGET[39m /styles/style.css
+2:21:23 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:21:23 PM [32mGET[39m /scripts/recipesScript.mjs
+2:21:24 PM [32mGET[39m /recipes
+2:21:24 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:21:47 PM [32mGET[39m /recipes.html
+2:21:47 PM [32mGET[39m /styles/style.css
+2:21:47 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:21:47 PM [32mGET[39m /scripts/recipesScript.mjs
+2:21:48 PM [32mGET[39m /recipes
+2:21:48 PM [32mGET[39m /IMG/FoodImage.jpg
+2:21:48 PM [32mGET[39m /index.html
+2:21:48 PM [32mGET[39m /styles/style.css
+2:21:48 PM [32mGET[39m /scripts/loginScript.mjs
+2:21:48 PM [32mGET[39m /scripts/postToUsers.mjs
+2:21:51 PM [33mPOST[39m /user
+2:21:51 PM [32mGET[39m /recipes.html
+2:21:52 PM [32mGET[39m /styles/style.css
+2:21:52 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:21:52 PM [32mGET[39m /scripts/recipesScript.mjs
+2:21:52 PM [32mGET[39m /recipes
+2:21:52 PM [32mGET[39m /IMG/FoodImage.jpg
+2:21:56 PM [32mGET[39m /recipes.html
+2:21:56 PM [32mGET[39m /styles/style.css
+2:21:56 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:21:56 PM [32mGET[39m /scripts/recipesScript.mjs
+2:21:56 PM [32mGET[39m /recipes
+2:21:56 PM [32mGET[39m /IMG/FoodImage.jpg
+2:21:58 PM [32mGET[39m /index.html
+2:21:58 PM [32mGET[39m /styles/style.css
+2:21:58 PM [32mGET[39m /scripts/loginScript.mjs
+2:21:58 PM [32mGET[39m /scripts/postToUsers.mjs
+2:22:03 PM [33mPOST[39m /user
+2:22:03 PM [32mGET[39m /index.html
+2:22:03 PM [32mGET[39m /styles/style.css
+2:22:03 PM [32mGET[39m /scripts/loginScript.mjs
+2:22:03 PM [32mGET[39m /scripts/postToUsers.mjs
+2:22:07 PM [33mPOST[39m /user
+2:22:07 PM [32mGET[39m /recipes.html
+2:22:07 PM [32mGET[39m /styles/style.css
+2:22:07 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:22:07 PM [32mGET[39m /scripts/recipesScript.mjs
+2:22:07 PM [32mGET[39m /recipes
+2:22:07 PM [32mGET[39m /IMG/FoodImage.jpg
+2:22:13 PM [33mPOST[39m /recipes
+2:22:13 PM [32mGET[39m /recipes.html
+2:22:13 PM [32mGET[39m /styles/style.css
+2:22:13 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:22:13 PM [32mGET[39m /scripts/recipesScript.mjs
+2:22:13 PM [32mGET[39m /recipes
+2:22:14 PM [32mGET[39m /IMG/FoodImage.jpg
+2:22:15 PM [32mGET[39m /recipes.html
+2:22:15 PM [32mGET[39m /styles/style.css
+2:22:15 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:22:15 PM [32mGET[39m /scripts/recipesScript.mjs
+2:22:15 PM [32mGET[39m /recipes
+2:22:15 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:22:30 PM [32mGET[39m /index.html
+2:22:30 PM [32mGET[39m /styles/style.css
+2:22:30 PM [32mGET[39m /scripts/loginScript.mjs
+2:22:30 PM [32mGET[39m /scripts/postToUsers.mjs
+2:22:30 PM [32mGET[39m /index.html
+2:22:30 PM [32mGET[39m /styles/style.css
+2:22:30 PM [32mGET[39m /scripts/loginScript.mjs
+2:22:30 PM [32mGET[39m /scripts/postToUsers.mjs
+2:22:50 PM [32mGET[39m /index.html
+2:22:50 PM [32mGET[39m /styles/style.css
+2:22:50 PM [32mGET[39m /scripts/loginScript.mjs
+2:22:50 PM [32mGET[39m /scripts/postToUsers.mjs
+2:22:59 PM [33mPOST[39m /user
+2:22:59 PM [32mGET[39m /recipes.html
+2:22:59 PM [32mGET[39m /styles/style.css
+2:22:59 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:22:59 PM [32mGET[39m /scripts/recipesScript.mjs
+2:22:59 PM [32mGET[39m /recipes
+2:22:59 PM [32mGET[39m /IMG/FoodImage.jpg
+2:23:06 PM [33mPOST[39m /recipes
+2:23:06 PM [32mGET[39m /recipes.html
+2:23:06 PM [32mGET[39m /styles/style.css
+2:23:06 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:23:06 PM [32mGET[39m /scripts/recipesScript.mjs
+2:23:06 PM [32mGET[39m /recipes
+2:23:07 PM [32mGET[39m /IMG/FoodImage.jpg
+2:23:09 PM [32mGET[39m /recipes.html
+2:23:09 PM [32mGET[39m /styles/style.css
+2:23:09 PM [32mGET[39m /scripts/recipesScript.mjs
+2:23:09 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:23:09 PM [32mGET[39m /recipes
+2:23:09 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:37:46 PM [32mGET[39m /recipes.html
+2:37:46 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:37:46 PM [32mGET[39m /styles/style.css
+2:37:46 PM [32mGET[39m /scripts/recipesScript.mjs
+2:37:46 PM [32mGET[39m /recipes
+2:37:47 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+2:38:05 PM [32mGET[39m /recipes.html
+2:38:05 PM [32mGET[39m /styles/style.css
+2:38:05 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:38:05 PM [32mGET[39m /scripts/recipesScript.mjs
+2:38:05 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:38:12 PM [32mGET[39m /recipes.html
+2:38:12 PM [32mGET[39m /styles/style.css
+2:38:12 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:38:12 PM [32mGET[39m /scripts/recipesScript.mjs
+2:38:12 PM [32mGET[39m /recipes
+2:38:12 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:38:46 PM [32mGET[39m /recipes.html
+2:38:46 PM [32mGET[39m /styles/style.css
+2:38:46 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:38:46 PM [32mGET[39m /scripts/recipesScript.mjs
+2:38:46 PM [32mGET[39m /scripts/postToUsers.mjs
+2:38:47 PM [32mGET[39m /recipes.html
+2:38:47 PM [32mGET[39m /styles/style.css
+2:38:47 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:38:47 PM [32mGET[39m /scripts/recipesScript.mjs
+2:38:47 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server environmentundefined
+####################
+####################
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+2:39:50 PM [32mGET[39m /recipes.html
+2:39:50 PM [32mGET[39m /styles/style.css
+2:39:50 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:39:50 PM [32mGET[39m /scripts/recipesScript.mjs
+2:39:50 PM [32mGET[39m /scripts/postToUsers.mjs
+2:39:52 PM [32mGET[39m /styles/style.css
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:40:33 PM [32mGET[39m /recipes.html
+2:40:33 PM [32mGET[39m /styles/style.css
+2:40:33 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:40:33 PM [32mGET[39m /scripts/recipesScript.mjs
+2:40:33 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server environmentundefined
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:40:42 PM [32mGET[39m /recipes.html
+2:40:42 PM [32mGET[39m /styles/style.css
+2:40:42 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:40:42 PM [32mGET[39m /scripts/recipesScript.mjs
+2:40:42 PM [32mGET[39m /recipes
+2:40:42 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+Server environmentundefined
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server environmentundefined
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
+####################
+Server enviromentlocal
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:41:10 PM [32mGET[39m /recipes.html
+2:41:11 PM [32mGET[39m /styles/style.css
+2:41:11 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:41:11 PM [32mGET[39m /scripts/recipesScript.mjs
+2:41:11 PM [32mGET[39m /recipes
+2:41:11 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:41:33 PM [32mGET[39m /recipes.html
+2:41:33 PM [32mGET[39m /styles/style.css
+2:41:33 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:41:33 PM [32mGET[39m /scripts/recipesScript.mjs
+2:41:33 PM [32mGET[39m /scripts/postToUsers.mjs
+####################
+Server enviromentlocal
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+2:42:46 PM [32mGET[39m /recipes.html
+2:42:46 PM [32mGET[39m /styles/style.css
+2:42:46 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:42:46 PM [32mGET[39m /scripts/recipesScript.mjs
+2:42:46 PM [32mGET[39m /recipes
+2:42:46 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:45:38 PM [32mGET[39m /recipes.html
+2:45:38 PM [32mGET[39m /styles/style.css
+2:45:38 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:45:38 PM [32mGET[39m /scripts/recipesScript.mjs
+2:45:38 PM [32mGET[39m /recipes
+2:45:38 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:46:28 PM [32mGET[39m /recipes.html
+2:46:28 PM [32mGET[39m /styles/style.css
+2:46:28 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:46:28 PM [32mGET[39m /scripts/recipesScript.mjs
+2:46:29 PM [32mGET[39m /recipes
+2:46:29 PM [32mGET[39m /IMG/FoodImage.jpg
+2:46:32 PM [32mGET[39m /index.html
+2:46:32 PM [32mGET[39m /styles/style.css
+2:46:32 PM [32mGET[39m /scripts/loginScript.mjs
+2:46:32 PM [32mGET[39m /scripts/postToUsers.mjs
+2:46:35 PM [33mPOST[39m /user
+2:46:35 PM [32mGET[39m /recipes.html
+2:46:35 PM [32mGET[39m /styles/style.css
+2:46:35 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:46:35 PM [32mGET[39m /scripts/recipesScript.mjs
+2:46:35 PM [32mGET[39m /recipes
+2:46:35 PM [32mGET[39m /IMG/FoodImage.jpg
+2:46:45 PM [32mGET[39m /recipes.html
+2:46:45 PM [32mGET[39m /styles/style.css
+2:46:45 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:46:45 PM [32mGET[39m /scripts/recipesScript.mjs
+2:46:45 PM [32mGET[39m /recipes
+2:46:45 PM [32mGET[39m /IMG/FoodImage.jpg
+2:46:51 PM [32mGET[39m /styles/style.css
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviromentlocal
+####################
+2:48:54 PM [32mGET[39m /recipes.html
+2:48:54 PM [32mGET[39m /styles/style.css
+2:48:54 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:48:54 PM [32mGET[39m /scripts/recipesScript.mjs
+2:48:54 PM [32mGET[39m /recipes
+2:48:54 PM [32mGET[39m /IMG/FoodImage.jpg
+2:48:57 PM [33mPOST[39m /recipes
+2:48:57 PM [32mGET[39m /recipes.html
+2:48:57 PM [32mGET[39m /styles/style.css
+2:48:57 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:48:57 PM [32mGET[39m /scripts/recipesScript.mjs
+2:48:57 PM [32mGET[39m /recipes
+2:48:57 PM [32mGET[39m /IMG/FoodImage.jpg
+2:49:03 PM [33mPUT[39m /recipes/491
+2:49:03 PM [32mGET[39m /recipes.html
+2:49:03 PM [32mGET[39m /styles/style.css
+2:49:03 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:49:03 PM [32mGET[39m /scripts/recipesScript.mjs
+2:49:03 PM [32mGET[39m /recipes
+2:49:03 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviromentlocal
+####################
+####################
+Server enviromentlocal
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+2:52:53 PM [32mGET[39m /recipes.html
+2:52:53 PM [32mGET[39m /styles/style.css
+2:52:53 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:52:53 PM [32mGET[39m /scripts/recipesScript.mjs
+2:52:53 PM [32mGET[39m /recipes
+2:52:53 PM [32mGET[39m /IMG/FoodImage.jpg
+2:52:53 PM [32mGET[39m /index.html
+2:52:53 PM [32mGET[39m /styles/style.css
+2:52:53 PM [32mGET[39m /scripts/loginScript.mjs
+2:52:53 PM [32mGET[39m /scripts/postToUsers.mjs
+2:52:54 PM [32mGET[39m /index.html
+2:52:54 PM [32mGET[39m /styles/style.css
+2:52:54 PM [32mGET[39m /scripts/loginScript.mjs
+2:52:54 PM [32mGET[39m /scripts/postToUsers.mjs
+2:53:05 PM [33mPOST[39m /user
+2:53:05 PM [32mGET[39m /index.html
+2:53:05 PM [32mGET[39m /styles/style.css
+2:53:05 PM [32mGET[39m /scripts/loginScript.mjs
+2:53:05 PM [32mGET[39m /scripts/postToUsers.mjs
+2:53:08 PM [33mPOST[39m /user
+2:53:08 PM [32mGET[39m /recipes.html
+2:53:08 PM [32mGET[39m /styles/style.css
+2:53:08 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:53:08 PM [32mGET[39m /scripts/recipesScript.mjs
+2:53:08 PM [32mGET[39m /recipes
+2:53:08 PM [32mGET[39m /IMG/FoodImage.jpg
+2:53:15 PM [33mPOST[39m /recipes
+2:53:16 PM [32mGET[39m /recipes.html
+2:53:16 PM [32mGET[39m /styles/style.css
+2:53:16 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:53:16 PM [32mGET[39m /scripts/recipesScript.mjs
+2:53:16 PM [32mGET[39m /recipes
+2:53:16 PM [32mGET[39m /IMG/FoodImage.jpg
+2:53:28 PM [33mPUT[39m /recipes/497
+2:53:28 PM [32mGET[39m /recipes.html
+2:53:28 PM [32mGET[39m /styles/style.css
+2:53:28 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:53:28 PM [32mGET[39m /scripts/recipesScript.mjs
+2:53:28 PM [32mGET[39m /recipes
+2:53:28 PM [32mGET[39m /IMG/FoodImage.jpg
+2:53:37 PM [31mDELETE[39m /recipes/497
+2:53:37 PM [32mGET[39m /recipes.html
+2:53:37 PM [32mGET[39m /styles/style.css
+2:53:37 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+2:53:37 PM [32mGET[39m /scripts/recipesScript.mjs
+2:53:37 PM [32mGET[39m /recipes
+2:53:37 PM [32mGET[39m /IMG/FoodImage.jpg
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
