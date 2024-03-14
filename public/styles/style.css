@@ -77,7 +77,7 @@ label {
 input,
 textarea {
   max-width: 100%;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
@@ -89,7 +89,7 @@ textarea {
 input[type="text"],
 textarea {
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 #leggTilKnapp {
@@ -240,4 +240,27 @@ button:hover {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+/* Define colors for each skill level */
+.skill-level-button.easy {
+  background-color: #5cb85c; /* Green color for easy */
+}
+
+.skill-level-button.medium {
+  background-color: #f0ad4e; /* Orange color for medium */
+}
+
+.skill-level-button.advanced {
+  background-color: #d9534f; /* Red color for advanced */
+}
+
+/* Style to indicate when button is clicked */
+.skill-level-button.selected {
+  border: 2px solid #333; /* Add border when button is clicked */
+}
+
+/* Hover effect */
+.skill-level-button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
 }

@@ -9,31 +9,25 @@ RECIPE_API.use(express.json());
 
 // Endpoint to handle creation of a new recipe
 RECIPE_API.post("/", async (req, res) => {
-  // Extract data from request body
-  const { title, ingredients, instructions, userId } = req.body;
-
-  // Check if all required fields are provided
-  if (title && ingredients && instructions && userId) {
-    // Create a new Recipe instance with provided data
+  const { title, ingredients, instructions, time, userId, skillLevel } =
+    req.body; // Extract skillLevel from request body
+  if (title && ingredients && instructions && time && userId && skillLevel) {
+    // Ensure skillLevel is provided
     const recipe = new Recipe();
     recipe.title = title;
     recipe.ingredients = ingredients;
     recipe.instructions = instructions;
+    recipe.time = time;
     recipe.creatorID = userId;
-
+    recipe.skillLevel = skillLevel; // Set skillLevel property
     try {
-      // Call DBManager to create the recipe in the database
       await DBManager.createRecipe(recipe);
-
-      // Send success response with the created recipe data
       res.status(HTTPCodes.SuccesfullRespons.Ok).json(recipe);
     } catch (error) {
-      // Handle and log errors if any occurred during recipe creation
       console.error("Error creating recipe:", error);
       res.status(HTTPCodes.ServerErrorRespons.InternalError).end();
     }
   } else {
-    // Send bad request response if any required field is missing
     res.status(HTTPCodes.ClientSideErrorRespons.BadRequest).end();
   }
 });

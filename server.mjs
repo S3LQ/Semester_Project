@@ -1,6 +1,6 @@
 import "dotenv/config";
 import express from "express";
-import SuperLogger from "./modules/SuperLogger.mjs";
+import SuperLogger from "./modules/superLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
 import USER_API from "./routes/usersRoute.mjs";
 import RECIPE_API from "./routes/recipeRoute.mjs";

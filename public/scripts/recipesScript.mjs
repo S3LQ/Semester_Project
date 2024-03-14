@@ -1,4 +1,3 @@
-// Function to create a new recipe
 export async function createRecipe() {
   // Retrieve user data from local storage
   const userData = JSON.parse(localStorage.getItem("userData"));
@@ -13,16 +12,28 @@ export async function createRecipe() {
   const title = document.getElementById("tittel").value;
   const ingredients = document.getElementById("ingredienser").value;
   const instructions = document.getElementById("instruksjoner").value;
+  const time = document.getElementById("tid").value;
   const userId = userData[0].id;
 
+  // Retrieve selected skill level
+  let skillLevel = null;
+  const selectedSkillButton = document.querySelector(
+    ".skill-level-button.selected"
+  );
+  if (selectedSkillButton) {
+    skillLevel = selectedSkillButton.value;
+  }
+
   // Check if all required fields are filled
-  if (title && ingredients && instructions) {
+  if (title && ingredients && instructions && skillLevel) {
     // Prepare recipe data object
     const recipeData = {
       title: title,
       ingredients: ingredients,
       instructions: instructions,
+      time: time,
       userId: userId,
+      skillLevel: skillLevel,
     };
 
     try {
@@ -81,7 +92,7 @@ function enlargeRecipeCard(recipe) {
 
   // Create and append image element
   const image = document.createElement("img");
-  image.src = "./IMG/FoodImage.jpg";
+  image.src = "./IMG/FoodImage.jpeg";
   image.alt = "Stock Image";
   enlargedCard.appendChild(image);
 
@@ -92,9 +103,16 @@ function enlargeRecipeCard(recipe) {
   ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
   const instruksjoner = document.createElement("p");
   instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
+  const tid = document.createElement("p");
+  tid.innerText = "Tid: " + recipe.time + " minutter";
+  const vanskelighetsgrad = document.createElement("p");
+  vanskelighetsgrad.innerText = "Vanskelighetsgrad: " + recipe.skill_level;
+
   enlargedCard.appendChild(tittel);
   enlargedCard.appendChild(ingredienser);
   enlargedCard.appendChild(instruksjoner);
+  enlargedCard.appendChild(tid);
+  enlargedCard.appendChild(vanskelighetsgrad);
 
   // Check if the user is the creator of the recipe to show edit and delete buttons
   const userData = JSON.parse(localStorage.getItem("userData"));
@@ -125,6 +143,8 @@ function enlargeRecipeCard(recipe) {
         '<textarea id="editedInstructions">' +
         recipe.instructions +
         "</textarea>";
+      tid.innerHTML =
+        '<textarea id="editedTime">' + recipe.time + "</textarea>";
 
       // Create and append save button
       const saveButton = document.createElement("button");
@@ -140,6 +160,7 @@ function enlargeRecipeCard(recipe) {
         tittel.innerText = " " + recipe.title;
         ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
         instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
+        tid.innerText = "Tid: " + recipe.time;
 
         // Remove save and cancel buttons
         saveButton.remove();
@@ -150,8 +171,6 @@ function enlargeRecipeCard(recipe) {
         deleteButton.style.display = "block";
         backButton.style.display = "block";
       };
-
-      backButton.style.display = "none";
 
       // Append save and cancel buttons
       enlargedCard.appendChild(saveButton);
@@ -167,20 +186,15 @@ function enlargeRecipeCard(recipe) {
   const backButton = document.createElement("button");
   backButton.innerText = "Tilbake til alle oppskrifter";
   backButton.onclick = () => {
-    // Display all recipes and remove the enlarged card
-    displayAllRecipes();
-    enlargedCard.remove();
     window.location.reload();
   };
 
   enlargedCard.appendChild(backButton);
-
-  // Append the enlarged card to the container
   kortContainer.appendChild(enlargedCard);
 }
 
-// Function to render a recipe card
 export function renderRecipeCard(recipe) {
+  console.log(recipe);
   const kortContainer = document.getElementById("kortContainer");
 
   // Create a new card element
@@ -197,67 +211,53 @@ export function renderRecipeCard(recipe) {
     kort.appendChild(trademark);
   }
 
-  // Create elements for title, ingredients, and instructions
+  // Create an element for the skill level
+  const skillLevelText = document.createElement("p");
+  skillLevelText.innerText = "Vanskelighetsgrad: " + recipe.skill_level;
+
+  // Assign color based on skill level
+  let color = "";
+  switch (recipe.skill_level.toLowerCase()) {
+    case "lett":
+      color = "green";
+      break;
+    case "medium":
+      color = "orange";
+      break;
+    case "avansert":
+      color = "red";
+      break;
+    default:
+      color = "black"; // Default color
+  }
+  skillLevelText.style.color = color;
+
+  // Create elements for title, ingredients, and time
   const tittel = document.createElement("h3");
   tittel.innerText = " " + recipe.title;
   tittel.classList.add("tittel");
   tittel.id = `tittel-${recipe.id}`;
-  const ingredienser = document.createElement("p");
-  ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
-  ingredienser.classList.add("ingredienser");
-  ingredienser.id = `ingredienser-${recipe.id}`;
-  const instruksjoner = document.createElement("p");
-  instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
-  instruksjoner.classList.add("instruksjoner");
-  instruksjoner.id = `instruksjoner-${recipe.id}`;
+  const tid = document.createElement("p");
+  tid.innerText = "Tid: " + recipe.time + " minutter";
+  tid.classList.add("tid");
+  tid.id = `tid-${recipe.id}`;
 
   // Create and append image element
   const image = document.createElement("img");
-  image.src = "./IMG/FoodImage.jpg";
+  image.src = "./IMG/FoodImage.jpeg";
   image.alt = "Stock Image";
   kort.appendChild(image);
 
-  // Append title, ingredients, and instructions to the card
+  // Append skill level, title, ingredients, and time to the card
   kort.appendChild(tittel);
-  kort.appendChild(ingredienser);
-  kort.appendChild(instruksjoner);
+  kort.appendChild(tid);
+  kort.appendChild(skillLevelText);
 
   // Add event listener to enlarge the card when clicked
   kort.addEventListener("click", () => enlargeRecipeCard(recipe));
 
   // Append the card to the container
   kortContainer.appendChild(kort);
-}
-
-// Function to display all recipes
-export async function displayAllRecipes() {
-  try {
-    // Fetch all recipes from the server
-    const response = await fetch("/recipes");
-    // Check if the response is ok
-    if (!response.ok) {
-      throw new Error("Failed to fetch recipes.");
-    }
-    // Extract recipes from the response
-    const recipes = await response.json();
-    // Get the container for recipe cards
-    const kortContainer = document.getElementById("kortContainer");
-    // Clear the container
-    kortContainer.innerHTML = "";
-
-    // Keep track of rendered recipe ids to avoid duplicates
-    const renderedRecipeIds = new Set();
-
-    // Render each recipe card
-    recipes.forEach((recipe) => {
-      if (!renderedRecipeIds.has(recipe.id)) {
-        renderRecipeCard(recipe);
-        renderedRecipeIds.add(recipe.id);
-      }
-    });
-  } catch (error) {
-    console.error("Error fetching all recipes:", error);
-  }
 }
 
 // Function to delete a recipe
@@ -295,21 +295,23 @@ export async function editRecipe(recipe) {
     return;
   }
 
-  // Prompt the user to enter new title, ingredients, and instructions
+  // Prompt the user to enter new values for each category
   const title = prompt("Enter new title:", recipe.title);
   const ingredients = prompt("Enter new ingredients:", recipe.ingredients);
   const instructions = prompt("Enter new instructions:", recipe.instructions);
+  const time = prompt("Enter new time (in minutes):", recipe.time);
 
   // Get user ID
   const userId = userData.id;
 
   // Check if all required fields are filled
-  if (title && ingredients && instructions) {
+  if (title && ingredients && instructions && time) {
     // Prepare updated recipe data object
     const updatedRecipeData = {
       title: title,
       ingredients: ingredients,
       instructions: instructions,
+      time: time,
       userId: userId,
     };
 
@@ -343,17 +345,31 @@ export async function editRecipe(recipe) {
 
 // Function to save edited recipe
 async function saveEditedRecipe(recipeId) {
-  // Retrieve edited title, ingredients, and instructions from input fields
+  // Retrieve edited title, ingredients, instructions, and time from input fields
   const editedTitle = document.getElementById("editedTitle").value;
   const editedIngredients = document.getElementById("editedIngredients").value;
   const editedInstructions =
     document.getElementById("editedInstructions").value;
+  const editedTime = document.getElementById("editedTime").value;
+
+  // Retrieve selected skill level
+  let editedSkillLevel = null;
+  const selectedSkillButton = document.querySelector(
+    ".skill-level-button.selected"
+  );
+  if (selectedSkillButton) {
+    editedSkillLevel = selectedSkillButton.value;
+  }
+
+  console.log("Edited Skill Level:", editedSkillLevel); // Debugging
 
   // Prepare updated recipe data object
   const updatedRecipeData = {
     title: editedTitle,
     ingredients: editedIngredients,
     instructions: editedInstructions,
+    time: editedTime,
+    skill_level: editedSkillLevel, // Use 'skill_level' instead of 'skillLevel'
   };
 
   try {

@@ -96,11 +96,13 @@ class DBManager {
     try {
       await client.connect();
       await client.query(
-        'Update "public"."Recipes" set "title" = $1, "ingredients" = $2, "instructions" = $3 where id = $4;',
+        'UPDATE "public"."Recipes" SET "title" = $1, "ingredients" = $2, "instructions" = $3, "time" = $4, "skill_level" = $5 WHERE id = $6;',
         [
           updatedRecipeData.title,
           updatedRecipeData.ingredients,
           updatedRecipeData.instructions,
+          updatedRecipeData.time,
+          updatedRecipeData.skill_level,
           recipeId,
         ]
       );
@@ -137,12 +139,14 @@ class DBManager {
     try {
       await client.connect();
       const output = await client.query(
-        'INSERT INTO "public"."Recipes"("title", "ingredients", "instructions", "creatorID") VALUES($1::Text, $2::Text, $3::Text, $4::Integer) RETURNING id;',
+        'INSERT INTO "public"."Recipes"("title", "ingredients", "instructions", "time", "creatorID", "skill_level") VALUES($1::Text, $2::Text, $3::Text, $4::Text, $5::Integer, $6::Text) RETURNING id;',
         [
           recipe.title,
           recipe.ingredients,
           recipe.instructions,
+          recipe.time,
           recipe.creatorID,
+          recipe.skillLevel,
         ]
       );
 
@@ -151,6 +155,7 @@ class DBManager {
       }
     } catch (error) {
       console.error(error);
+      throw error; // Ensure to throw the error for error handling in the caller function
     } finally {
       client.end();
     }
@@ -168,9 +173,18 @@ class DBManager {
         'SELECT * FROM "public"."Recipes" WHERE id = $1',
         [id]
       );
-      return output.rows;
+
+      if (output.rows.length > 0) {
+        const recipe = output.rows[0];
+        console.log("Retrieved Recipe:", recipe);
+        return recipe;
+      } else {
+        console.log("No recipe found with ID:", id);
+        return null;
+      }
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching recipe:", error);
+      throw error; // Rethrow the error to handle it in the caller function
     } finally {
       client.end();
     }

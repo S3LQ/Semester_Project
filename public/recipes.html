@@ -29,6 +29,37 @@
           <label for="instruksjoner">Instruksjoner:</label>
           <textarea id="instruksjoner" required></textarea>
 
+          <label for="tid">Tid (minutter):</label>
+          <input type="text" id="tid" required />
+
+          <label for="vanskelighetsgrad">Vanskelighetsgrad:</label>
+          <div id="skill-level-buttons">
+            <button
+              type="button"
+              class="skill-level-button easy"
+              id="skill-easy"
+              value="Lett"
+            >
+              Lett
+            </button>
+            <button
+              type="button"
+              class="skill-level-button medium"
+              id="skill-medium"
+              value="Medium"
+            >
+              Medium
+            </button>
+            <button
+              type="button"
+              class="skill-level-button advanced"
+              id="skill-advanced"
+              value="Avansert"
+            >
+              Avansert
+            </button>
+          </div>
+
           <button type="button" id="leggTilKnapp">Legg til oppskrift</button>
         </form>
       </div>
@@ -69,6 +100,19 @@
 
         window.location.href = "index.html";
       }
+
+      // Event listener for skill level buttons
+      document.querySelectorAll(".skill-level-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          // Remove "selected" class from all buttons
+          document.querySelectorAll(".skill-level-button").forEach((btn) => {
+            btn.classList.remove("selected");
+          });
+
+          // Add "selected" class to the clicked button
+          this.classList.add("selected");
+        });
+      });
     </script>
   </body>
 </html>

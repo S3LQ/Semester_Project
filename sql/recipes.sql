@@ -3,5 +3,7 @@ CREATE TABLE "Recipes" (
     user_id INTEGER REFERENCES users(id),
     title TEXT,
     ingredients TEXT,
-    instructions TEXT
+    instructions TEXT,
+    time TEXT,
+    skillLevel TEXT
 );
