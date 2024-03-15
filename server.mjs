@@ -1,10 +1,9 @@
 import "dotenv/config";
 import express from "express";
-import SuperLogger from "/Users/tveitsindre/Documents/Skole/Applikasjonsutvikling_2/semesterProjectDemo/modules/superLogger.mjs";
+import SuperLogger from "./modules/superLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
 import USER_API from "./routes/usersRoute.mjs";
 import RECIPE_API from "./routes/recipeRoute.mjs";
-import DBManager from "./modules/storageManager.mjs";
 
 // Print important startup information for developers
 printDeveloperStartupInportantInformationMSG();

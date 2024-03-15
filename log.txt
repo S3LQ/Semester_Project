@@ -24372,3 +24372,11 @@ Server enviromentlocal
 Server enviromentlocal
 Database connection  postgresql://localhost:5433/tveitsindre
 ####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
