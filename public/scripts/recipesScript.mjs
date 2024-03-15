@@ -344,7 +344,7 @@ export async function editRecipe(recipe) {
 }
 
 // Function to save edited recipe
-async function saveEditedRecipe(recipeId) {
+async function saveEditedRecipe(recipeId, originalSkillLevel) {
   // Retrieve edited title, ingredients, instructions, and time from input fields
   const editedTitle = document.getElementById("editedTitle").value;
   const editedIngredients = document.getElementById("editedIngredients").value;
@@ -352,29 +352,18 @@ async function saveEditedRecipe(recipeId) {
     document.getElementById("editedInstructions").value;
   const editedTime = document.getElementById("editedTime").value;
 
-  // Retrieve selected skill level
-  let editedSkillLevel = null;
-  const selectedSkillButton = document.querySelector(
-    ".skill-level-button.selected"
-  );
-  if (selectedSkillButton) {
-    editedSkillLevel = selectedSkillButton.value;
-  }
-
-  console.log("Edited Skill Level:", editedSkillLevel); // Debugging
-
-  // Prepare updated recipe data object
-  const updatedRecipeData = {
-    title: editedTitle,
-    ingredients: editedIngredients,
-    instructions: editedInstructions,
-    time: editedTime,
-    skill_level: editedSkillLevel, // Use 'skill_level' instead of 'skillLevel'
-  };
-
   try {
+    // Prepare updated recipe data object
+    const updatedRecipeData = {
+      title: editedTitle,
+      ingredients: editedIngredients,
+      instructions: editedInstructions,
+      time: editedTime,
+      skill_level: originalSkillLevel, // Use the original skill level
+    };
+
     // Send PUT request to update the recipe
-    const response = await fetch(`/recipes/${recipeId}`, {
+    const updateResponse = await fetch(`/recipes/${recipeId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -383,7 +372,7 @@ async function saveEditedRecipe(recipeId) {
     });
 
     // Check if the response is ok
-    if (response.ok) {
+    if (updateResponse.ok) {
       // Reload the page after successful update
       location.reload();
     } else {

@@ -39,40 +39,7 @@ server.get("/", (req, res, next) => {
     .end();
 });
 
-// Define a route handler for updating a recipe by its ID
-server.put("/recipes/:id", async (req, res) => {
-  const recipeId = req.params.id;
-  const updatedRecipeData = req.body;
-
-  try {
-    // Update the recipe in the database using the provided data
-    const updatedRecipe = await DBManager.updateRecipe(
-      recipeId,
-      updatedRecipeData
-    );
-
-    // Log database connection status
-    console.log("Connected to the database successfully");
-
-    // Respond with a success message
-    res.status(200).json({ message: "Recipe updated successfully" });
-  } catch (error) {
-    // Handle errors and respond with an error message
-    console.error("Error updating recipe:", error);
-    res.status(500).json({ error: "Failed to update recipe" });
-  }
-});
-
-// Define a route handler for deleting a recipe by its ID
-server.delete("/recipes/:id", (req, res) => {
-  const recipeId = req.params.id;
-
-  // Respond with a success message
-  res.status(200).json({ message: "Recipe deleted successfully" });
-});
-
-// Start the server and listen on the specified port
-server.listen(port, () => {
-  // Log server start message
-  console.log(`Server is running on port ${port}`);
+// Start the server
+server.listen(server.get("port"), function () {
+  console.log("server running", server.get("port"));
 });

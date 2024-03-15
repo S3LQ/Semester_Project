@@ -96,13 +96,12 @@ class DBManager {
     try {
       await client.connect();
       await client.query(
-        'UPDATE "public"."Recipes" SET "title" = $1, "ingredients" = $2, "instructions" = $3, "time" = $4, "skill_level" = $5 WHERE id = $6;',
+        'UPDATE "public"."Recipes" SET "title" = $1, "ingredients" = $2, "instructions" = $3, "time" = $4 WHERE id = $5;',
         [
           updatedRecipeData.title,
           updatedRecipeData.ingredients,
           updatedRecipeData.instructions,
           updatedRecipeData.time,
-          updatedRecipeData.skill_level,
           recipeId,
         ]
       );

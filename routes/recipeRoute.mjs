@@ -73,6 +73,9 @@ RECIPE_API.put("/:id", async (req, res) => {
   const recipeId = req.params.id;
   const updatedRecipeData = req.body;
 
+  // Log the received updatedRecipeData object
+  console.log("Received updated recipe data:", updatedRecipeData);
+
   try {
     // Call DBManager to update the recipe in the database
     await DBManager.updateRecipe(recipeId, updatedRecipeData);
