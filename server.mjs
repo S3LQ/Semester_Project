@@ -51,6 +51,9 @@ server.put("/recipes/:id", async (req, res) => {
       updatedRecipeData
     );
 
+    // Log database connection status
+    console.log("Connected to the database successfully");
+
     // Respond with a success message
     res.status(200).json({ message: "Recipe updated successfully" });
   } catch (error) {
