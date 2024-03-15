@@ -1,5 +1,6 @@
 import "dotenv/config";
 import express from "express";
+import SuperLogger from "./modules/superLogger.mjs";
 import printDeveloperStartupInportantInformationMSG from "./modules/developerHelpers.mjs";
 import USER_API from "./routes/usersRoute.mjs";
 import RECIPE_API from "./routes/recipeRoute.mjs";
@@ -13,6 +14,12 @@ const server = express();
 // Define the port number from environment variable or use 8080 as default
 const port = process.env.PORT || 8080;
 server.set("port", port);
+
+// Create an instance of SuperLogger for logging
+const logger = new SuperLogger();
+
+// Use the auto HTTP request logger middleware provided by SuperLogger
+server.use(logger.createAutoHTTPRequestLogger());
 
 // Serve static files from the "public" directory
 server.use(express.static("public"));
