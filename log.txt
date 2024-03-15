@@ -23060,3 +23060,33 @@ Database connection  postgresql://localhost:5433/tveitsindre
 Server enviromentlocal
 Database connection  postgresql://localhost:5433/tveitsindre
 ####################
+9:31:39 PM [32mGET[39m /recipes.html
+9:31:39 PM [32mGET[39m /styles/style.css
+9:31:39 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:31:39 PM [32mGET[39m /scripts/recipesScript.mjs
+9:31:39 PM [32mGET[39m /recipes
+9:31:39 PM [32mGET[39m /IMG/FoodImage.jpeg
+9:31:42 PM [32mGET[39m /recipes.html
+9:31:42 PM [32mGET[39m /styles/style.css
+9:31:42 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:31:42 PM [32mGET[39m /scripts/recipesScript.mjs
+9:31:42 PM [32mGET[39m /recipes
+9:31:42 PM [32mGET[39m /IMG/FoodImage.jpeg
+9:31:50 PM [32mGET[39m /recipes.html
+9:31:50 PM [32mGET[39m /styles/style.css
+9:31:50 PM [32mGET[39m /scripts/displayRecipesScript.mjs
+9:31:50 PM [32mGET[39m /scripts/recipesScript.mjs
+9:31:50 PM [32mGET[39m /recipes
+9:31:50 PM [32mGET[39m /IMG/FoodImage.jpeg
+####################
+Server enviromentlocal
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+Server enviromentlocal
+Database connection  postgresql://localhost:5433/tveitsindre
+####################
+####################
+Database connection  postgresql://localhost:5433/tveitsindre
+Server enviromentlocal
+####################

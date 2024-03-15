@@ -69,4 +69,7 @@ server.delete("/recipes/:id", (req, res) => {
 });
 
 // Start the server and listen on the specified port
-server.listen(port, () => {});
+server.listen(port, () => {
+  // Log server start message
+  console.log(`Server is running on port ${port}`);
+});
