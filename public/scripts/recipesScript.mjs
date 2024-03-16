@@ -98,15 +98,20 @@ function enlargeRecipeCard(recipe) {
 
   // Create and append elements for title, ingredients, and instructions
   const tittel = document.createElement("h3");
-  tittel.innerText = " " + recipe.title;
+  tittel.innerHTML = "<b>" + recipe.title + "</b>";
+
   const ingredienser = document.createElement("p");
-  ingredienser.innerText = "Ingredienser: " + recipe.ingredients;
+  ingredienser.innerHTML = "<b>Ingredienser:</b> " + recipe.ingredients;
+
   const instruksjoner = document.createElement("p");
-  instruksjoner.innerText = "Instruksjoner: " + recipe.instructions;
+  instruksjoner.innerHTML = "<b>Instruksjoner:</b> " + recipe.instructions;
+
   const tid = document.createElement("p");
-  tid.innerText = "Tid: " + recipe.time + " minutter";
+  tid.innerHTML = "<b>Tid:</b> " + recipe.time + " minutter";
+
   const vanskelighetsgrad = document.createElement("p");
-  vanskelighetsgrad.innerText = "Vanskelighetsgrad: " + recipe.skill_level;
+  vanskelighetsgrad.innerHTML =
+    "<b>Vanskelighetsgrad:</b> " + recipe.skill_level;
 
   enlargedCard.appendChild(tittel);
   enlargedCard.appendChild(ingredienser);
@@ -194,7 +199,6 @@ function enlargeRecipeCard(recipe) {
 }
 
 export function renderRecipeCard(recipe) {
-  console.log(recipe);
   const kortContainer = document.getElementById("kortContainer");
 
   // Create a new card element
@@ -326,7 +330,6 @@ export async function editRecipe(recipe) {
       });
       // Check if the response is ok
       if (response.ok) {
-        // Reload the page after successful update
         location.reload();
       } else {
         // Throw an error if failed to update the recipe

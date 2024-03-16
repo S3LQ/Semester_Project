@@ -188,21 +188,34 @@ button:hover {
 }
 
 .enlarged-card {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  align-items: center; /* Center items horizontally */
 }
 
 .enlarged-card h3,
 .enlarged-card p {
   text-align: center;
+  width: 400px;
 }
 
 .enlarged-card img {
-  float: right;
-  margin-left: 20px;
-  width: 500px;
-  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  width: 70%;
+  max-width: 500px;
   border-radius: 8px;
-  margin-bottom: 20px;
+}
+
+.enlarged-card .actionButton,
+.enlarged-card .edit-button {
+  width: 200px;
+  margin-top: 1px;
+}
+
+.enlarged-card button {
+  width: 200px;
+  margin-top: 1px;
 }
 
 .edit-button {

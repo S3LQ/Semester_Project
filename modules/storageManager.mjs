@@ -175,10 +175,8 @@ class DBManager {
 
       if (output.rows.length > 0) {
         const recipe = output.rows[0];
-        console.log("Retrieved Recipe:", recipe);
         return recipe;
       } else {
-        console.log("No recipe found with ID:", id);
         return null;
       }
     } catch (error) {
